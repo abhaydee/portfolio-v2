@@ -5,6 +5,9 @@ export const HeroScreenContainer = styled.div`
   background-color: #fff;
   width: 100%;
   height: 100vh;
+  @media (max-width: 576px) {
+    height: 18rem;
+  }
 `;
 
 export const HeaderContainer = styled.div`
@@ -12,10 +15,38 @@ export const HeaderContainer = styled.div`
   flex-direction: row;
   justify-content: space-evenly;
   padding: 3.2rem 7rem 0;
+  @media (max-width: 500px) {
+    justify-content: space-between;
+    font-size: 12px;
+    padding: 0.5rem;
+    display: none;
+  }
 `;
 
 export const ProjectsCustomContainer = styled.div`
-position: relative;
-background-color: #242424;
-color: #fff;
+  background-color: #242424;
+  color: #fff;
+`;
+
+export const Header3 = styled.h3`
+  padding-right: 10px;
+  @media screen and (max-width: 500px) {
+    padding-right: 1rem;
+  }
+`;
+
+export const ProjectImage = styled.img``;
+
+export const FigureContainer = styled.figure`
+  position: relative;
+  margin-bottom: 5rem;
+`;
+
+export const CustomImage = styled.img`
+height: 100%;
+left: 0;
+position: absolute;
+top: 0;
+width: 100%;
+}
 `;

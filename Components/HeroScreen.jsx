@@ -8,16 +8,20 @@ function HeroScreen() {
     font-weight: 600;
     // position: absolute;
     // top: 50%;
-    margin-top:15rem;
+    margin-top: 15rem;
     transform: translateY(-50%);
     text-align: center;
     color: #242424;
+
+    @media (max-width: 576px) {
+      font-size: 2rem;
+    }
   `;
 
-  const HeroScreenSubTitle=styled.p`
-        text-align:center;
-        font-size:3rem;
-        color:#019872;
+  const HeroScreenSubTitle = styled.p`
+    text-align: center;
+    font-size: 3rem;
+    color: #019872;
   `;
   return (
     <HeroScreenContainer>
