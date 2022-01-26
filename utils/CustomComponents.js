@@ -40,6 +40,7 @@ export const ProjectImage = styled.img``;
 export const FigureContainer = styled.figure`
   position: relative;
   margin-bottom: 5rem;
+  border-radius : 1rem;
 `;
 
 export const CustomImage = styled.img`
@@ -50,3 +51,12 @@ top: 0;
 width: 100%;
 }
 `;
+
+export const ProjectsContainerTitle = styled.h1`
+    padding: 3rem 1rem 2rem 1rem;
+    @media (min-width: 768px) {
+      padding: 6rem 0 4rem 8rem;
+      font-size: 5rem;
+      max-width: ${props => props.maxWidth};
+    }
+  `;
