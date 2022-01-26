@@ -9,6 +9,7 @@ import {
 } from "../utils/CustomComponents";
 import styled from "styled-components";
 import Image from "next/image";
+import { Fade } from "react-reveal";
 function ProjectsContainer() {
   
   const ProjectsDescriptionContainer = styled.div`
@@ -141,6 +142,8 @@ function ProjectsContainer() {
       <ProjectsContainerTitle maxWidth={"55rem"}>
         DISCOVER MY LATEST PROJECTS.
       </ProjectsContainerTitle>
+      <Fade bottom>
+
       {projectsList.map((projectItem, projectItemIndex) => {
         return (
           <div key={projectItemIndex}>
@@ -151,7 +154,8 @@ function ProjectsContainer() {
                     <ProjectImage
                       src={projectItem.projectImage}
                       width={"100%"}
-                      height={"585"}
+                      // height={"585"}
+                      style={{objectFit:"cover",backgroundPosition:"center",maxWidth:"100%",height:"auto"}}
                     />
                   </a>
                   <ProjectsData>
@@ -164,6 +168,8 @@ function ProjectsContainer() {
           </div>
         );
       })}
+            </Fade>
+
     </ProjectsCustomContainer>
   );
 }
