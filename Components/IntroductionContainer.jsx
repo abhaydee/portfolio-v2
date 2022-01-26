@@ -25,12 +25,14 @@ function IntroductionContainer() {
   `;
 
   const CustomFigure = styled.figure`
-    position: relative;
-    height: 64.2rem;
-    width:fit-content;
-    left: 70rem;
-    bottom: 42rem;
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 35.5273, 0, 1);
+    @media (min-width: 768px) {
+      position: relative;
+      height: 64.2rem;
+      width: fit-content;
+      left: 70rem;
+      bottom: 42rem;
+      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 35.5273, 0, 1);
+    }
   `;
 
   const SelfAvatar = styled.img`
@@ -39,7 +41,7 @@ function IntroductionContainer() {
     display: block;
 
     @media (max-width: 576px) {
-      display: none;
+      display: none !important;
     }
   `;
   return (
@@ -56,9 +58,9 @@ function IntroductionContainer() {
             individuals.
           </IntroductionParagraph>
         </IntroductionDescription>
-        <CustomFigure>
+        {/* <CustomFigure>
           <SelfAvatar src="./assets/images/avatar.svg" />
-        </CustomFigure>
+        </CustomFigure> */}
       </ProjectsCustomContainer>
     </>
   );
