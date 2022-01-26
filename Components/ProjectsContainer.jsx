@@ -155,7 +155,7 @@ function ProjectsContainer() {
                       src={projectItem.projectImage}
                       width={"100%"}
                       // height={"585"}
-                      style={{objectFit:"cover",backgroundPosition:"center",maxWidth:"100%",height:"auto"}}
+                      style={{objectFit:"cover",backgroundPosition:"center",maxWidth:"100%",height:"auto",borderRadius:"30"}}
                     />
                   </a>
                   <ProjectsData>
