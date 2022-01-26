@@ -42,7 +42,7 @@ function ContactContainer() {
     margin-bottom: 1.6rem;
   `;
 
-  const CopyRight=styled.div`
+  const CopyRight = styled.div`
     font-size: 1.8rem;
   `;
   return (
@@ -52,25 +52,21 @@ function ContactContainer() {
       </ContactContainerTitle>
       <Footer>
         <FooterSocials>
-          <img
-            src="/assets/images/linkedin-logo.png"
-            width={50}
-            height={50}
-          />
-          <img
-            src="/assets/images/github-sign.png"
-            width={50}
-            height={50}
-          />
-          <img
-            src="/assets/images/twitter-sign.png"
-            width={50}
-            height={50}
-          />
+          <a href="https://www.linkedin.com/in/abhaydee/" target="_blank">
+            <img
+              src="/assets/images/linkedin-logo.png"
+              width={50}
+              height={50}
+            />
+          </a>
+          <a href="https://github.com/abhaydee" target="_blank">
+            <img src="/assets/images/github-sign.png" width={50} height={50} />
+          </a>
+          <a href="https://twitter.com/abhaycodes" target="_blank">
+            <img src="/assets/images/twitter-sign.png" width={50} height={50} />
+          </a>
         </FooterSocials>
-        <CopyRight>
-            @2022 Abhay Deshpande
-        </CopyRight>
+        <CopyRight>@2022 Abhay Deshpande</CopyRight>
       </Footer>
     </ContactDisplay>
   );
