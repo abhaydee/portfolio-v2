@@ -5,13 +5,15 @@ import {
   CustomContainer,
   FigureContainer,
   CustomImage,
-  ProjectsContainerTitle
+  ProjectsContainerTitle,
 } from "../utils/CustomComponents";
 import styled from "styled-components";
 import Image from "next/image";
 import { Fade } from "react-reveal";
+import Link from "next/link";
+import Router, { useRouter } from "next/router";
 function ProjectsContainer() {
-  
+  const router = useRouter();
   const ProjectsDescriptionContainer = styled.div`
     position: relative;
     display: flex;
@@ -39,8 +41,8 @@ function ProjectsContainer() {
     // position: absolute;
     // top: 0;
     // width: 100%;
-    object-fit:cover;
-    background-position:center;
+    object-fit: cover;
+    background-position: center;
   `;
 
   const projectsList = [
@@ -59,6 +61,7 @@ function ProjectsContainer() {
         "MixPanel-Analytics",
       ],
       projectLink: "https://www.culture-plus.com/seneca-go",
+      external: true,
       projectImage: "/assets/images/seneca-go.png",
       projectDescription: `I am currently working as Full Stack Engineer for a  from-scratch React Native Full-Stack Product. Working on the API Integration with React Native and GraphQL and AWS-APP-SYNC (Serverless)`,
     },
@@ -77,13 +80,15 @@ function ProjectsContainer() {
       ],
       projectLink: "https://www.vodacom.co.za/shopping/products",
       projectImage: "/assets/images/vodacom.png",
+      external: true,
       projectDescription: `We were building client intimacy by understanding their functional and UX requirements. We have developed extensively reusable React Components in the UI. Made from scratch, fully functional e-commerce React products using NextJS. Worked on API Integration of React with Magento using GraphQL, the Product's overall functionality, and successfully delivered it. I was a part of the Team where we built this Product from scratch. The Front End of this project is built with NEXTJS, React, Redux, GraphQL (Consuming Side)`,
     },
     {
       id: "3",
       projectTitle: "REST Countries with colour theme switcher",
       techStack: ["Javascript", "Next JS", "Redux-Thunk"],
-      projectLink: "https://rest-countries-seven.vercel.app/",
+      projectLink: "/Rest-Countries",
+      external: false,
       projectImage: "/assets/images/rest-countries.png",
       projectDescription: `A fully-featured application that describes the details of
         countries all around the globe. The most exciting thing that I did
@@ -95,13 +100,15 @@ function ProjectsContainer() {
       projectTitle: "Netflix Clone ",
       projectImage: "/assets/images/netflix-clone.png",
       techStack: ["React", "Javascript", "Firebase", "TMDB API", "CSS3"],
-      projectLink: "https://netflix-clone-f12a4.web.App",
+      projectLink: "/Netflix",
+      external: false,
       projectDescription: `A customized Netflix Landing Page which plays the on-screen trailer of TV Shows & Movies around the globe`,
     },
     {
       id: "5",
       projectTitle: "Social Media Web",
       projectImage: "/assets/images/vodacom.png",
+      external: false,
       techStack: [
         "React",
         "React-Context",
@@ -110,7 +117,7 @@ function ProjectsContainer() {
         "Apollo Server",
         "MongoDB",
       ],
-      projectLink: "https://social-media-web.netlify.app/",
+      projectLink: "/Social-Media-Web",
       projectDescription: `A from-scratch Full Stack Application provides a Secure Login System for the users and performs all basic CRUD social media functionalities.`,
     },
     {
@@ -125,51 +132,69 @@ function ProjectsContainer() {
         "Firebase",
       ],
       projectImage: "/assets/images/todo-list.png",
-      projectLink: "https://todo-list-ten-inky.vercel.app/",
+      external: false,
+      projectLink: "/todo-list",
       projectDescription: `We all know that a Typical to-do list web application helps a developer understand the CRUD functionalities of the web. I always wanted to build a to-do application rich in UI, yet simple and easier to use.t also comes with a unique dark mode theme for all those AMOLED screens used there. This site is going to look amazing on your phones and desktops. I have given it an honest try.`,
     },
     {
       id: "7",
       projectTitle: "Memory Game",
       techStack: ["HTML5", "CSS3", "JavaSript"],
-      projectLink: "https://abhaydee.github.io/Memory-Game/",
+      projectLink: "/Memory-Game",
       projectImage: "/assets/images/memory-game.png",
+      external: false,
       projectDescription: `An interactive memory game built using HTML5, CSS3, JavaScript. The game also consists of appropriate Timer and Scores Section, which makes the game extremely competitive for users.`,
     },
   ];
+
+  const handleNavigation = (projectItem) => {
+    if (typeof window !== undefined && projectItem.external) {
+      window.open(
+        projectItem.projectLink,
+         "_blank"
+      );
+    }
+    else {
+        router.push(projectItem.projectLink)
+    }
+  };
   return (
     <ProjectsCustomContainer>
       <ProjectsContainerTitle maxWidth={"55rem"}>
         DISCOVER MY LATEST PROJECTS.
       </ProjectsContainerTitle>
       <Fade bottom>
-
-      {projectsList.map((projectItem, projectItemIndex) => {
-        return (
-          <div key={projectItemIndex}>
-            <CustomContainer>
-              <ProjectsDescriptionContainer>
-                <FigureContainer>
-                  <a href={projectItem.projectLink} target="_blank">
-                    <ProjectImage
-                      src={projectItem.projectImage}
-                      width={"100%"}
-                      // height={"585"}
-                      style={{objectFit:"cover",backgroundPosition:"center",maxWidth:"100%",height:"auto",borderRadius:"30"}}
-                    />
-                  </a>
-                  <ProjectsData>
-                    <h3>{projectItem.projectTitle}</h3>
-                    <p>NEXTJS</p>
-                  </ProjectsData>
-                </FigureContainer>
-              </ProjectsDescriptionContainer>
-            </CustomContainer>
-          </div>
-        );
-      })}
-            </Fade>
-
+        {projectsList.map((projectItem, projectItemIndex) => {
+          return (
+            <div key={projectItemIndex}>
+              <CustomContainer>
+                <ProjectsDescriptionContainer>
+                  <FigureContainer>
+                    <div onClick={() => handleNavigation(projectItem)}>
+                      <ProjectImage
+                        src={projectItem.projectImage}
+                        width={"100%"}
+                        // height={"585"}
+                        style={{
+                          objectFit: "cover",
+                          backgroundPosition: "center",
+                          maxWidth: "100%",
+                          height: "auto",
+                          borderRadius: "30",
+                        }}
+                      />
+                    </div>
+                    <ProjectsData>
+                      <h3>{projectItem.projectTitle}</h3>
+                      <p>NEXTJS</p>
+                    </ProjectsData>
+                  </FigureContainer>
+                </ProjectsDescriptionContainer>
+              </CustomContainer>
+            </div>
+          );
+        })}
+      </Fade>
     </ProjectsCustomContainer>
   );
 }

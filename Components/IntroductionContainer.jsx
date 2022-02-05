@@ -9,6 +9,13 @@ function IntroductionContainer() {
   const IntroductionDescription = styled.div`
     padding-left: 8rem;
     padding-bottom: 13.5rem;
+    @media (max-width: 1080px) {
+      padding-left:1rem;
+      padding-right:1rem;
+      padding-bottom:4rem;
+      justify-content:center;
+      text-align:center;
+    }
   `;
 
   const IntroductionTitle = styled.h3`
@@ -22,10 +29,13 @@ function IntroductionContainer() {
     font-size: 2.8rem;
     width: 56rem;
     line-height: 3.5rem;
+    @media (max-width:1080px){
+      width: 100%;
+    }
   `;
 
   const CustomFigure = styled.figure`
-    @media (min-width: 768px) {
+    @media (min-width: 1080px) {
       position: relative;
       height: 64.2rem;
       width: fit-content;
@@ -40,7 +50,7 @@ function IntroductionContainer() {
     height: 36.4375rem;
     display: block;
 
-    @media (max-width: 576px) {
+    @media (max-width: 1080px) {
       display: none !important;
     }
   `;
@@ -58,9 +68,9 @@ function IntroductionContainer() {
             individuals.
           </IntroductionParagraph>
         </IntroductionDescription>
-        {/* <CustomFigure>
+        <CustomFigure>
           <SelfAvatar src="./assets/images/avatar.svg" />
-        </CustomFigure> */}
+        </CustomFigure>
       </ProjectsCustomContainer>
     </>
   );

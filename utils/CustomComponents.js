@@ -42,6 +42,9 @@ export const FigureContainer = styled.figure`
   margin-bottom: 5rem;
   margin-inline:6rem;
   border-radius : 1rem;
+  @media (max-width:576px){
+    margin-inline:1rem;
+  }
 `;
 
 export const CustomImage = styled.img`

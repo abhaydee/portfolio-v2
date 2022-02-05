@@ -11,8 +11,8 @@ import { Fade } from "react-reveal";
 
 export default function Home() {
   return (
-    <div style={{ scrollBehaviour: "smooth" }}>
-      <CustomContainer className={styles.container}>
+    <div style={{ scrollBehaviour: "smooth" }} >
+      <CustomContainer >
         <Zoom bottom>
           <HeroScreen />
         </Zoom>
