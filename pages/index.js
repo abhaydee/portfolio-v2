@@ -8,6 +8,7 @@ import styles from "../styles/Home.module.css";
 import { CustomContainer } from "../utils/CustomComponents";
 import Zoom from "react-reveal/Zoom";
 import { Fade } from "react-reveal";
+import Organizations from "../Components/Organizations";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Zoom bottom>
           <HeroScreen />
         </Zoom>
+        <Organizations/>
         <ProjectsContainer />
         <Fade>
           <IntroductionContainer />
