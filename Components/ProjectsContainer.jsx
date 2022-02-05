@@ -84,7 +84,19 @@ function ProjectsContainer() {
       projectDescription: `We were building client intimacy by understanding their functional and UX requirements. We have developed extensively reusable React Components in the UI. Made from scratch, fully functional e-commerce React products using NextJS. Worked on API Integration of React with Magento using GraphQL, the Product's overall functionality, and successfully delivered it. I was a part of the Team where we built this Product from scratch. The Front End of this project is built with NEXTJS, React, Redux, GraphQL (Consuming Side)`,
     },
     {
-      id: "3",
+      id: "4",
+      projectTitle: "Coinbase Clone for crypto transactions",
+      techStack: ["Javascript", "NextJS", "SanityIO","MetaMask","ThirdWeb"],
+      projectLink: "/coinbase-clone",
+      external: false,
+      projectImage: "/assets/images/rest-countries.png",
+      projectDescription: `A fully-featured application that describes the details of
+        countries all around the globe. The most exciting thing that I did
+        here was to reduce the API calls and handle all the complex
+        functionality using Javascript.`,
+    },
+    {
+      id: "4",
       projectTitle: "REST Countries with colour theme switcher",
       techStack: ["Javascript", "Next JS", "Redux-Thunk"],
       projectLink: "/Rest-Countries",
@@ -96,7 +108,7 @@ function ProjectsContainer() {
         functionality using Javascript.`,
     },
     {
-      id: "4",
+      id: "5",
       projectTitle: "Netflix Clone ",
       projectImage: "/assets/images/netflix-clone.png",
       techStack: ["React", "Javascript", "Firebase", "TMDB API", "CSS3"],
@@ -105,7 +117,7 @@ function ProjectsContainer() {
       projectDescription: `A customized Netflix Landing Page which plays the on-screen trailer of TV Shows & Movies around the globe`,
     },
     {
-      id: "5",
+      id: "6",
       projectTitle: "Social Media Web",
       projectImage: "/assets/images/vodacom.png",
       external: false,
@@ -121,7 +133,7 @@ function ProjectsContainer() {
       projectDescription: `A from-scratch Full Stack Application provides a Secure Login System for the users and performs all basic CRUD social media functionalities.`,
     },
     {
-      id: "6",
+      id: "7",
       projectTitle: "Customized Todo List Web Application",
       techStack: [
         "HTML5",
@@ -137,7 +149,7 @@ function ProjectsContainer() {
       projectDescription: `We all know that a Typical to-do list web application helps a developer understand the CRUD functionalities of the web. I always wanted to build a to-do application rich in UI, yet simple and easier to use.t also comes with a unique dark mode theme for all those AMOLED screens used there. This site is going to look amazing on your phones and desktops. I have given it an honest try.`,
     },
     {
-      id: "7",
+      id: "8",
       projectTitle: "Memory Game",
       techStack: ["HTML5", "CSS3", "JavaSript"],
       projectLink: "/Memory-Game",
