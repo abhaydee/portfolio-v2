@@ -16,3 +16,17 @@ a {
   box-sizing: border-box;
   margin: 0;
 }
+
+li{
+  list-style: none;
+}
+
+li::before{
+  content: "\00BB";
+  padding-right:1rem;
+  padding-bottom: 1rem;
+}
+
+li{
+  display: inline-flex;
+}
