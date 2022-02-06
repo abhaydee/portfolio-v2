@@ -41,7 +41,6 @@ export const FigureContainer = styled.figure`
   position: relative;
   margin-bottom: 5rem;
   margin-inline:6rem;
-  border-radius : 1rem;
   @media (max-width:576px){
     margin-inline:1rem;
   }

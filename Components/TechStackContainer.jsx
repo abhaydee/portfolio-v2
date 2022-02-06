@@ -22,7 +22,6 @@ const Wrapper = styled.div`
   text-align: center;
   background-color: rgb(47, 59, 84);
   color: #d7dce2;
-  border-radius :1rem;
   @media (max-width:1024px){
       width:6.31rem;
       height:8.18rem;
@@ -31,7 +30,6 @@ const Wrapper = styled.div`
 const Image = styled.img`
   width:70px;
   height:70px;
-  border-radius : 10px;
   @media (max-width:1024px){
       width:50px;
       height:50px;

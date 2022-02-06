@@ -20,10 +20,10 @@ export default function Home() {
         </Zoom>
         <Organizations />
         <ProjectsContainer />
-        <Fade>
+        {/* <Fade> */}
           <IntroductionContainer />
           <ContactContainer />
-        </Fade>
+        {/* </Fade> */}
       </CustomContainer>
     </div>
   );

@@ -116,6 +116,9 @@ const TechStackGrid = styled.div`
   display:flex;
   margin-right:1rem;
   margin-bottom:1rem;
+  @media (max-width:1024px){
+    margin-right:0.6rem;
+  }
   justify-content:center;
 `
 
@@ -123,7 +126,8 @@ const CustomContainer = styled.div`
   display:flex;
   padding-inline:6rem;
   @media (max-width:1024px){
-    padding-inline:0.5rem;
+    padding-inline:0.1rem;
+    margin-left:1rem;
     flex-direction:row;
     max-width:100%;
     flex-wrap:wrap;
