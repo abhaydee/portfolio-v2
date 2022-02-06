@@ -167,6 +167,7 @@ function ProjectsContainer() {
       );
     }
     else {
+        localStorage.setItem("Project-Details",JSON.stringify(projectItem))
         router.push(projectItem.projectLink)
     }
   };
