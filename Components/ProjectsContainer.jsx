@@ -87,7 +87,7 @@ function ProjectsContainer() {
       id: "4",
       projectTitle: "Coinbase Clone for crypto transactions",
       techStack: [
-        { tech: "Javascript", logoUrl: "/assets/images/javascript-logo.ico" },
+        { tech: "Javascript", logoUrl: "/assets/images/javascript-logo.png" },
         { tech: "Nextjs", logoUrl: "/assets/images/nextjs-logo.png" },
         { tech: "MetaMask", logoUrl: "/assets/images/metamask-logo.png" },
         { tech: "ThirdWeb", logoUrl: "/assets/images/thirdweb-logo.jpeg" },

@@ -30,13 +30,14 @@ const ProjectDetails = () => {
               ></FlexImage>
             </ImageContainer>
           </DetailsContainer> */}
+          <TechStackTitle>Tech Stack</TechStackTitle>
           <CustomContainer>
             {projectData.techStack.map((projectItem, projectItemIndex) => {
               return (
                 <TechStackGrid key={projectItemIndex}>
                   <TechStackContainer
-                    techName={"NextJS"}
-                    techLogo="/assets/images/nextjs-logo.png"
+                    techName={projectItem.tech}
+                    techLogo={projectItem.logoUrl}
                   />
                 </TechStackGrid>
               );
@@ -132,5 +133,12 @@ const CustomContainer = styled.div`
     max-width:100%;
     flex-wrap:wrap;
   }
+  `
+
+export const TechStackTitle = styled.h2`
+color: #ffcc66;
+text-align:center;
+margin-bottom:2rem;   
+
 `
 export default ProjectDetails;
