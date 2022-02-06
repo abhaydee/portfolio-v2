@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import TechStackContainer from "../Components/TechStackContainer";
-import { CustomContainer } from "../utils/CustomComponents";
 const ProjectDetails = () => {
   const [projectData, setProjectData] = useState({});
   useEffect(() => {
@@ -32,10 +31,16 @@ const ProjectDetails = () => {
             </ImageContainer>
           </DetailsContainer> */}
           <CustomContainer>
-            <TechStackContainer
-              techName={"NextJS"}
-              techLogo="/assets/images/nextjs-logo.png"
-            />
+            {projectData.techStack.map((projectItem, projectItemIndex) => {
+              return (
+                <TechStackGrid key={projectItemIndex}>
+                  <TechStackContainer
+                    techName={"NextJS"}
+                    techLogo="/assets/images/nextjs-logo.png"
+                  />
+                </TechStackGrid>
+              );
+            })}
           </CustomContainer>
         </div>
       )}
@@ -52,6 +57,9 @@ const Wrapper = styled.div`
 const Header1 = styled.h1`
   font-size: 70px;
   color: #ffcc66;
+  @media (max-width:1024px){
+    font-size:36px;
+  }
 `;
 const Image = styled.img`
   width: 100%;
@@ -104,4 +112,21 @@ const DetailsContainer = styled.div`
   }
 `;
 
+const TechStackGrid = styled.div`
+  display:flex;
+  margin-right:1rem;
+  margin-bottom:1rem;
+  justify-content:center;
+`
+
+const CustomContainer = styled.div`
+  display:flex;
+  padding-inline:6rem;
+  @media (max-width:1024px){
+    padding-inline:0.5rem;
+    flex-direction:row;
+    max-width:100%;
+    flex-wrap:wrap;
+  }
+`
 export default ProjectDetails;

@@ -23,16 +23,27 @@ const Wrapper = styled.div`
   background-color: rgb(47, 59, 84);
   color: #d7dce2;
   border-radius :1rem;
+  @media (max-width:1024px){
+      width:6.31rem;
+      height:8.18rem;
+  }
 `;
 const Image = styled.img`
   width:70px;
   height:70px;
   border-radius : 10px;
+  @media (max-width:1024px){
+      width:50px;
+      height:50px;
+  }
 `;
 const ImageContainer = styled.div`
 `;
 
 const TechText = styled.p`
-    padding:1rem
+    padding:1rem;
+    @media (max-width:1024px){
+        padding:0.5rem;
+    }
 `
 export default TechStackContainer;
