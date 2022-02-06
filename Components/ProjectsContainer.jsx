@@ -69,14 +69,14 @@ function ProjectsContainer() {
       id: "2",
       projectTitle: "Accenture South-Africa",
       techStack: [
-        "NextJS",
-        "React",
-        "Javascript",
-        "SASS",
-        "Redux",
-        "Redux-Thunk",
-        "Graphql",
-        "Adobe-Analytics",
+        {tech:"NextJS", logoUrl:"/assets/images/nextjs-logo.png"},
+        {tech:"React", logoUrl:"/assets/images/react-logo.png"},
+        {tech:"React", logoUrl:"/assets/images/react-logo.png"},
+        {tech:"React", logoUrl:"/assets/images/react-logo.png"},
+        {tech:"React", logoUrl:"/assets/images/react-logo.png"},
+        {tech:"React", logoUrl:"/assets/images/react-logo.png"},
+        {tech:"React", logoUrl:"/assets/images/react-logo.png"},
+        {tech:"React", logoUrl:"/assets/images/react-logo.png"},
       ],
       projectLink: "https://www.vodacom.co.za/shopping/products",
       projectImage: "/assets/images/vodacom.png",
@@ -86,7 +86,13 @@ function ProjectsContainer() {
     {
       id: "4",
       projectTitle: "Coinbase Clone for crypto transactions",
-      techStack: ["Javascript", "NextJS", "SanityIO","MetaMask","ThirdWeb"],
+      techStack: [
+        { tech: "Javascript", logoUrl: "/assets/images/javascript-logo.ico" },
+        { tech: "Nextjs", logoUrl: "/assets/images/nextjs-logo.png" },
+        { tech: "MetaMask", logoUrl: "/assets/images/metamask-logo.png" },
+        { tech: "ThirdWeb", logoUrl: "/assets/images/thirdweb-logo.jpeg" },
+        { tech: "Sanity", logoUrl: "/assets/images/sanity-logo.png" },
+      ],
       projectLink: "/coinbase-clone",
       external: false,
       projectImage: "/assets/images/rest-countries.png",
@@ -94,7 +100,7 @@ function ProjectsContainer() {
         countries all around the globe. The most exciting thing that I did
         here was to reduce the API calls and handle all the complex
         functionality using Javascript.`,
-      projectShortDescription:`A dynamic UI web application which enables users to send/receive payments in the form of CryptoCurrency. `
+      projectShortDescription: `A dynamic UI web application which enables users to send/receive payments in the form of CryptoCurrency. `,
     },
     {
       id: "4",
@@ -107,7 +113,7 @@ function ProjectsContainer() {
         countries all around the globe. The most exciting thing that I did
         here was to reduce the API calls and handle all the complex
         functionality using Javascript.`,
-      projectShortDescription:`A fully-featured application that describes the details of countries all around the globe. `
+      projectShortDescription: `A fully-featured application that describes the details of countries all around the globe. `,
     },
     {
       id: "5",
@@ -117,7 +123,7 @@ function ProjectsContainer() {
       projectLink: "/Netflix",
       external: false,
       projectDescription: `A customized Netflix Landing Page which plays the on-screen trailer of TV Shows & Movies around the globe`,
-      projectShortDescription:`A clone of the Netflix landing Page which plays onscreens trailers for all the TV shows and movies.`
+      projectShortDescription: `A clone of the Netflix landing Page which plays onscreens trailers for all the TV shows and movies.`,
     },
     {
       id: "6",
@@ -133,7 +139,7 @@ function ProjectsContainer() {
         "MongoDB",
       ],
       projectLink: "/Social-Media-Web",
-      projectShortDescription:`A secured social media web application which implements all the CRUD functionalities of Social Media. `,
+      projectShortDescription: `A secured social media web application which implements all the CRUD functionalities of Social Media. `,
       projectDescription: `A from-scratch Full Stack Application provides a Secure Login System for the users and performs all basic CRUD social media functionalities.`,
     },
     {
@@ -150,7 +156,7 @@ function ProjectsContainer() {
       projectImage: "/assets/images/todo-list.png",
       external: false,
       projectLink: "/todo-list",
-      projectShortDescription:`We all know that a Typical to-do list web application helps a developer understand the CRUD functionalities of the web. I always wanted to build a to-do application rich in UI, yet simple and easier to use.`,
+      projectShortDescription: `We all know that a Typical to-do list web application helps a developer understand the CRUD functionalities of the web. I always wanted to build a to-do application rich in UI, yet simple and easier to use.`,
       projectDescription: `We all know that a Typical to-do list web application helps a developer understand the CRUD functionalities of the web. I always wanted to build a to-do application rich in UI, yet simple and easier to use.t also comes with a unique dark mode theme for all those AMOLED screens used there. This site is going to look amazing on your phones and desktops. I have given it an honest try.`,
     },
     {
@@ -167,14 +173,10 @@ function ProjectsContainer() {
 
   const handleNavigation = (projectItem) => {
     if (typeof window !== undefined && projectItem.external) {
-      window.open(
-        projectItem.projectLink,
-         "_blank"
-      );
-    }
-    else {
-        localStorage.setItem("Project-Details",JSON.stringify(projectItem))
-        router.push(projectItem.projectLink)
+      window.open(projectItem.projectLink, "_blank");
+    } else {
+      localStorage.setItem("Project-Details", JSON.stringify(projectItem));
+      router.push(projectItem.projectLink);
     }
   };
   return (
