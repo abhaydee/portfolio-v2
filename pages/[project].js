@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+import TechStackContainer from "../Components/TechStackContainer";
+import { CustomContainer } from "../utils/CustomComponents";
 const ProjectDetails = () => {
   const [projectData, setProjectData] = useState({});
   useEffect(() => {
@@ -29,9 +31,12 @@ const ProjectDetails = () => {
               ></FlexImage>
             </ImageContainer>
           </DetailsContainer> */}
-          <TechStackContainer>
-
-          </TechStackContainer>
+          <CustomContainer>
+            <TechStackContainer
+              techName={"NextJS"}
+              techLogo="/assets/images/nextjs-logo.png"
+            />
+          </CustomContainer>
         </div>
       )}
     </Wrapper>
@@ -41,7 +46,7 @@ const ProjectDetails = () => {
 const Wrapper = styled.div`
   padding-top: 4rem;
   min-height: 100%;
-  background: #212529;
+  background: linear-gradient(rgb(47, 59, 84), rgb(23, 28, 40));
   text-align: center;
 `;
 const Header1 = styled.h1`
@@ -99,7 +104,4 @@ const DetailsContainer = styled.div`
   }
 `;
 
- export const TechStackContainer = styled.div`
-  margin-top:2rem;
- `
 export default ProjectDetails;

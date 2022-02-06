@@ -9,15 +9,16 @@ import { CustomContainer } from "../utils/CustomComponents";
 import Zoom from "react-reveal/Zoom";
 import { Fade } from "react-reveal";
 import Organizations from "../Components/Organizations";
+import TechStackContainer from "../Components/TechStackContainer";
 
 export default function Home() {
   return (
-    <div style={{ scrollBehaviour: "smooth" }} >
-      <CustomContainer >
+    <div style={{ scrollBehaviour: "smooth" }}>
+      <CustomContainer>
         <Zoom bottom>
           <HeroScreen />
         </Zoom>
-        <Organizations/>
+        <Organizations />
         <ProjectsContainer />
         <Fade>
           <IntroductionContainer />
