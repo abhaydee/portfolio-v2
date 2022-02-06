@@ -94,6 +94,7 @@ function ProjectsContainer() {
         countries all around the globe. The most exciting thing that I did
         here was to reduce the API calls and handle all the complex
         functionality using Javascript.`,
+      projectShortDescription:`A dynamic UI web application which enables users to send/receive payments in the form of CryptoCurrency. `
     },
     {
       id: "4",
@@ -106,6 +107,7 @@ function ProjectsContainer() {
         countries all around the globe. The most exciting thing that I did
         here was to reduce the API calls and handle all the complex
         functionality using Javascript.`,
+      projectShortDescription:`A fully-featured application that describes the details of countries all around the globe. `
     },
     {
       id: "5",
@@ -115,6 +117,7 @@ function ProjectsContainer() {
       projectLink: "/Netflix",
       external: false,
       projectDescription: `A customized Netflix Landing Page which plays the on-screen trailer of TV Shows & Movies around the globe`,
+      projectShortDescription:`A clone of the Netflix landing Page which plays onscreens trailers for all the TV shows and movies.`
     },
     {
       id: "6",
@@ -130,6 +133,7 @@ function ProjectsContainer() {
         "MongoDB",
       ],
       projectLink: "/Social-Media-Web",
+      projectShortDescription:`A secured social media web application which implements all the CRUD functionalities of Social Media. `,
       projectDescription: `A from-scratch Full Stack Application provides a Secure Login System for the users and performs all basic CRUD social media functionalities.`,
     },
     {
@@ -146,6 +150,7 @@ function ProjectsContainer() {
       projectImage: "/assets/images/todo-list.png",
       external: false,
       projectLink: "/todo-list",
+      projectShortDescription:`We all know that a Typical to-do list web application helps a developer understand the CRUD functionalities of the web. I always wanted to build a to-do application rich in UI, yet simple and easier to use.`,
       projectDescription: `We all know that a Typical to-do list web application helps a developer understand the CRUD functionalities of the web. I always wanted to build a to-do application rich in UI, yet simple and easier to use.t also comes with a unique dark mode theme for all those AMOLED screens used there. This site is going to look amazing on your phones and desktops. I have given it an honest try.`,
     },
     {
@@ -155,6 +160,7 @@ function ProjectsContainer() {
       projectLink: "/Memory-Game",
       projectImage: "/assets/images/memory-game.png",
       external: false,
+      projectShortDescription: `An interactive memory game built using HTML5, CSS3, JavaScript.`,
       projectDescription: `An interactive memory game built using HTML5, CSS3, JavaScript. The game also consists of appropriate Timer and Scores Section, which makes the game extremely competitive for users.`,
     },
   ];

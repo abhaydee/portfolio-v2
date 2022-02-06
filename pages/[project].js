@@ -3,7 +3,7 @@ import styled from "styled-components";
 const ProjectDetails = () => {
   const [projectData,setProjectData] = useState({});
   useEffect(()=>{
-    var projectDetails = localStorage.getItem("Project-Details");
+    var projectDetails = JSON.parse(localStorage.getItem("Project-Details"));
     setProjectData(projectDetails)
   },[])
 
@@ -12,18 +12,18 @@ const ProjectDetails = () => {
     <Wrapper className="d-flex flex-column align-items-center">
       {Object.keys(projectData).length>0 && 
          ( <div className="container">
-         <Header1 className="mb-5">{projectData.id}</Header1>
+         <Header1 className="mb-5">{projectData.projectTitle}</Header1>
          <ShortDescription>
            {projectData.projectDescription}
          </ShortDescription>
          <Image
            src={
-            "/assets/images/rest-countries_dark2.png"
+            projectData.projectImage
           }
          />
          <Image
            src={
-             "/assets/images/rest-countries_dark2.png"
+             projectData.projectImage
            }
          />
          <DetailsContainer className="flex-md-row flex-lg-row  flex-sm-column">
