@@ -13,11 +13,11 @@ import TechStackContainer from "../Components/TechStackContainer";
 
 export default function Home() {
   return (
-    <div style={{ scrollBehaviour: "smooth" }}>
+    <div >
       <CustomContainer>
-        <Zoom bottom>
+        {/* <Zoom bottom> */}
           <HeroScreen />
-        </Zoom>
+        {/* </Zoom> */}
         <Organizations />
         <ProjectsContainer />
         {/* <Fade> */}

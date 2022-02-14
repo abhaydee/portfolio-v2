@@ -105,7 +105,12 @@ function ProjectsContainer() {
     {
       id: "4",
       projectTitle: "REST Countries with colour theme switcher",
-      techStack: ["Javascript", "Next JS", "Redux-Thunk"],
+      techStack: [
+        { tech: "Javascript", logoUrl: "/assets/images/javascript-logo.png" },
+        { tech: "Nextjs", logoUrl: "/assets/images/nextjs-logo.png" },
+        { tech: "Redux", logoUrl: "/assets/images/redux-logo.jpeg" },
+        { tech: "SASS", logoUrl: "/assets/images/sass-logo.png" },
+      ],
       projectLink: "/Rest-Countries",
       external: false,
       projectImage: "/assets/images/rest-countries.png",
@@ -119,7 +124,12 @@ function ProjectsContainer() {
       id: "5",
       projectTitle: "Netflix Clone ",
       projectImage: "/assets/images/netflix-clone.png",
-      techStack: ["React", "Javascript", "Firebase", "TMDB API", "CSS3"],
+      techStack: [
+        { tech: "Javascript", logoUrl: "/assets/images/javascript-logo.png" },
+        { tech: "ReactJS", logoUrl: "/assets/images/react-logo.png" },
+        { tech:"CSS", logoUrl:"/assets/images/css-logo.png"},
+        { tech:"Firebase", logoUrl:"/assets/images/firebase-logo.png"}
+      ],
       projectLink: "/Netflix",
       external: false,
       projectDescription: `A customized Netflix Landing Page which plays the on-screen trailer of TV Shows & Movies around the globe`,
@@ -128,16 +138,15 @@ function ProjectsContainer() {
     {
       id: "6",
       projectTitle: "Social Media Web",
-      projectImage: "/assets/images/vodacom.png",
-      external: false,
+      projectImage: "/assets/images/social-media-web.png",
       techStack: [
-        "React",
-        "React-Context",
-        "GraphQL(Apollo-Client)",
-        "NodeJS",
-        "Apollo Server",
-        "MongoDB",
+        { tech: "Javascript", logoUrl: "/assets/images/javascript-logo.png" },
+        { tech: "ReactJS", logoUrl: "/assets/images/react-logo.png" },
+        { tech:"GraphQL", logoUrl:"/assets/images/graphql-logo.png"},
+        { tech:"NodeJS", logoUrl:"/assets/images/node-logo.png"},
+        { tech:"MongoDB", logoUrl:"/assets/images/mongodb-logo.png"}
       ],
+      external: false,
       projectLink: "/Social-Media-Web",
       projectShortDescription: `A secured social media web application which implements all the CRUD functionalities of Social Media. `,
       projectDescription: `A from-scratch Full Stack Application provides a Secure Login System for the users and performs all basic CRUD social media functionalities.`,
@@ -184,7 +193,7 @@ function ProjectsContainer() {
       <ProjectsContainerTitle maxWidth={"55rem"}>
         DISCOVER MY LATEST PROJECTS.
       </ProjectsContainerTitle>
-      <Fade bottom>
+      {/* <Fade bottom> */}
         {projectsList.map((projectItem, projectItemIndex) => {
           return (
             <div key={projectItemIndex}>
@@ -215,7 +224,7 @@ function ProjectsContainer() {
             </div>
           );
         })}
-      </Fade>
+      {/* </Fade> */}
     </ProjectsCustomContainer>
   );
 }

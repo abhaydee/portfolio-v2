@@ -121,6 +121,9 @@ const TechStackGrid = styled.div`
     margin-right:0.6rem;
   }
   justify-content:center;
+  align-items:center;
+  align-self:center;
+  flex:1;
 `
 
 const CustomContainer = styled.div`
