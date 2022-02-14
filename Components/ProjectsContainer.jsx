@@ -155,12 +155,11 @@ function ProjectsContainer() {
       id: "7",
       projectTitle: "Customized Todo List Web Application",
       techStack: [
-        "HTML5",
-        "CSS3",
-        "JavaSript",
-        "React",
-        "Redux-Thunk",
-        "Firebase",
+        { tech: "ReactJS", logoUrl: "/assets/images/react-logo.png" },
+        { tech:"GraphQL", logoUrl:"/assets/images/graphql-logo.png"},
+        { tech:"CSS", logoUrl:"/assets/images/css-logo.png"},
+        { tech:"Redux", logoUrl:"/assets/images/redux-logo.jpeg"},
+        { tech:"Javascript", logoUrl:"/assets/images/javascript-logo.png"}
       ],
       projectImage: "/assets/images/todo-list.png",
       external: false,
@@ -171,7 +170,11 @@ function ProjectsContainer() {
     {
       id: "8",
       projectTitle: "Memory Game",
-      techStack: ["HTML5", "CSS3", "JavaSript"],
+      techStack: [
+        { tech:"CSS", logoUrl:"/assets/images/css-logo.png"},
+        { tech:"Javascript", logoUrl:"/assets/images/javascript-logo.png"},
+        { tech:"HTML", logoUrl:"/assets/images/html-logo.png"}
+      ],
       projectLink: "/Memory-Game",
       projectImage: "/assets/images/memory-game.png",
       external: false,
