@@ -51,7 +51,7 @@ function ContactContainer() {
   return (
     <ContactDisplay>
       <ContactContainerTitle>
-        <ContactHeader>ABHAYGIRISH1997@GMAIL.COM</ContactHeader>
+        <ContactHeader >HI@ABHAYDEE.COM</ContactHeader>
       </ContactContainerTitle>
       <Footer>
         <FooterSocials>

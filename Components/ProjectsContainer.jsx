@@ -9,7 +9,6 @@ import {
 } from "../utils/CustomComponents";
 import styled from "styled-components";
 import Image from "next/image";
-import { Fade } from "react-reveal";
 import Link from "next/link";
 import Router, { useRouter } from "next/router";
 function ProjectsContainer() {
@@ -202,8 +201,8 @@ function ProjectsContainer() {
           <div key={projectItemIndex}>
             <CustomContainer>
               <ProjectsDescriptionContainer>
-                <FigureContainer>
-                  <div onClick={() => handleNavigation(projectItem)}>
+                <FigureContainer  >
+                  <div onClick={() => handleNavigation(projectItem)} style={{cursor:"pointer"}}>
                     <ProjectImage
                       src={projectItem.projectImage}
                       width={"100%"}
