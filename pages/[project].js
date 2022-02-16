@@ -58,8 +58,8 @@ const Wrapper = styled.div`
 const Header1 = styled.h1`
   font-size: 70px;
   color: #ffcc66;
-  @media (max-width:1024px){
-    font-size:36px;
+  @media (max-width: 1024px) {
+    font-size: 36px;
   }
 `;
 const Image = styled.img`
@@ -114,34 +114,33 @@ const DetailsContainer = styled.div`
 `;
 
 const TechStackGrid = styled.div`
-  display:flex;
-  margin-right:1rem;
-  margin-bottom:1rem;
-  @media (max-width:1024px){
-    margin-right:0.6rem;
+  display: flex;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  @media (max-width: 1024px) {
+    margin-right: 0.6rem;
   }
-  justify-content:center;
-  align-items:center;
-  align-self:center;
-  flex:1;
-`
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  flex: 1;
+`;
 
 const CustomContainer = styled.div`
-  display:flex;
-  padding-inline:6rem;
-  @media (max-width:1024px){
-    padding-inline:0.1rem;
-    margin-left:1rem;
-    flex-direction:row;
-    max-width:100%;
-    flex-wrap:wrap;
+  display: flex;
+  padding-inline: 6rem;
+  @media (max-width: 1024px) {
+    padding-inline: 0.1rem;
+    margin-left: 1rem;
+    flex-direction: row;
+    max-width: 100%;
+    flex-wrap: wrap;
   }
-  `
+`;
 
 export const TechStackTitle = styled.h2`
-color: #ffcc66;
-text-align:center;
-margin-bottom:2rem;   
-
-`
+  color: #ffcc66;
+  text-align: center;
+  margin-bottom: 2rem;
+`;
 export default ProjectDetails;

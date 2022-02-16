@@ -28,8 +28,14 @@ export const ProjectsCustomContainer = styled.div`
   color: #fff;
 `;
 
-export const Header3 = styled.h3`
+export const Header3 = styled.a`
   padding-right: 10px;
+  color: black;
+  font-size: 1.5rem;
+  text-decoration: none;
+  &::hover {
+    cursor: pointer;
+  }
   @media screen and (max-width: 500px) {
     padding-right: 1rem;
   }
@@ -40,9 +46,9 @@ export const ProjectImage = styled.img``;
 export const FigureContainer = styled.figure`
   position: relative;
   margin-bottom: 5rem;
-  margin-inline:6rem;
-  @media (max-width:576px){
-    margin-inline:1rem;
+  margin-inline: 6rem;
+  @media (max-width: 576px) {
+    margin-inline: 1rem;
   }
 `;
 
@@ -56,10 +62,10 @@ width: 100%;
 `;
 
 export const ProjectsContainerTitle = styled.h1`
-    padding: 3rem 1rem 2rem 1rem;
-    @media (min-width: 768px) {
-      padding: 6rem 0 4rem 8rem;
-      font-size: 5rem;
-      max-width: ${props => props.maxWidth};
-    }
-  `;
+  padding: 3rem 1rem 2rem 1rem;
+  @media (min-width: 768px) {
+    padding: 6rem 0 4rem 8rem;
+    font-size: 5rem;
+    max-width: ${(props) => props.maxWidth};
+  }
+`;

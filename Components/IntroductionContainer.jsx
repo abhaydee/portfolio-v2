@@ -10,11 +10,11 @@ function IntroductionContainer() {
     padding-left: 8rem;
     padding-bottom: 13.5rem;
     @media (max-width: 1080px) {
-      padding-left:1rem;
-      padding-right:1rem;
-      padding-bottom:4rem;
-      justify-content:center;
-      text-align:center;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-bottom: 4rem;
+      justify-content: center;
+      text-align: center;
     }
   `;
 
@@ -29,7 +29,7 @@ function IntroductionContainer() {
     font-size: 2.8rem;
     width: 56rem;
     line-height: 3.5rem;
-    @media (max-width:1080px){
+    @media (max-width: 1080px) {
       width: 100%;
     }
   `;

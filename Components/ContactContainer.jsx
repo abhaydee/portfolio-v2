@@ -16,8 +16,8 @@ function ContactContainer() {
     justify-content: center;
     height: 10rem;
     flex-direction: column;
-    @media (max-width:576px){
-      font-size:1.5rem;
+    @media (max-width: 576px) {
+      font-size: 1.5rem;
     }
   `;
   const ContactDisplay = styled.div`

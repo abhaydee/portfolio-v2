@@ -13,16 +13,16 @@ import TechStackContainer from "../Components/TechStackContainer";
 
 export default function Home() {
   return (
-    <div >
+    <div>
       <CustomContainer>
         {/* <Zoom bottom> */}
-          <HeroScreen />
+        <HeroScreen />
         {/* </Zoom> */}
         <Organizations />
         <ProjectsContainer />
         {/* <Fade> */}
-          <IntroductionContainer />
-          <ContactContainer />
+        <IntroductionContainer />
+        <ContactContainer />
         {/* </Fade> */}
       </CustomContainer>
     </div>

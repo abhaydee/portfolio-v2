@@ -69,14 +69,14 @@ function ProjectsContainer() {
       id: "2",
       projectTitle: "Accenture South-Africa",
       techStack: [
-        {tech:"NextJS", logoUrl:"/assets/images/nextjs-logo.png"},
-        {tech:"React", logoUrl:"/assets/images/react-logo.png"},
-        {tech:"React", logoUrl:"/assets/images/react-logo.png"},
-        {tech:"React", logoUrl:"/assets/images/react-logo.png"},
-        {tech:"React", logoUrl:"/assets/images/react-logo.png"},
-        {tech:"React", logoUrl:"/assets/images/react-logo.png"},
-        {tech:"React", logoUrl:"/assets/images/react-logo.png"},
-        {tech:"React", logoUrl:"/assets/images/react-logo.png"},
+        { tech: "NextJS", logoUrl: "/assets/images/nextjs-logo.png" },
+        { tech: "React", logoUrl: "/assets/images/react-logo.png" },
+        { tech: "React", logoUrl: "/assets/images/react-logo.png" },
+        { tech: "React", logoUrl: "/assets/images/react-logo.png" },
+        { tech: "React", logoUrl: "/assets/images/react-logo.png" },
+        { tech: "React", logoUrl: "/assets/images/react-logo.png" },
+        { tech: "React", logoUrl: "/assets/images/react-logo.png" },
+        { tech: "React", logoUrl: "/assets/images/react-logo.png" },
       ],
       projectLink: "https://www.vodacom.co.za/shopping/products",
       projectImage: "/assets/images/vodacom.png",
@@ -127,8 +127,8 @@ function ProjectsContainer() {
       techStack: [
         { tech: "Javascript", logoUrl: "/assets/images/javascript-logo.png" },
         { tech: "ReactJS", logoUrl: "/assets/images/react-logo.png" },
-        { tech:"CSS", logoUrl:"/assets/images/css-logo.png"},
-        { tech:"Firebase", logoUrl:"/assets/images/firebase-logo.png"}
+        { tech: "CSS", logoUrl: "/assets/images/css-logo.png" },
+        { tech: "Firebase", logoUrl: "/assets/images/firebase-logo.png" },
       ],
       projectLink: "/Netflix",
       external: false,
@@ -142,9 +142,9 @@ function ProjectsContainer() {
       techStack: [
         { tech: "Javascript", logoUrl: "/assets/images/javascript-logo.png" },
         { tech: "ReactJS", logoUrl: "/assets/images/react-logo.png" },
-        { tech:"GraphQL", logoUrl:"/assets/images/graphql-logo.png"},
-        { tech:"NodeJS", logoUrl:"/assets/images/node-logo.png"},
-        { tech:"MongoDB", logoUrl:"/assets/images/mongodb-logo.png"}
+        { tech: "GraphQL", logoUrl: "/assets/images/graphql-logo.png" },
+        { tech: "NodeJS", logoUrl: "/assets/images/node-logo.png" },
+        { tech: "MongoDB", logoUrl: "/assets/images/mongodb-logo.png" },
       ],
       external: false,
       projectLink: "/Social-Media-Web",
@@ -156,10 +156,10 @@ function ProjectsContainer() {
       projectTitle: "Customized Todo List Web Application",
       techStack: [
         { tech: "ReactJS", logoUrl: "/assets/images/react-logo.png" },
-        { tech:"GraphQL", logoUrl:"/assets/images/graphql-logo.png"},
-        { tech:"CSS", logoUrl:"/assets/images/css-logo.png"},
-        { tech:"Redux", logoUrl:"/assets/images/redux-logo.jpeg"},
-        { tech:"Javascript", logoUrl:"/assets/images/javascript-logo.png"}
+        { tech: "GraphQL", logoUrl: "/assets/images/graphql-logo.png" },
+        { tech: "CSS", logoUrl: "/assets/images/css-logo.png" },
+        { tech: "Redux", logoUrl: "/assets/images/redux-logo.jpeg" },
+        { tech: "Javascript", logoUrl: "/assets/images/javascript-logo.png" },
       ],
       projectImage: "/assets/images/todo-list.png",
       external: false,
@@ -171,9 +171,9 @@ function ProjectsContainer() {
       id: "8",
       projectTitle: "Memory Game",
       techStack: [
-        { tech:"CSS", logoUrl:"/assets/images/css-logo.png"},
-        { tech:"Javascript", logoUrl:"/assets/images/javascript-logo.png"},
-        { tech:"HTML", logoUrl:"/assets/images/html-logo.png"}
+        { tech: "CSS", logoUrl: "/assets/images/css-logo.png" },
+        { tech: "Javascript", logoUrl: "/assets/images/javascript-logo.png" },
+        { tech: "HTML", logoUrl: "/assets/images/html-logo.png" },
       ],
       projectLink: "/Memory-Game",
       projectImage: "/assets/images/memory-game.png",
@@ -197,36 +197,36 @@ function ProjectsContainer() {
         DISCOVER MY LATEST PROJECTS.
       </ProjectsContainerTitle>
       {/* <Fade bottom> */}
-        {projectsList.map((projectItem, projectItemIndex) => {
-          return (
-            <div key={projectItemIndex}>
-              <CustomContainer>
-                <ProjectsDescriptionContainer>
-                  <FigureContainer>
-                    <div onClick={() => handleNavigation(projectItem)}>
-                      <ProjectImage
-                        src={projectItem.projectImage}
-                        width={"100%"}
-                        // height={"585"}
-                        style={{
-                          objectFit: "cover",
-                          backgroundPosition: "center",
-                          maxWidth: "100%",
-                          height: "auto",
-                          borderRadius: "30",
-                        }}
-                      />
-                    </div>
-                    <ProjectsData>
-                      <h3>{projectItem.projectTitle}</h3>
-                      <p>NEXTJS</p>
-                    </ProjectsData>
-                  </FigureContainer>
-                </ProjectsDescriptionContainer>
-              </CustomContainer>
-            </div>
-          );
-        })}
+      {projectsList.map((projectItem, projectItemIndex) => {
+        return (
+          <div key={projectItemIndex}>
+            <CustomContainer>
+              <ProjectsDescriptionContainer>
+                <FigureContainer>
+                  <div onClick={() => handleNavigation(projectItem)}>
+                    <ProjectImage
+                      src={projectItem.projectImage}
+                      width={"100%"}
+                      // height={"585"}
+                      style={{
+                        objectFit: "cover",
+                        backgroundPosition: "center",
+                        maxWidth: "100%",
+                        height: "auto",
+                        borderRadius: "30",
+                      }}
+                    />
+                  </div>
+                  <ProjectsData>
+                    <h3>{projectItem.projectTitle}</h3>
+                    <p>NEXTJS</p>
+                  </ProjectsData>
+                </FigureContainer>
+              </ProjectsDescriptionContainer>
+            </CustomContainer>
+          </div>
+        );
+      })}
       {/* </Fade> */}
     </ProjectsCustomContainer>
   );
