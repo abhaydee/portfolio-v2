@@ -15,7 +15,10 @@ const ProjectDetails = () => {
         <div className="container">
           <Header1 className="mb-5">{projectData.projectTitle}</Header1>
           <ShortDescription>{projectData.projectDescription}</ShortDescription>
-          <Image src={projectData.projectImage} />
+          <Anchor href={projectData.externalLink} target="_blank">
+            <Image src={projectData.projectImage} />
+          </Anchor>
+
           <Image src={projectData.projectImage} />
           {/* <DetailsContainer className="flex-md-row flex-lg-row  flex-sm-column">
             <Description>
@@ -38,6 +41,7 @@ const ProjectDetails = () => {
                   <TechStackContainer
                     techName={projectItem.tech}
                     techLogo={projectItem.logoUrl}
+                    projectLink={projectItem.externalLink}
                   />
                 </TechStackGrid>
               );
@@ -142,5 +146,9 @@ export const TechStackTitle = styled.h2`
   color: #ffcc66;
   text-align: center;
   margin-bottom: 2rem;
+`;
+
+export const Anchor = styled.a`
+  cursor:pointer;
 `;
 export default ProjectDetails;

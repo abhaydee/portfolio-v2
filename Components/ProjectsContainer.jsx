@@ -85,6 +85,7 @@ function ProjectsContainer() {
     {
       id: "4",
       projectTitle: "Coinbase Clone for crypto transactions",
+      externalLink:"https://coinbase-clone-three.vercel.app/",
       techStack: [
         { tech: "Javascript", logoUrl: "/assets/images/javascript-logo.png" },
         { tech: "Nextjs", logoUrl: "/assets/images/nextjs-logo.png" },
@@ -104,6 +105,7 @@ function ProjectsContainer() {
     {
       id: "4",
       projectTitle: "REST Countries with colour theme switcher",
+      externalLink:"https://rest-countries-seven.vercel.app/",
       techStack: [
         { tech: "Javascript", logoUrl: "/assets/images/javascript-logo.png" },
         { tech: "Nextjs", logoUrl: "/assets/images/nextjs-logo.png" },
@@ -121,8 +123,9 @@ function ProjectsContainer() {
     },
     {
       id: "5",
-      projectTitle: "Netflix Clone ",
+      projectTitle: "Netflix Clone",
       projectImage: "/assets/images/netflix-clone.png",
+      externalLink:"https://netflix-clone-f12a4.web.App",
       techStack: [
         { tech: "Javascript", logoUrl: "/assets/images/javascript-logo.png" },
         { tech: "ReactJS", logoUrl: "/assets/images/react-logo.png" },
@@ -138,6 +141,7 @@ function ProjectsContainer() {
       id: "6",
       projectTitle: "Social Media Web",
       projectImage: "/assets/images/social-media-web.png",
+      externalLink:"https://social-media-web.netlify.app/",
       techStack: [
         { tech: "Javascript", logoUrl: "/assets/images/javascript-logo.png" },
         { tech: "ReactJS", logoUrl: "/assets/images/react-logo.png" },
@@ -153,6 +157,7 @@ function ProjectsContainer() {
     {
       id: "7",
       projectTitle: "Customized Todo List Web Application",
+      externalLink:" https://todo-list-ten-inky.vercel.app/",
       techStack: [
         { tech: "ReactJS", logoUrl: "/assets/images/react-logo.png" },
         { tech: "GraphQL", logoUrl: "/assets/images/graphql-logo.png" },
@@ -169,6 +174,7 @@ function ProjectsContainer() {
     {
       id: "8",
       projectTitle: "Memory Game",
+      externalLink:"https://abhaydee.github.io/Memory-Game/",
       techStack: [
         { tech: "CSS", logoUrl: "/assets/images/css-logo.png" },
         { tech: "Javascript", logoUrl: "/assets/images/javascript-logo.png" },
