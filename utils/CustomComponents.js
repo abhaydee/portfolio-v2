@@ -30,8 +30,9 @@ export const ProjectsCustomContainer = styled.div`
 
 export const Header3 = styled.a`
   padding-right: 10px;
+  font-family:"Source-OpenSans";
   color: black;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   text-decoration: none;
   &::hover {
     cursor: pointer;
@@ -63,6 +64,7 @@ width: 100%;
 
 export const ProjectsContainerTitle = styled.h1`
   padding: 3rem 1rem 2rem 1rem;
+  font-family:"Source-OpenSans";
   @media (min-width: 768px) {
     padding: 6rem 0 4rem 8rem;
     font-size: 5rem;

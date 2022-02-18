@@ -4,6 +4,7 @@ import { HeroScreenContainer } from "../utils/CustomComponents";
 import styled from "styled-components";
 function HeroScreen() {
   const HeroScreenTitle = styled.div`
+    font-family:"Source-OpenSans";
     font-size: 8.8rem;
     font-weight: 600;
     // position: absolute;
@@ -20,6 +21,7 @@ function HeroScreen() {
 
   const HeroScreenSubTitle = styled.p`
     text-align: center;
+    font-family:"Source-OpenSans";
     font-size: 3rem;
     color: #019872;
   `;

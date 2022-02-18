@@ -6,46 +6,46 @@ const Organizations = () => {
   const renderSoftwayDescription = () => {
     return (
       <div className="d-flex flex-column align-items-center">
-        <h3>
+        <Header3>
           Full Stack Engineer{" "}
           <a href="https://google.com" target="_blank">
             @Softway
           </a>
-        </h3>
+        </Header3>
         <p>Apr 2021 - Present</p>
         <ul style={{ maxWidth: "500px" }} id="list">
-          <li>
+          <ListItem>
             <p>
               I am currently working as a Full Stack Engineer for a from-scratch
               React Native Full-Stack Product
             </p>
-          </li>
-          <li>
+          </ListItem>
+          <ListItem>
             <p>
               Worked majorly on setting up infrastructure and integrating
               Content Management System(Strapi) API into React Native.
             </p>
-          </li>
-          <li>
+          </ListItem>
+          <ListItem>
             <p>
               Significantly contributed towards the implementation of creating
               optimized API’s using AWS-APP-SYNC, AWS-LAMBDA, and Typescript.
             </p>
-          </li>
-          <li>
+          </ListItem>
+          <ListItem>
             <p>
               Optimising the performance of the cross platform app by
               implementing effective cache mechanisms and state management for
               React Native
             </p>
-          </li>
-          <li>
+          </ListItem>
+          <ListItem>
             <p>
               Integrating several native IOS and Android modules using React
               Native bridge, which effectively contributed to the overall cross
               functionality of the Mobile App
             </p>
-          </li>
+          </ListItem>
         </ul>
       </div>
     );
@@ -54,42 +54,42 @@ const Organizations = () => {
   const renderAccentureDescription = () => {
     return (
       <div className="d-flex flex-column align-items-center">
-        <h3>
+        <Header3>
           Front End Engineer{" "}
           <a href="https://google.com" target="_blank">
             @Accenture
           </a>
-        </h3>
+        </Header3>
         <p>Oct 2019 - Apr 2021</p>
         <ul style={{ maxWidth: "500px" }} id="list">
-          <li>
+          <ListItem>
             <p>
               Building client intimacy by understanding their functional and UX
               requirements. Developed extensively reusable React Components in
               the UI.
             </p>
-          </li>
-          <li>
+          </ListItem>
+          <ListItem>
             <p>
               Built from scratch, fully functional e-commerce React product
               using NextJS. Also handled API Integration of React and Drupal
               (Content Management System). The overall functionality of the
               product, and successfully delivered it.
             </p>
-          </li>
-          <li>
+          </ListItem>
+          <ListItem>
             <p>
               Improved the performance of the Application by over 60% by
               implementing persist cache for pages which required higher
               payloads.{" "}
             </p>
-          </li>
-          <li>
+          </ListItem>
+          <ListItem>
             <p>
               Mentored several members of the team to upskill from other
               technologies towards NEXTJS and GraphQL.
             </p>
-          </li>
+          </ListItem>
         </ul>
       </div>
     );
@@ -98,33 +98,33 @@ const Organizations = () => {
   const renderKulizaDescription = () => {
     return (
       <div className="d-flex flex-column align-items-center">
-        <h3>
+        <Header3>
           React & React Native Developer{" "}
           <a href="https://google.com" target="_blank">
             @Kuliza Technologies
           </a>
-        </h3>
+        </Header3>
         <p>July 2019 - Oct 2019</p>
         <ul style={{ maxWidth: "500px" }} id="list">
-          <li>
+          <ListItem>
             <p>
               Implemented one of the most optimized pagination push
               notifications for the mobile app in React Native for Magma
             </p>
-          </li>
-          <li>
+          </ListItem>
+          <ListItem>
             <p>
               Built the front-end landing page for Standard Chartered bank.
               Improving the codebase fixed several issues and bugs in the
               product.
             </p>
-          </li>
-          <li>
+          </ListItem>
+          <ListItem>
             <p>
               This Pagination feature enhanced the performance of the app by
               over 50%.
             </p>
-          </li>
+          </ListItem>
         </ul>
       </div>
     );
@@ -133,7 +133,7 @@ const Organizations = () => {
     <Wrapper>
       <Header>Organization that I have been a part of...</Header>
       <div className="d-flex justify-content-center mx-auto container">
-        <Button className="btn" onClick={() => setActiveTab("Softway")} >
+        <Button className="btn" onClick={() => setActiveTab("Softway")}>
           Softway
         </Button>
         <Button
@@ -165,11 +165,12 @@ const Wrapper = styled.div`
   padding-top: 4rem;
   padding-inline: 8rem;
   @media (max-width: 1024px) {
-    padding-inline:1rem;
+    padding-inline: 1rem;
   }
 `;
 const Header = styled.h1`
   text-align: center;
+  font-family: "Source-OpenSans";
 `;
 const Button = styled.button`
   margin: 2rem;
@@ -182,4 +183,12 @@ const Button = styled.button`
 const Header5 = styled.h5`
   text-align: center;
 `;
+
+const Header3 =styled.h3`
+  font-family:"Source-OpenSans";
+`
+
+const ListItem = styled.li`
+font-family:"Source-OpenSans"
+`
 export default Organizations;
