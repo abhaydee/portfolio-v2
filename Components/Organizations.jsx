@@ -133,7 +133,7 @@ const Organizations = () => {
     <Wrapper>
       <Header>Organization that I have been a part of...</Header>
       <div className="d-flex justify-content-center mx-auto container">
-        <Button className="btn" onClick={() => setActiveTab("Softway")}>
+        <Button className="btn" onClick={() => setActiveTab("Softway")} >
           Softway
         </Button>
         <Button
@@ -163,10 +163,10 @@ const Wrapper = styled.div`
   background-color: #fff;
   color: #000;
   padding-top: 4rem;
-  padding-line: 8rem;
-  // @media (max-width: 1024px) {
-  //   padding: 1rem;
-  // }
+  padding-inline: 8rem;
+  @media (max-width: 1024px) {
+    padding-inline:1rem;
+  }
 `;
 const Header = styled.h1`
   text-align: center;

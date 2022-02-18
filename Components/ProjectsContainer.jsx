@@ -69,13 +69,6 @@ function ProjectsContainer() {
       projectTitle: "Accenture South-Africa",
       techStack: [
         { tech: "NextJS", logoUrl: "/assets/images/nextjs-logo.png" },
-        { tech: "React", logoUrl: "/assets/images/react-logo.png" },
-        { tech: "React", logoUrl: "/assets/images/react-logo.png" },
-        { tech: "React", logoUrl: "/assets/images/react-logo.png" },
-        { tech: "React", logoUrl: "/assets/images/react-logo.png" },
-        { tech: "React", logoUrl: "/assets/images/react-logo.png" },
-        { tech: "React", logoUrl: "/assets/images/react-logo.png" },
-        { tech: "React", logoUrl: "/assets/images/react-logo.png" },
       ],
       projectLink: "https://www.vodacom.co.za/shopping/products",
       projectImage: "/assets/images/vodacom.png",
@@ -85,17 +78,18 @@ function ProjectsContainer() {
     {
       id: "4",
       projectTitle: "Coinbase Clone for crypto transactions",
-      externalLink:"https://coinbase-clone-three.vercel.app/",
+      externalLink: "https://coinbase-clone-three.vercel.app/",
       techStack: [
+        { tech: "ThirdWeb", logoUrl: "/assets/images/thirdweb-logo.jpeg" },
         { tech: "Javascript", logoUrl: "/assets/images/javascript-logo.png" },
         { tech: "Nextjs", logoUrl: "/assets/images/nextjs-logo.png" },
         { tech: "MetaMask", logoUrl: "/assets/images/metamask-logo.png" },
-        { tech: "ThirdWeb", logoUrl: "/assets/images/thirdweb-logo.jpeg" },
         { tech: "Sanity", logoUrl: "/assets/images/sanity-logo.png" },
       ],
       projectLink: "/coinbase-clone",
       external: false,
-      projectImage: "/assets/images/rest-countries.png",
+      projectImage: "/assets/images/coinbase.png",
+      projectImage2: "/assets/images/coinbase2.png",
       projectDescription: `A fully-featured application that describes the details of
         countries all around the globe. The most exciting thing that I did
         here was to reduce the API calls and handle all the complex
@@ -105,16 +99,17 @@ function ProjectsContainer() {
     {
       id: "4",
       projectTitle: "REST Countries with colour theme switcher",
-      externalLink:"https://rest-countries-seven.vercel.app/",
+      externalLink: "https://rest-countries-seven.vercel.app/",
       techStack: [
-        { tech: "Javascript", logoUrl: "/assets/images/javascript-logo.png" },
         { tech: "Nextjs", logoUrl: "/assets/images/nextjs-logo.png" },
+        { tech: "Javascript", logoUrl: "/assets/images/javascript-logo.png" },
         { tech: "Redux", logoUrl: "/assets/images/redux-logo.jpeg" },
         { tech: "SASS", logoUrl: "/assets/images/sass-logo.png" },
       ],
       projectLink: "/Rest-Countries",
       external: false,
       projectImage: "/assets/images/rest-countries.png",
+      projectImage2: "/assets/images/rest-countries.png",
       projectDescription: `A fully-featured application that describes the details of
         countries all around the globe. The most exciting thing that I did
         here was to reduce the API calls and handle all the complex
@@ -125,10 +120,11 @@ function ProjectsContainer() {
       id: "5",
       projectTitle: "Netflix Clone",
       projectImage: "/assets/images/netflix-clone.png",
-      externalLink:"https://netflix-clone-f12a4.web.App",
+      projectImage2: "/assets/images/rest-countries.png",
+      externalLink: "https://netflix-clone-f12a4.web.App",
       techStack: [
-        { tech: "Javascript", logoUrl: "/assets/images/javascript-logo.png" },
         { tech: "ReactJS", logoUrl: "/assets/images/react-logo.png" },
+        { tech: "Javascript", logoUrl: "/assets/images/javascript-logo.png" },
         { tech: "CSS", logoUrl: "/assets/images/css-logo.png" },
         { tech: "Firebase", logoUrl: "/assets/images/firebase-logo.png" },
       ],
@@ -141,7 +137,7 @@ function ProjectsContainer() {
       id: "6",
       projectTitle: "Social Media Web",
       projectImage: "/assets/images/social-media-web.png",
-      externalLink:"https://social-media-web.netlify.app/",
+      externalLink: "https://social-media-web.netlify.app/",
       techStack: [
         { tech: "Javascript", logoUrl: "/assets/images/javascript-logo.png" },
         { tech: "ReactJS", logoUrl: "/assets/images/react-logo.png" },
@@ -157,7 +153,7 @@ function ProjectsContainer() {
     {
       id: "7",
       projectTitle: "Customized Todo List Web Application",
-      externalLink:" https://todo-list-ten-inky.vercel.app/",
+      externalLink: " https://todo-list-ten-inky.vercel.app/",
       techStack: [
         { tech: "ReactJS", logoUrl: "/assets/images/react-logo.png" },
         { tech: "GraphQL", logoUrl: "/assets/images/graphql-logo.png" },
@@ -174,10 +170,10 @@ function ProjectsContainer() {
     {
       id: "8",
       projectTitle: "Memory Game",
-      externalLink:"https://abhaydee.github.io/Memory-Game/",
+      externalLink: "https://abhaydee.github.io/Memory-Game/",
       techStack: [
-        { tech: "CSS", logoUrl: "/assets/images/css-logo.png" },
         { tech: "Javascript", logoUrl: "/assets/images/javascript-logo.png" },
+        { tech: "CSS", logoUrl: "/assets/images/css-logo.png" },
         { tech: "HTML", logoUrl: "/assets/images/html-logo.png" },
       ],
       projectLink: "/Memory-Game",
@@ -207,8 +203,11 @@ function ProjectsContainer() {
           <div key={projectItemIndex}>
             <CustomContainer>
               <ProjectsDescriptionContainer>
-                <FigureContainer  >
-                  <div onClick={() => handleNavigation(projectItem)} style={{cursor:"pointer"}}>
+                <FigureContainer>
+                  <div
+                    onClick={() => handleNavigation(projectItem)}
+                    style={{ cursor: "pointer" }}
+                  >
                     <ProjectImage
                       src={projectItem.projectImage}
                       width={"100%"}
@@ -224,7 +223,7 @@ function ProjectsContainer() {
                   </div>
                   <ProjectsData>
                     <h3>{projectItem.projectTitle}</h3>
-                    <p>NEXTJS</p>
+                    <p>{projectItem.techStack[0].tech}</p>
                   </ProjectsData>
                 </FigureContainer>
               </ProjectsDescriptionContainer>

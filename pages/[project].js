@@ -19,7 +19,7 @@ const ProjectDetails = () => {
             <Image src={projectData.projectImage} />
           </Anchor>
 
-          <Image src={projectData.projectImage} />
+          <Image src={projectData.projectImage2} />
           {/* <DetailsContainer className="flex-md-row flex-lg-row  flex-sm-column">
             <Description>
               It gives an overall view of all the different countries all over
