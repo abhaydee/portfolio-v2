@@ -14,8 +14,8 @@ function HeroScreen() {
     text-align: center;
     color: #242424;
 
-    @media (max-width: 576px) {
-      font-size: 2rem;
+    @media (max-width: 1024px) {
+      font-size: 3rem;
     }
   `;
 
@@ -24,6 +24,9 @@ function HeroScreen() {
     font-family:"Source-OpenSans";
     font-size: 3rem;
     color: #019872;
+    @media (max-width:1024px){
+      font-size:2rem;
+    }
   `;
   return (
     <HeroScreenContainer>

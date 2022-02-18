@@ -21,6 +21,7 @@ function IntroductionContainer() {
   const IntroductionTitle = styled.h3`
     font-size: 6.4rem;
     padding-bottom: 2.4rem;
+    font-family:"Source-OpenSans";
   `;
 
   const IntroductionParagraph = styled.p`
@@ -29,6 +30,7 @@ function IntroductionContainer() {
     font-size: 2.8rem;
     width: 56rem;
     line-height: 3.5rem;
+    font-family:"Source-OpenSans";
     @media (max-width: 1080px) {
       width: 100%;
     }

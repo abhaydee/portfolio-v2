@@ -9,6 +9,7 @@ function ContactContainer() {
   `;
   const ContactHeader = styled.h3`
     color: #242424;
+    font-family:"Source-OpenSans";
     font-size: 4rem;
     font-weight: 600;
     cursor: pointer;
@@ -47,6 +48,7 @@ function ContactContainer() {
 
   const CopyRight = styled.div`
     font-size: 1.8rem;
+    font-family:"Source-OpenSans";  
   `;
   return (
     <ContactDisplay>

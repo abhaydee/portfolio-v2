@@ -30,6 +30,7 @@ function ProjectsContainer() {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    font-family:"Source-OpenSans";
     align-items: center;
     margin-top: 1.6rem;
   `;
@@ -43,13 +44,20 @@ function ProjectsContainer() {
     object-fit: cover;
     background-position: center;
   `;
+  const ProjectTitle = styled.h3`
+    font-size:1.5rem;
+  `
 
+  const ProjectTechStackTitle = styled.p`
+  font-size:1rem;
+
+  `
   const projectsList = [
     {
       id: "1",
       projectTitle: "SOFTWAY SOLUTIONS",
       techStack: [
-        "React-Native",
+        { tech: "React-Native", logoUrl: "/assets/images/thirdweb-logo.jpeg" },
         "Javascript",
         "React-Context",
         "StrapiCMS",
@@ -222,8 +230,8 @@ function ProjectsContainer() {
                     />
                   </div>
                   <ProjectsData>
-                    <h3>{projectItem.projectTitle}</h3>
-                    <p>{projectItem.techStack[0].tech}</p>
+                    <ProjectTitle>{projectItem.projectTitle}</ProjectTitle>
+                    <ProjectTechStackTitle>{projectItem.techStack[0].tech}</ProjectTechStackTitle>
                   </ProjectsData>
                 </FigureContainer>
               </ProjectsDescriptionContainer>

@@ -13,7 +13,7 @@ const Organizations = () => {
           </a>
         </Header3>
         <p>Apr 2021 - Present</p>
-        <ul style={{ maxWidth: "500px" }} id="list">
+        <ul style={{ maxWidth: "500px", paddingLeft: 0 }} id="list">
           <ListItem>
             <p>
               I am currently working as a Full Stack Engineer for a from-scratch
@@ -61,7 +61,7 @@ const Organizations = () => {
           </a>
         </Header3>
         <p>Oct 2019 - Apr 2021</p>
-        <ul style={{ maxWidth: "500px" }} id="list">
+        <ul style={{ maxWidth: "500px", paddingLeft: 0 }} id="list">
           <ListItem>
             <p>
               Building client intimacy by understanding their functional and UX
@@ -99,13 +99,13 @@ const Organizations = () => {
     return (
       <div className="d-flex flex-column align-items-center">
         <Header3>
-          React & React Native Developer{" "}
+          Front End Web/Mobile Engineer{" "}
           <a href="https://google.com" target="_blank">
             @Kuliza Technologies
           </a>
         </Header3>
         <p>July 2019 - Oct 2019</p>
-        <ul style={{ maxWidth: "500px" }} id="list">
+        <ul style={{ maxWidth: "500px", paddingLeft: 0 }} id="list">
           <ListItem>
             <p>
               Implemented one of the most optimized pagination push
@@ -184,11 +184,16 @@ const Header5 = styled.h5`
   text-align: center;
 `;
 
-const Header3 =styled.h3`
-  font-family:"Source-OpenSans";
-`
+const Header3 = styled.h3`
+  font-family: "Source-OpenSans";
+  text-align: center;
+  margin-top:1rem;
+  line-height:2.25rem;
+`;
 
 const ListItem = styled.li`
-font-family:"Source-OpenSans"
-`
+  font-family: "Source-OpenSans";
+  line-height:2rem;
+  font-size:1.25rem;
+`;
 export default Organizations;
