@@ -42,7 +42,12 @@ function ProjectsContainer() {
     // top: 0;
     // width: 100%;
     object-fit: cover;
+    border-radius :1rem;
     background-position: center;
+    &:hover{
+      transform: scale(1.05);
+      transition: transform 1.05s ease-in-out;
+    }
   `;
   const ProjectTitle = styled.h3`
     font-size:1.5rem;

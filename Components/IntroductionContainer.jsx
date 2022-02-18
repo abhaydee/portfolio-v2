@@ -56,9 +56,18 @@ function IntroductionContainer() {
       display: none !important;
     }
   `;
+
+  const IntroductionOuterContainer = styled.div`
+  background-color: #242424;
+  color: #fff;
+  height:62.5rem;
+  @media (max-width:1024px){
+    height:60rem;
+  }
+  `
   return (
     <>
-      <ProjectsCustomContainer>
+      <IntroductionOuterContainer >
         <ProjectsContainerTitle maxWidth={"70rem"}>
           ALLOW ME TO INTRODUCE MYSELF.
         </ProjectsContainerTitle>
@@ -73,7 +82,7 @@ function IntroductionContainer() {
         <CustomFigure>
           <SelfAvatar src="./assets/images/avatar.svg" />
         </CustomFigure>
-      </ProjectsCustomContainer>
+      </IntroductionOuterContainer>
     </>
   );
 }

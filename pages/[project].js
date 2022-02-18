@@ -61,6 +61,7 @@ const Wrapper = styled.div`
 `;
 const Header1 = styled.h1`
   font-size: 70px;
+  font-family: "Source-OpenSans";
   color: #ffcc66;
   @media (max-width: 1024px) {
     font-size: 36px;
@@ -71,12 +72,18 @@ const Image = styled.img`
   height: 100%;
   object-fit: contain;
   margin-bottom: 4rem;
+  border-radius: 1rem;
+  &:hover{
+    transform: scale(1.05);
+    transition: transform 1.05s ease-in-out;
+  }
 `;
 
 const ShortDescription = styled.p`
   font-size: 1.25rem;
   color: rgb(162, 170, 188);
   margin-bottom: 5rem;
+  font-family: "Source-OpenSans";
   @media (max-width: 1024px) {
     margin-bottom: 3rem;
   }
@@ -149,6 +156,6 @@ export const TechStackTitle = styled.h2`
 `;
 
 export const Anchor = styled.a`
-  cursor:pointer;
+  cursor: pointer;
 `;
 export default ProjectDetails;

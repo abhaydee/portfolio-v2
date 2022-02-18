@@ -7,13 +7,10 @@ function HeroScreen() {
     font-family:"Source-OpenSans";
     font-size: 8.8rem;
     font-weight: 600;
-    // position: absolute;
-    // top: 50%;
     margin-top: 15rem;
     transform: translateY(-50%);
     text-align: center;
     color: #242424;
-
     @media (max-width: 1024px) {
       font-size: 3rem;
     }
