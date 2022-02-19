@@ -132,21 +132,10 @@ const Organizations = () => {
   return (
     <Wrapper>
       <Header>Organization that I have been a part of...</Header>
-      <div className="d-flex justify-content-center mx-auto container">
-        <Button className="btn" onClick={() => setActiveTab("Softway")}>
-          Softway
-        </Button>
-        <Button
-          className={`btn ${
-            activeTab === "Accenture"
-              ? "text-decoration:underline"
-              : "text-decoration:none;"
-          }`}
-          onClick={() => setActiveTab("Accenture")}
-        >
-          Accenture
-        </Button>
-        <Button className="btn" onClick={() => setActiveTab("Kuliza")}>
+      <div className="d-flex justify-content-center mx-auto container align-self-center">
+        <Button className="btn" style={{ backgroundColor:"#019872", color:"#fff"}} onClick={() => setActiveTab("Softway")}>Softway</Button>
+        <Button className="btn" style={{ backgroundColor:"#019872", color:"#fff"}} onClick={() => setActiveTab("Accenture")}>Accenture</Button>
+        <Button className="btn" style={{ backgroundColor:"#019872", color:"#fff"}} onClick={() => setActiveTab("Kuliza")}>
           Kuliza Technologies
         </Button>
       </div>
@@ -173,9 +162,16 @@ const Header = styled.h1`
   font-family: "Source-OpenSans";
 `;
 const Button = styled.button`
-  margin: 2rem;
-  background-color: trasparent !important;
-  color: black;
+  margin:3rem;
+  padding-inline:1rem !important;
+  &:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+  }
   @media (max-width: 1080px) {
     margin: 0.5rem;
   }
