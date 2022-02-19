@@ -7,9 +7,12 @@ function ContactContainer() {
     flex-direction: column;
     justify-content: center;
   `;
-  const ContactHeader = styled.h3`
+  const ContactHeader = styled.a`
     color: #242424;
-    font-family: "Source-OpenSans";
+    font-family: "Poppins-Regular";
+    color: teal;
+    text-decoration:none;
+    font-weight: bold;
     font-size: 4rem;
     font-weight: 600;
     cursor: pointer;
@@ -17,6 +20,9 @@ function ContactContainer() {
     justify-content: center;
     height: 10rem;
     flex-direction: column;
+    &:hover{
+      color:teal;
+    }
     @media (max-width: 576px) {
       font-size: 1.5rem;
     }
@@ -53,7 +59,7 @@ function ContactContainer() {
   return (
     <ContactDisplay>
       <ContactContainerTitle>
-        <ContactHeader>HI@ABHAYDEE.COM</ContactHeader>
+        <ContactHeader href="mailto:hi@abhaydee.com">HI@ABHAYDEE.COM</ContactHeader>
       </ContactContainerTitle>
       <Footer>
         <FooterSocials>

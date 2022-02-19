@@ -30,7 +30,8 @@ export const ProjectsCustomContainer = styled.div`
 
 export const Header3 = styled.a`
   padding-right: 10px;
-  font-family:"Source-OpenSans";
+  font-family:"Poppins-Regular";
+  font-weight:bold;
   color: black;
   font-size: 1.75rem;
   text-decoration: none;
@@ -66,7 +67,7 @@ export const ProjectsContainerTitle = styled.h1`
   padding: 3rem 1rem 2rem 1rem;
   font-family:"Source-OpenSans";
   @media (min-width: 768px) {
-    padding: 6rem 0 4rem 8rem;
+    padding: 6rem 0 4rem 5.5rem;
     font-size: 5rem;
     max-width: ${(props) => props.maxWidth};
   }

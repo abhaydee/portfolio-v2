@@ -7,7 +7,7 @@ import {
 
 function IntroductionContainer() {
   const IntroductionDescription = styled.div`
-    padding-left: 8rem;
+    padding-left: 5.5rem;
     padding-bottom: 13.5rem;
     @media (max-width: 1080px) {
       padding-left: 1rem;
@@ -30,8 +30,8 @@ function IntroductionContainer() {
   const IntroductionParagraph = styled.p`
     display: block;
     font-weight: 300;
-    font-size: 2.8rem;
-    width: 56rem;
+    font-size: 2rem;
+    width: 50rem;
     line-height: 3.5rem;
     font-family: "Source-OpenSans";
     @media (max-width: 1080px) {
@@ -45,8 +45,8 @@ function IntroductionContainer() {
     @media (min-width: 1080px) {
       position: relative;
       width: fit-content;
-      left: 70rem;
-      bottom: 55.5rem;
+      left: 60rem;
+      bottom: 53rem;
       transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 35.5273, 0, 1);
     }
   `;
@@ -76,7 +76,7 @@ function IntroductionContainer() {
   return (
     <>
       <IntroductionOuterContainer>
-        <ProjectsContainerTitle maxWidth={"70rem"}>
+        <ProjectsContainerTitle maxWidth={"60rem"}>
           ALLOW ME TO INTRODUCE MYSELF.
         </ProjectsContainerTitle>
         <IntroductionDescription>

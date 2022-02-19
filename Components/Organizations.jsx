@@ -159,7 +159,8 @@ const Wrapper = styled.div`
 `;
 const Header = styled.h1`
   text-align: center;
-  font-family: "Source-OpenSans";
+  font-family: "Poppins-Regular";
+  font-weight:bold;
 `;
 const Button = styled.button`
   margin:3rem;
