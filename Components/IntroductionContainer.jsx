@@ -33,36 +33,40 @@ function IntroductionContainer() {
     font-family: "Source-OpenSans";
     @media (max-width: 1080px) {
       width: 100%;
+      font-size:2rem;
     }
   `;
 
   const CustomFigure = styled.figure`
     @media (min-width: 1080px) {
       position: relative;
-      height: 64.2rem;
       width: fit-content;
       left: 70rem;
-      bottom: 42rem;
+      bottom: 55.5rem;
       transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 35.5273, 0, 1);
     }
   `;
 
   const SelfAvatar = styled.img`
     width: 24.375rem;
-    height: 36.4375rem;
+    height: 40.4375rem;
     display: block;
-
+    padding-bottom:4rem;
     @media (max-width: 1080px) {
       display: none !important;
+    }
+    &:hover {
+      transform: scale(1.05);
+      transition: transform 1.05s ease-in-out;
     }
   `;
 
   const IntroductionOuterContainer = styled.div`
     background-color: #242424;
     color: #fff;
-    height: 62.5rem;
+    height: 68.5rem;
     @media (max-width: 1024px) {
-      height: 60rem;
+      height: 62rem;
     }
   `;
   return (
@@ -74,9 +78,8 @@ function IntroductionContainer() {
         <IntroductionDescription>
           <IntroductionTitle>HELLO</IntroductionTitle>
           <IntroductionParagraph>
-            I am Abhay Deshpande Full-Stack Developer, located in Bangalore,
-            India. I work as a Full Stack Eng with companies, agencies and
-            individuals.
+            I am Abhay Deshpande Full-Stack Developer from Bangalore, India, Also Front End Developer Nanodegree Graduate at Udacity (Co-created By Google).
+            Working with clients, my dream has always been driven towards providing unique experiences with the best level of quality and service to them.
           </IntroductionParagraph>
         </IntroductionDescription>
         <CustomFigure>
