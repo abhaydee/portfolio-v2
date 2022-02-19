@@ -22,6 +22,9 @@ function IntroductionContainer() {
     font-size: 6.4rem;
     padding-bottom: 2.4rem;
     font-family: "Source-OpenSans";
+    @media (max-width:1024px){
+      text-align:left;
+    }
   `;
 
   const IntroductionParagraph = styled.p`
@@ -34,6 +37,7 @@ function IntroductionContainer() {
     @media (max-width: 1080px) {
       width: 100%;
       font-size:2rem;
+      text-align:left;
     }
   `;
 
@@ -66,7 +70,7 @@ function IntroductionContainer() {
     color: #fff;
     height: 68.5rem;
     @media (max-width: 1024px) {
-      height: 62rem;
+      height: 67rem;
     }
   `;
   return (
