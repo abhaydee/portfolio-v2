@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Source-OpenSans ,sans-serif;
+  font-family: Source-OpenSans, sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -31,23 +31,21 @@ li {
 }
 
 @font-face {
-  font-family: 'Source-OpenSans';
-  src: url('../public/assets/fonts/SourceSansPro-Regular.ttf');
-  src: url('../public/assets/fonts/SourceSansPro-SemiBold.ttf');
+  font-family: "Source-OpenSans";
+  src: url("../public/assets/fonts/SourceSansPro-Regular.ttf");
+  src: url("../public/assets/fonts/SourceSansPro-SemiBold.ttf");
   font-weight: 400;
   font-style: normal;
-}  
-
-
-@font-face {
-  font-family: 'Source-OpenSansLight';
-  src: url('../public/assets/fonts/SourceSansPro-Light.ttf');
-  font-style: normal;
-}  
-
+}
 
 @font-face {
-  font-family: 'Poppins-Regular';
-  src: url('../public/assets/fonts/Poppins-Regular.ttf');
+  font-family: "Source-OpenSansLight";
+  src: url("../public/assets/fonts/SourceSansPro-Light.ttf");
   font-style: normal;
-}  
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../public/assets/fonts/Poppins-Regular.ttf");
+  font-style: normal;
+}

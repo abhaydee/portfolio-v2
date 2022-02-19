@@ -187,13 +187,13 @@ const Header5 = styled.h5`
 const Header3 = styled.h3`
   font-family: "Source-OpenSans";
   text-align: center;
-  margin-top:1rem;
-  line-height:2.25rem;
+  margin-top: 1rem;
+  line-height: 2.25rem;
 `;
 
 const ListItem = styled.li`
   font-family: "Source-OpenSans";
-  line-height:2rem;
-  font-size:1.25rem;
+  line-height: 2rem;
+  font-size: 1.25rem;
 `;
 export default Organizations;

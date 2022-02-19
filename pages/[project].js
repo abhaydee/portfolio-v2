@@ -73,7 +73,7 @@ const Image = styled.img`
   object-fit: contain;
   margin-bottom: 4rem;
   border-radius: 1rem;
-  &:hover{
+  &:hover {
     transform: scale(1.05);
     transition: transform 1.05s ease-in-out;
   }

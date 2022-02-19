@@ -30,7 +30,7 @@ function ProjectsContainer() {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    font-family:"Source-OpenSans";
+    font-family: "Source-OpenSans";
     align-items: center;
     margin-top: 1.6rem;
   `;
@@ -42,21 +42,20 @@ function ProjectsContainer() {
     // top: 0;
     // width: 100%;
     object-fit: cover;
-    border-radius :1rem;
+    border-radius: 1rem;
     background-position: center;
-    &:hover{
+    &:hover {
       transform: scale(1.05);
       transition: transform 1.05s ease-in-out;
     }
   `;
   const ProjectTitle = styled.h3`
-    font-size:1.5rem;
-  `
+    font-size: 1.5rem;
+  `;
 
   const ProjectTechStackTitle = styled.p`
-  font-size:1rem;
-
-  `
+    font-size: 1rem;
+  `;
   const projectsList = [
     {
       id: "1",
@@ -236,7 +235,9 @@ function ProjectsContainer() {
                   </div>
                   <ProjectsData>
                     <ProjectTitle>{projectItem.projectTitle}</ProjectTitle>
-                    <ProjectTechStackTitle>{projectItem.techStack[0].tech}</ProjectTechStackTitle>
+                    <ProjectTechStackTitle>
+                      {projectItem.techStack[0].tech}
+                    </ProjectTechStackTitle>
                   </ProjectsData>
                 </FigureContainer>
               </ProjectsDescriptionContainer>

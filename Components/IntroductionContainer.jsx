@@ -21,7 +21,7 @@ function IntroductionContainer() {
   const IntroductionTitle = styled.h3`
     font-size: 6.4rem;
     padding-bottom: 2.4rem;
-    font-family:"Source-OpenSans";
+    font-family: "Source-OpenSans";
   `;
 
   const IntroductionParagraph = styled.p`
@@ -30,7 +30,7 @@ function IntroductionContainer() {
     font-size: 2.8rem;
     width: 56rem;
     line-height: 3.5rem;
-    font-family:"Source-OpenSans";
+    font-family: "Source-OpenSans";
     @media (max-width: 1080px) {
       width: 100%;
     }
@@ -58,16 +58,16 @@ function IntroductionContainer() {
   `;
 
   const IntroductionOuterContainer = styled.div`
-  background-color: #242424;
-  color: #fff;
-  height:62.5rem;
-  @media (max-width:1024px){
-    height:60rem;
-  }
-  `
+    background-color: #242424;
+    color: #fff;
+    height: 62.5rem;
+    @media (max-width: 1024px) {
+      height: 60rem;
+    }
+  `;
   return (
     <>
-      <IntroductionOuterContainer >
+      <IntroductionOuterContainer>
         <ProjectsContainerTitle maxWidth={"70rem"}>
           ALLOW ME TO INTRODUCE MYSELF.
         </ProjectsContainerTitle>

@@ -4,10 +4,10 @@ import styled from "styled-components";
 const TechStackContainer = ({ techName, techLogo }) => {
   return (
     <Wrapper>
-        <ImageContainer>
-          <Image src={techLogo} />
-        </ImageContainer>
-        <TechText>{techName}</TechText>
+      <ImageContainer>
+        <Image src={techLogo} />
+      </ImageContainer>
+      <TechText>{techName}</TechText>
     </Wrapper>
   );
 };
@@ -46,6 +46,5 @@ const TechText = styled.p`
     text-align: center;
   }
 `;
-
 
 export default TechStackContainer;
