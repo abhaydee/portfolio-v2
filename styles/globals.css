@@ -50,4 +50,30 @@ li {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Kicker-Black";
+  src: url("../public/assets/fonts/Kicker-Black.ttf");
+  font-style: normal;
+}
 
+@font-face {
+  font-family: "NeueMachina-Ultrabold";
+  src: url("../public/assets/fonts/NeueMachina-Ultrabold.otf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hanson-Bold";
+  src: url("../public/assets/fonts/Hanson-Bold.ttf");
+}
+
+@font-face {
+  font-family: "ObjectSans-Regular";
+  src: url("../public/assets/fonts/ObjectSans-Regular.otf");
+}
+
+
+@font-face {
+  font-family: "jukotha-regular";
+  src: url("../public/assets/fonts/jukotha-regular.otf");
+}

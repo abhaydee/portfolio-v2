@@ -584,6 +584,11 @@ balanced-match@^1.0.0:
   resolved "https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.2.tgz"
   integrity sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==
 
+bezier-easing@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/bezier-easing/-/bezier-easing-2.1.0.tgz#c04dfe8b926d6ecaca1813d69ff179b7c2025d86"
+  integrity sha1-wE3+i5JtbsrKGBPWn/F5t8ICXYY=
+
 big.js@^5.2.2:
   version "5.2.2"
   resolved "https://registry.npmjs.org/big.js/-/big.js-5.2.2.tgz"
@@ -1715,6 +1720,13 @@ p-try@^1.0.0:
   resolved "https://registry.npmjs.org/p-try/-/p-try-1.0.0.tgz"
   integrity sha1-y8ec26+P1CKOE/Yh8rGiN8GyB7M=
 
+parallax-controller@^1.3.3:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/parallax-controller/-/parallax-controller-1.3.3.tgz#101ef5e4530d69e9f915b39e3b81ad4696a68006"
+  integrity sha512-GDHvMl3UbKna0bOwwB8Q+dBkpIo2DlJFj3WJElDHZFFEI47aoqQND3paHrqFez1Z64AVQSWeHax+4e6ljE9Sew==
+  dependencies:
+    bezier-easing "^2.1.0"
+
 parent-module@^1.0.0:
   version "1.0.1"
   resolved "https://registry.npmjs.org/parent-module/-/parent-module-1.0.1.tgz"
@@ -1813,6 +1825,13 @@ react-refresh@0.8.3:
   version "0.8.3"
   resolved "https://registry.npmjs.org/react-refresh/-/react-refresh-0.8.3.tgz"
   integrity sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg==
+
+react-scroll-parallax@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/react-scroll-parallax/-/react-scroll-parallax-3.0.3.tgz#1bb5aec113070043ee613a2bb8e649873c98c4da"
+  integrity sha512-GDmCk6PmHBZg9+Kb3P5hntr+MmVZrAv1EEyrbF1wXzS8TqOYDsoUuJYS9xtm/hi8JP0DywzE9oXfVNmDykHA/w==
+  dependencies:
+    parallax-controller "^1.3.3"
 
 react-spring@^9.4.3:
   version "9.4.3"

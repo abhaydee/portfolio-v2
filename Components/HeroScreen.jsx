@@ -4,8 +4,9 @@ import { HeroScreenContainer } from "../utils/CustomComponents";
 import styled from "styled-components";
 function HeroScreen() {
   const HeroScreenTitle = styled.div`
-    font-family: "Poppins-Regular";
-    font-size: 8.8rem;
+    font-family: "jukotha-regular";
+    text-transform:uppercase;
+    font-size: 8rem;
     font-weight: bold;
     margin-top: 15rem;
     transform: translateY(-50%);
@@ -18,7 +19,7 @@ function HeroScreen() {
 
   const HeroScreenSubTitle = styled.p`
     text-align: center;
-    font-family: "Poppins-Regular";
+    font-family: "jukotha-regular";
     font-weight:bold;
     font-size: 3rem;
     letter-spacing:0.75rem;
