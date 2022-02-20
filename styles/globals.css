@@ -86,3 +86,7 @@ li {
   font-family: "lemon-milk";
   src: url("../public/assets/fonts/lemon-milk.otf");
 }
+
+.rec.rec-arrow:disabled {
+  visibility: hidden;
+}

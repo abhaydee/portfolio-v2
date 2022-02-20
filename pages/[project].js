@@ -52,7 +52,7 @@ const Wrapper = styled.div`
 `;
 const Header1 = styled.h1`
   font-size: 70px;
-  font-family: "Source-OpenSans";
+  font-family: "Kicker-Black";
   color: #ffcc66;
   @media (max-width: 1024px) {
     font-size: 36px;

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import Carousel from "react-elastic-carousel";
 
 const Organizations = () => {
   const [activeTab, setActiveTab] = useState("Softway");
@@ -132,7 +133,7 @@ const Organizations = () => {
   return (
     <Wrapper>
       <Header>Organization that I have been a part of...</Header>
-      <div className="d-flex justify-content-center mx-auto container align-self-center">
+      {/* <div className="d-flex justify-content-center mx-auto container align-self-center">
         <Button className="btn" style={{ backgroundColor:"#019872", color:"#fff"}} onClick={() => setActiveTab("Softway")}>Softway</Button>
         <Button className="btn" style={{ backgroundColor:"#019872", color:"#fff"}} onClick={() => setActiveTab("Accenture")}>Accenture</Button>
         <Button className="btn" style={{ backgroundColor:"#019872", color:"#fff"}} onClick={() => setActiveTab("Kuliza")}>
@@ -143,7 +144,18 @@ const Organizations = () => {
         {activeTab === "Softway" && renderSoftwayDescription()}
         {activeTab == "Accenture" && renderAccentureDescription()}
         {activeTab == "Kuliza" && renderKulizaDescription()}
-      </div>
+      </div> */}
+      <Carousel itemsToShow={1} enableMouseSwipe={false} enableSwipe={false} pagination={false}>
+          <div>
+          {renderSoftwayDescription()}
+          </div>
+          <div>
+            {renderAccentureDescription()}
+          </div>
+          <div>
+            {renderKulizaDescription()}
+          </div>
+      </Carousel>
     </Wrapper>
   );
 };
@@ -161,6 +173,7 @@ const Header = styled.h1`
   text-align: center;
   font-family: "Kicker-Black";
   font-weight:bold;
+  margin-bottom:2rem;
 `;
 const Button = styled.button`
   margin:3rem;
