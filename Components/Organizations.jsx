@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Carousel from "react-elastic-carousel";
+import { ComponentReSize } from "../utils/utils";
 
 const Organizations = () => {
   const [activeTab, setActiveTab] = useState("Softway");
+  const isMobile = ComponentReSize();
+  console.log("logging the is mobile data", isMobile);
   const renderSoftwayDescription = () => {
     return (
       <div className="d-flex flex-column align-items-center">
@@ -133,29 +136,51 @@ const Organizations = () => {
   return (
     <Wrapper>
       <Header>Organization that I have been a part of...</Header>
-      {/* <div className="d-flex justify-content-center mx-auto container align-self-center">
-        <Button className="btn" style={{ backgroundColor:"#019872", color:"#fff"}} onClick={() => setActiveTab("Softway")}>Softway</Button>
-        <Button className="btn" style={{ backgroundColor:"#019872", color:"#fff"}} onClick={() => setActiveTab("Accenture")}>Accenture</Button>
-        <Button className="btn" style={{ backgroundColor:"#019872", color:"#fff"}} onClick={() => setActiveTab("Kuliza")}>
-          Kuliza Technologies
-        </Button>
-      </div>
-      <div>
-        {activeTab === "Softway" && renderSoftwayDescription()}
-        {activeTab == "Accenture" && renderAccentureDescription()}
-        {activeTab == "Kuliza" && renderKulizaDescription()}
-      </div> */}
-      <Carousel itemsToShow={1} enableMouseSwipe={false} enableSwipe={false} pagination={false}>
-          <div>
-          {renderSoftwayDescription()}
-          </div>
-          <div>
-            {renderAccentureDescription()}
-          </div>
-          <div>
-            {renderKulizaDescription()}
-          </div>
-      </Carousel>
+      {isMobile ? (
+        <>
+          <TabsContent className="d-flex justify-content-center mx-auto container align-self-center">
+            <Button
+              className="btn"
+              style={{ backgroundColor: "#019872", color: "#fff" }}
+              onClick={() => setActiveTab("Softway")}
+            >
+              Softway
+            </Button>
+            <Button
+              className="btn"
+              style={{ backgroundColor: "#019872", color: "#fff" }}
+              onClick={() => setActiveTab("Accenture")}
+            >
+              Accenture
+            </Button>
+            <Button
+              className="btn"
+              style={{ backgroundColor: "#019872", color: "#fff" }}
+              onClick={() => setActiveTab("Kuliza")}
+            >
+              Kuliza Technologies
+            </Button>
+          </TabsContent>
+          <TabsContainer>
+            {activeTab === "Softway" && renderSoftwayDescription()}
+            {activeTab == "Accenture" && renderAccentureDescription()}
+            {activeTab == "Kuliza" && renderKulizaDescription()}
+          </TabsContainer>
+        </>
+      ) : (
+        <CarouselContainer>
+          <Carousel
+            itemsToShow={1}
+            enableMouseSwipe={false}
+            enableSwipe={false}
+            pagination={false}
+          >
+            <div>{renderSoftwayDescription()}</div>
+            <div>{renderAccentureDescription()}</div>
+            <div>{renderKulizaDescription()}</div>
+          </Carousel>
+        </CarouselContainer>
+      )}
     </Wrapper>
   );
 };
@@ -172,13 +197,13 @@ const Wrapper = styled.div`
 const Header = styled.h1`
   text-align: center;
   font-family: "Kicker-Black";
-  font-weight:bold;
-  margin-bottom:2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
 `;
 const Button = styled.button`
-  margin:3rem;
-  padding-inline:1rem !important;
-  &:hover{
+  margin: 3rem;
+  padding-inline: 1rem !important;
+  &:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
     -webkit-transition: -webkit-transform 0.2s;
@@ -206,4 +231,9 @@ const ListItem = styled.li`
   line-height: 2rem;
   font-size: 1.25rem;
 `;
+
+const TabsContainer = styled.div``;
+const TabsContent = styled.div``;
+
+const CarouselContainer = styled.div``;
 export default Organizations;
