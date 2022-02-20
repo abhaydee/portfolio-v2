@@ -21,7 +21,7 @@ function IntroductionContainer() {
   const IntroductionTitle = styled.h3`
     font-size: 6.4rem;
     padding-bottom: 2.4rem;
-    font-family: "Source-OpenSans";
+    font-family: "Kicker-Black";
     @media (max-width:1024px){
       text-align:left;
     }

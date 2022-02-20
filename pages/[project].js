@@ -14,25 +14,16 @@ const ProjectDetails = () => {
       {Object.keys(projectData).length > 0 && (
         <div className="container">
           <Header1 className="mb-5">{projectData.projectTitle}</Header1>
-          <ShortDescription>{projectData.projectDescription}</ShortDescription>
+          <ProjectDescription>{projectData.projectDescription}</ProjectDescription>
           <Anchor href={projectData.externalLink} target="_blank">
             <Image src={projectData.projectImage} />
           </Anchor>
 
-          <Image src={projectData.projectImage2} />
-          {/* <DetailsContainer className="flex-md-row flex-lg-row  flex-sm-column">
-            <Description>
-              It gives an overall view of all the different countries all over
-              the globe. The most exciting thing that I worked on here was to
-              reduce the API calls and handle all the complex functionality
-              using Javascript.
-            </Description>
-            <ImageContainer>
-              <FlexImage
-                src={"/assets/images/rest-countries_dark2.png"}
-              ></FlexImage>
-            </ImageContainer>
-          </DetailsContainer> */}
+          <Anchor href={projectData.externalLink} target="_blank">
+            <Image src={projectData.projectImage2} />
+          </Anchor>
+          <ShortDescription>{projectData.projectShortDescription}</ShortDescription>
+        
           <TechStackTitle>Tech Stack</TechStackTitle>
           <CustomContainer>
             {projectData.techStack.map((projectItem, projectItemIndex) => {
@@ -76,6 +67,16 @@ const Image = styled.img`
   &:hover {
     transform: scale(1.05);
     transition: transform 1.05s ease-in-out;
+  }
+`;
+
+const ProjectDescription = styled.p`
+  font-size: 1.25rem;
+  color: rgb(162, 170, 188);
+  margin-bottom: 5rem;
+  font-family: "Source-OpenSans";
+  @media (max-width: 1024px) {
+    margin-bottom: 3rem;
   }
 `;
 

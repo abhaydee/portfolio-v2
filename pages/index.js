@@ -11,7 +11,7 @@ import TechStackContainer from "../Components/TechStackContainer";
 
 export default function Home() {
   return (
-    <div>
+    <div style={{scrollBehavior:"smooth"}}>
       <CustomContainer>
         {/* <Zoom bottom> */}
         <HeroScreen />

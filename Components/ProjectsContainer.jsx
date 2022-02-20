@@ -102,11 +102,8 @@ function ProjectsContainer() {
       external: false,
       projectImage: "/assets/images/coinbase.png",
       projectImage2: "/assets/images/coinbase2.png",
-      projectDescription: `A fully-featured application that describes the details of
-        countries all around the globe. The most exciting thing that I did
-        here was to reduce the API calls and handle all the complex
-        functionality using Javascript.`,
-      projectShortDescription: `A dynamic UI web application which enables users to send/receive payments in the form of CryptoCurrency. `,
+      projectDescription: `A dynamic UI web application which enables users to send/receive payments in the form of CryptoCurrency. The website also describes the portfolio details of the users by analysing and integrating metamask wallet into the web application.`,
+      projectShortDescription: `The users can click on Send/Receive button to utilize crypto transactions through meta-mask.`,
     },
     {
       id: "4",
@@ -126,7 +123,7 @@ function ProjectsContainer() {
         countries all around the globe. The most exciting thing that I did
         here was to reduce the API calls and handle all the complex
         functionality using Javascript.`,
-      projectShortDescription: `A fully-featured application that describes the details of countries all around the globe. `,
+      projectShortDescription: `The web app also has a toggle feature where the users can dark/light theme based on their preference`,
     },
     {
       id: "5",
@@ -142,8 +139,8 @@ function ProjectsContainer() {
       ],
       projectLink: "/Netflix",
       external: false,
-      projectDescription: `A customized Netflix Landing Page which plays the on-screen trailer of TV Shows & Movies around the globe`,
-      projectShortDescription: `A clone of the Netflix landing Page which plays onscreens trailers for all the TV shows and movies.`,
+      projectDescription: `A clone of the Netflix landing Page built with ReactJS and Firebase. I have used TMDB Database to render all the TV Shows and Movies data.`,
+      projectShortDescription: `The most exciting feature in this project is that the web app can also play on screen trailers of shows and movies displayed.`,
     },
     {
       id: "6",
@@ -176,8 +173,8 @@ function ProjectsContainer() {
       projectImage: "/assets/images/todo-list.png",
       external: false,
       projectLink: "/todo-list",
-      projectShortDescription: `We all know that a Typical to-do list web application helps a developer understand the CRUD functionalities of the web. I always wanted to build a to-do application rich in UI, yet simple and easier to use.`,
-      projectDescription: `We all know that a Typical to-do list web application helps a developer understand the CRUD functionalities of the web. I always wanted to build a to-do application rich in UI, yet simple and easier to use.t also comes with a unique dark mode theme for all those AMOLED screens used there. This site is going to look amazing on your phones and desktops. I have given it an honest try.`,
+      projectShortDescription: `It also comes with a unique dark mode theme for all those AMOLED screens out there. This website is going to look amazing on your phones and desktops. I have given it an honest try.`,
+      projectDescription: `We all know that a Typical to-do list web application helps a developer understand the CRUD functionalities of the web. I always wanted to build a to-do application rich in UI, yet simple and easier to use.`,
     },
     {
       id: "8",
@@ -191,8 +188,8 @@ function ProjectsContainer() {
       projectLink: "/Memory-Game",
       projectImage: "/assets/images/memory-game.png",
       external: false,
-      projectShortDescription: `An interactive memory game built using HTML5, CSS3, JavaScript.`,
-      projectDescription: `An interactive memory game built using HTML5, CSS3, JavaScript. The game also consists of appropriate Timer and Scores Section, which makes the game extremely competitive for users.`,
+      projectShortDescription: `An interactive Memory Game through which the users can challenge themselves to complete the Game.`,
+      projectDescription: `The web application also consists of timer and points which keeps the participants on their toes and motivate them them to perform better in their next try.`,
     },
   ];
 

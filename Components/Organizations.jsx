@@ -159,7 +159,7 @@ const Wrapper = styled.div`
 `;
 const Header = styled.h1`
   text-align: center;
-  font-family: "ObjectSans-Regular";
+  font-family: "Kicker-Black";
   font-weight:bold;
 `;
 const Button = styled.button`
@@ -182,14 +182,14 @@ const Header5 = styled.h5`
 `;
 
 const Header3 = styled.h3`
-  font-family: "ObjectSans-Regular";
+  font-family: "Source-OpenSans";
   text-align: center;z
   margin-top: 1rem;
   line-height: 2.25rem;
 `;
 
 const ListItem = styled.li`
-  font-family: "ObjectSans-Regular";
+  font-family: "Source-OpenSans";
   line-height: 2rem;
   font-size: 1.25rem;
 `;

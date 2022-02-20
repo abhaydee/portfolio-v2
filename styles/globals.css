@@ -63,6 +63,10 @@ li {
 }
 
 @font-face {
+  font-family: "NeueMachina-Regular";
+  src: url("../public/assets/fonts/NeueMachina-Regular.otf");
+}
+@font-face {
   font-family: "Hanson-Bold";
   src: url("../public/assets/fonts/Hanson-Bold.ttf");
 }
@@ -76,4 +80,9 @@ li {
 @font-face {
   font-family: "jukotha-regular";
   src: url("../public/assets/fonts/jukotha-regular.otf");
+}
+
+@font-face {
+  font-family: "lemon-milk";
+  src: url("../public/assets/fonts/lemon-milk.otf");
 }

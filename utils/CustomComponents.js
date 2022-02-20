@@ -30,7 +30,7 @@ export const ProjectsCustomContainer = styled.div`
 
 export const Header3 = styled.a`
   padding-right: 10px;
-  font-family: "jukotha-regular";
+  font-family: "Kicker-Black";
   font-weight:bold;
   color: black;
   font-size: 1.75rem;
@@ -65,7 +65,7 @@ width: 100%;
 
 export const ProjectsContainerTitle = styled.h1`
   padding: 3rem 1rem 2rem 1rem;
-  font-family:"Source-OpenSans";
+  font-family:"Kicker-Black";
   @media (min-width: 768px) {
     padding: 6rem 0 4rem 5.5rem;
     font-size: 5rem;

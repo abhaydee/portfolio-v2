@@ -9,7 +9,7 @@ function ContactContainer() {
   `;
   const ContactHeader = styled.a`
     color: #242424;
-    font-family: "Poppins-Regular";
+    font-family: "Kicker-Black";
     color: teal;
     text-decoration:none;
     font-weight: bold;

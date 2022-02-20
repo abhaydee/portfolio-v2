@@ -4,7 +4,7 @@ import { HeroScreenContainer } from "../utils/CustomComponents";
 import styled from "styled-components";
 function HeroScreen() {
   const HeroScreenTitle = styled.div`
-    font-family: "jukotha-regular";
+    font-family: "Kicker-Black";
     text-transform:uppercase;
     font-size: 8rem;
     font-weight: bold;
@@ -19,7 +19,7 @@ function HeroScreen() {
 
   const HeroScreenSubTitle = styled.p`
     text-align: center;
-    font-family: "jukotha-regular";
+    font-family: "Kicker-Black";
     font-weight:bold;
     font-size: 3rem;
     letter-spacing:0.75rem;
