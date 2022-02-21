@@ -28,12 +28,12 @@ const Wrapper = styled.div`
   }
 `;
 const Image = styled.img`
-  width: 70px;
-  height: 70px;
+  width: 4.575rem;
+  height: 4.575rem;
   object-fit: cover;
   @media (max-width: 1024px) {
-    width: 50px;
-    height: 50px;
+    width: 3.125rem;
+    height: 3.125rem;
   }
 `;
 const ImageContainer = styled.div``;

@@ -151,7 +151,7 @@ function ProjectsContainer() {
         { tech: "Javascript", logoUrl: "/assets/images/javascript-logo.png" },
         { tech: "ReactJS", logoUrl: "/assets/images/react-logo.png" },
         { tech: "GraphQL", logoUrl: "/assets/images/graphql-logo.png" },
-        { tech: "NodeJS", logoUrl: "/assets/images/node-logo.png" },
+        { tech: "NodeJS", logoUrl: "/assets/images/node-logo.svg" },
         { tech: "MongoDB", logoUrl: "/assets/images/mongodb-logo.png" },
       ],
       external: false,
