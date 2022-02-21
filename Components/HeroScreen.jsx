@@ -6,7 +6,8 @@ function HeroScreen() {
   const HeroScreenTitle = styled.div`
     font-family: "Kicker-Black";
     text-transform:uppercase;
-    font-size: 8rem;
+    font-size: 6rem;
+    line-height:3rem;
     font-weight: bold;
     margin-top: 15rem;
     transform: translateY(-50%);
@@ -23,6 +24,7 @@ function HeroScreen() {
     font-weight:bold;
     font-size: 3rem;
     letter-spacing:0.75rem;
+    margin-top:3rem;
     color: #019872;
     @media (max-width: 1024px) {
       font-size: 2rem;

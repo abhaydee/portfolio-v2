@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
 function ContactContainer() {
@@ -64,17 +65,17 @@ function ContactContainer() {
       <Footer>
         <FooterSocials>
           <a href="https://www.linkedin.com/in/abhaydee/" target="_blank">
-            <img
+            <Image
               src="/assets/images/linkedin-logo.png"
               width={50}
               height={50}
             />
           </a>
           <a href="https://github.com/abhaydee" target="_blank">
-            <img src="/assets/images/github-sign.png" width={50} height={50} />
+            <Image src="/assets/images/github-sign.png" width={50} height={50} />
           </a>
           <a href="https://twitter.com/abhaycodes" target="_blank">
-            <img src="/assets/images/twitter-sign.png" width={50} height={50} />
+            <Image src="/assets/images/twitter-sign.png" width={50} height={50} />
           </a>
         </FooterSocials>
         <CopyRight>@2022 Abhay Deshpande</CopyRight>

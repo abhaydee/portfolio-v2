@@ -140,7 +140,6 @@ const TechStackGrid = styled.div`
 
 const CustomContainer = styled.div`
   display: flex;
-  padding-inline: 6rem;
   @media (max-width: 1024px) {
     padding-inline: 0.1rem;
     margin-left: 1rem;
