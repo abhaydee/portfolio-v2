@@ -6,7 +6,6 @@ import { ComponentReSize } from "../utils/utils";
 const Organizations = () => {
   const [activeTab, setActiveTab] = useState("Softway");
   const isMobile = ComponentReSize();
-  console.log("logging the is mobile data", isMobile);
   const renderSoftwayDescription = () => {
     return (
       <div className="d-flex flex-column align-items-center">

@@ -1,15 +1,12 @@
 import React from "react";
 import {
   ProjectsCustomContainer,
-  ProjectImage,
   CustomContainer,
   FigureContainer,
   ProjectsContainerTitle,
 } from "../utils/CustomComponents";
 import styled from "styled-components";
-import Image from "next/image";
-import Link from "next/link";
-import Router, { useRouter } from "next/router";
+import  { useRouter } from "next/router";
 function ProjectsContainer() {
   const router = useRouter();
   const ProjectsDescriptionContainer = styled.div`
