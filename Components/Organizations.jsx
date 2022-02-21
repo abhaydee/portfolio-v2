@@ -12,9 +12,9 @@ const Organizations = () => {
       <div className="d-flex flex-column align-items-center">
         <Header3>
           Full Stack Engineer{" "}
-          <a href="https://google.com" target="_blank">
+          <Anchor href="https://google.com" target="_blank">
             @Softway
-          </a>
+          </Anchor>
         </Header3>
         <p>Apr 2021 - Present</p>
         <ul style={{ maxWidth: "500px", paddingLeft: 0 }} id="list">
@@ -60,9 +60,9 @@ const Organizations = () => {
       <div className="d-flex flex-column align-items-center">
         <Header3>
           Front End Engineer{" "}
-          <a href="https://google.com" target="_blank">
+          <Anchor href="https://google.com" target="_blank" >
             @Accenture
-          </a>
+          </Anchor>
         </Header3>
         <p>Oct 2019 - Apr 2021</p>
         <ul style={{ maxWidth: "500px", paddingLeft: 0 }} id="list">
@@ -104,9 +104,9 @@ const Organizations = () => {
       <div className="d-flex flex-column align-items-center">
         <Header3>
           Front End Web/Mobile Engineer{" "}
-          <a href="https://google.com" target="_blank">
+          <Anchor href="https://google.com" target="_blank">
             @Kuliza Technologies
-          </a>
+          </Anchor>
         </Header3>
         <p>July 2019 - Oct 2019</p>
         <ul style={{ maxWidth: "500px", paddingLeft: 0 }} id="list">
@@ -202,7 +202,6 @@ const Header = styled.h1`
 `;
 const Button = styled.button`
   margin: 3rem;
-  padding-inline: 1rem !important;
   &:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
@@ -236,4 +235,11 @@ const TabsContainer = styled.div``;
 const TabsContent = styled.div``;
 
 const CarouselContainer = styled.div``;
+
+const Anchor =styled.a`
+  color:teal;
+  &:hover{
+    color:teal;
+  }
+`
 export default Organizations;
