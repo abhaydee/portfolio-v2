@@ -87,7 +87,7 @@ function IntroductionContainer() {
           </IntroductionParagraph>
         </IntroductionDescription>
         <CustomFigure>
-          <SelfAvatar src="./assets/images/avatar.svg" />
+          <SelfAvatar src="./assets/images/avatar.jpg" alt="avatar image" />
         </CustomFigure>
       </IntroductionOuterContainer>
     </>

@@ -36,55 +36,74 @@ li {
   src: url("../public/assets/fonts/SourceSansPro-SemiBold.ttf");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Source-OpenSansLight";
   src: url("../public/assets/fonts/SourceSansPro-Light.ttf");
   font-style: normal;
+  font-display: swap;
+
 }
 
 @font-face {
   font-family: "Poppins-Regular";
   src: url("../public/assets/fonts/Poppins-Regular.ttf");
   font-style: normal;
+  font-display: swap;
+
 }
 
 @font-face {
   font-family: "Kicker-Black";
   src: url("../public/assets/fonts/Kicker-Black.ttf");
   font-style: normal;
+  font-display: swap;
+
 }
 
 @font-face {
   font-family: "NeueMachina-Ultrabold";
   src: url("../public/assets/fonts/NeueMachina-Ultrabold.otf");
   font-style: normal;
+  font-display: swap;
+
 }
 
 @font-face {
   font-family: "NeueMachina-Regular";
   src: url("../public/assets/fonts/NeueMachina-Regular.otf");
+  font-display: swap;
+
 }
 @font-face {
   font-family: "Hanson-Bold";
   src: url("../public/assets/fonts/Hanson-Bold.ttf");
+  font-display: swap;
+
 }
 
 @font-face {
   font-family: "ObjectSans-Regular";
   src: url("../public/assets/fonts/ObjectSans-Regular.otf");
+  font-display: swap;
+
 }
 
 
 @font-face {
   font-family: "jukotha-regular";
   src: url("../public/assets/fonts/jukotha-regular.otf");
+  font-display: swap;
+
 }
 
 @font-face {
   font-family: "lemon-milk";
   src: url("../public/assets/fonts/lemon-milk.otf");
+  font-display: swap;
+
 }
 
 .rec.rec-arrow:disabled {

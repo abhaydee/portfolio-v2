@@ -5,7 +5,7 @@ const TechStackContainer = ({ techName, techLogo }) => {
   return (
     <Wrapper>
       <ImageContainer>
-        <Image src={techLogo} />
+        <Image src={techLogo} alt="tech-logo"/>
       </ImageContainer>
       <TechText>{techName}</TechText>
     </Wrapper>

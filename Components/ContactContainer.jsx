@@ -64,18 +64,19 @@ function ContactContainer() {
       </ContactContainerTitle>
       <Footer>
         <FooterSocials>
-          <a href="https://www.linkedin.com/in/abhaydee/" target="_blank">
+          <a href="https://www.linkedin.com/in/abhaydee/" target="_blank" alt="linkedin-logo" rel="noopener noreferrer">
             <Image
-              src="/assets/images/linkedin-logo.png"
+              src="/assets/images/linkedin-logo.jpg"
               width={50}
               height={50}
+              alt="linkedin-logo"
             />
           </a>
-          <a href="https://github.com/abhaydee" target="_blank">
-            <Image src="/assets/images/github-sign.png" width={50} height={50} />
+          <a href="https://github.com/abhaydee" target="_blank" rel="noopener noreferrer">
+            <Image src="/assets/images/github-sign.jpg" width={50} height={50} alt="github-logo" />
           </a>
-          <a href="https://twitter.com/abhaycodes" target="_blank">
-            <Image src="/assets/images/twitter-sign.png" width={50} height={50} />
+          <a href="https://twitter.com/abhaycodes" target="_blank" rel="noopener noreferrer">
+            <Image src="/assets/images/twitter-sign.jpg" width={50} height={50} alt="twitter-logo"/>
           </a>
         </FooterSocials>
         <CopyRight>@2022 Abhay Deshpande</CopyRight>

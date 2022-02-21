@@ -12,7 +12,7 @@ const Organizations = () => {
       <div className="d-flex flex-column align-items-center">
         <Header3>
           Full Stack Engineer{" "}
-          <Anchor href="https://google.com" target="_blank">
+          <Anchor href="https://google.com" target="_blank" rel="noopener noreferrer">
             @Softway
           </Anchor>
         </Header3>
@@ -60,7 +60,7 @@ const Organizations = () => {
       <div className="d-flex flex-column align-items-center">
         <Header3>
           Front End Engineer{" "}
-          <Anchor href="https://google.com" target="_blank" >
+          <Anchor href="https://google.com" target="_blank" rel="noopener noreferrer">
             @Accenture
           </Anchor>
         </Header3>
@@ -104,7 +104,7 @@ const Organizations = () => {
       <div className="d-flex flex-column align-items-center">
         <Header3>
           Front End Web/Mobile Engineer{" "}
-          <Anchor href="https://google.com" target="_blank">
+          <Anchor href="https://google.com" target="_blank" rel="noopener noreferrer">
             @Kuliza Technologies
           </Anchor>
         </Header3>

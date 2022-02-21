@@ -15,12 +15,12 @@ const ProjectDetails = () => {
         <div className="container">
           <Header1 className="mb-5">{projectData.projectTitle}</Header1>
           <ProjectDescription>{projectData.projectDescription}</ProjectDescription>
-          <Anchor href={projectData.externalLink} target="_blank">
-            <Image src={projectData.projectImage} />
+          <Anchor href={projectData.externalLink} target="_blank" rel="noopener noreferrer">
+            <Image src={projectData.projectImage} alt="project-image-1" />
           </Anchor>
 
-          <Anchor href={projectData.externalLink} target="_blank">
-            <Image src={projectData.projectImage2} />
+          <Anchor href={projectData.externalLink} target="_blank" rel="noopener noreferrer">
+            <Image src={projectData.projectImage2} alt="project-image-2"/>
           </Anchor>
           <ShortDescription>{projectData.projectShortDescription}</ShortDescription>
         
