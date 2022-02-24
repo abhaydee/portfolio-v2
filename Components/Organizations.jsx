@@ -11,7 +11,11 @@ const Organizations = () => {
       <div className="d-flex flex-column align-items-center">
         <Header3>
           Full Stack Engineer{" "}
-          <Anchor href="https://google.com" target="_blank" rel="noopener noreferrer">
+          <Anchor
+            href="https://www.softway.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             @Softway
           </Anchor>
         </Header3>
@@ -59,7 +63,11 @@ const Organizations = () => {
       <div className="d-flex flex-column align-items-center">
         <Header3>
           Front End Engineer{" "}
-          <Anchor href="https://google.com" target="_blank" rel="noopener noreferrer">
+          <Anchor
+            href="https://www.accenture.com/in-en"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             @Accenture
           </Anchor>
         </Header3>
@@ -103,7 +111,11 @@ const Organizations = () => {
       <div className="d-flex flex-column align-items-center">
         <Header3>
           Front End Web/Mobile Engineer{" "}
-          <Anchor href="https://google.com" target="_blank" rel="noopener noreferrer">
+          <Anchor
+            href="https://www.kuliza.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             @Kuliza Technologies
           </Anchor>
         </Header3>
@@ -173,6 +185,7 @@ const Organizations = () => {
             enableMouseSwipe={false}
             enableSwipe={false}
             pagination={false}
+            itemPadding={[, 10]}
           >
             <div>{renderSoftwayDescription()}</div>
             <div>{renderAccentureDescription()}</div>
@@ -233,12 +246,19 @@ const ListItem = styled.li`
 const TabsContainer = styled.div``;
 const TabsContent = styled.div``;
 
-const CarouselContainer = styled.div``;
+const CarouselContainer = styled.div`
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-item: center;
+  align-self: center;
+`;
 
-const Anchor =styled.a`
-  color:teal;
-  &:hover{
-    color:teal;
+const Anchor = styled.a`
+  color: teal;
+  &:hover {
+    color: teal;
   }
-`
+`;
 export default Organizations;

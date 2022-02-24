@@ -32,7 +32,7 @@ function IntroductionContainer() {
     font-family: "Source-OpenSans";
     @media (max-width: 1080px) {
       width: 100%;
-      font-size: 2rem;
+      font-size: 1.5rem;
       text-align: left;
       justify-content: center;
     }

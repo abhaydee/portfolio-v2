@@ -53,6 +53,16 @@ export const FigureContainer = styled.figure`
   @media (max-width: 576px) {
     margin-inline: 1rem;
   }
+  @media (min-width: 1024px) {
+    mix-blend-mode: screen;
+    filter: grayscale(100%) contrast(1) brightness(90%);
+    &:hover {
+      filter: none;
+      opacity: 100%;
+      transition: opacity 500ms linear 0s;
+      background-color: transparent;
+    }
+  }
 `;
 
 export const CustomImage = styled.img`
@@ -67,7 +77,7 @@ width: 100%;
 export const ProjectsContainerTitle = styled.h1`
   padding: 3rem 1rem 2rem 1rem;
   font-family: "Kicker-Black";
-  max-width:50rem;
+  max-width: 50rem;
   @media (min-width: 768px) {
     padding: 6rem 0 4rem 5.5rem;
     font-size: 4rem;
