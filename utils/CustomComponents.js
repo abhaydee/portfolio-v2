@@ -53,16 +53,7 @@ export const FigureContainer = styled.figure`
   @media (max-width: 576px) {
     margin-inline: 1rem;
   }
-  @media (min-width: 1024px) {
-    mix-blend-mode: screen;
-    filter: grayscale(100%) contrast(1) brightness(90%);
-    &:hover {
-      filter: none;
-      opacity: 100%;
-      transition: opacity 500ms linear 0s;
-      background-color: transparent;
-    }
-  }
+
 `;
 
 export const CustomImage = styled.img`

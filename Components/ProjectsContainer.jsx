@@ -6,7 +6,7 @@ import {
   ProjectsContainerTitle,
 } from "../utils/CustomComponents";
 import styled from "styled-components";
-import  { useRouter } from "next/router";
+import { useRouter } from "next/router";
 function ProjectsContainer() {
   const router = useRouter();
   const ProjectsDescriptionContainer = styled.div`
@@ -30,7 +30,17 @@ function ProjectsContainer() {
     align-items: center;
     margin-top: 1.6rem;
   `;
-
+  const CustomImageContainer = styled.div`
+    @media (min-width: 1024px) {
+      filter: grayscale(100%) contrast(1) brightness(90%);
+      &:hover {
+        filter: none;
+        opacity: 100%;
+        transition: opacity 500ms linear 0s;
+        background-color: transparent;
+      }
+    }
+  `;
   const ProjectImage = styled.img`
     // height: 100%;
     // left: 0;
@@ -209,7 +219,7 @@ function ProjectsContainer() {
             <CustomContainer>
               <ProjectsDescriptionContainer>
                 <FigureContainer>
-                  <div
+                  <CustomImageContainer
                     onClick={() => handleNavigation(projectItem)}
                     style={{ cursor: "pointer" }}
                   >
@@ -226,7 +236,7 @@ function ProjectsContainer() {
                         borderRadius: "30",
                       }}
                     />
-                  </div>
+                  </CustomImageContainer>
                   <ProjectsData>
                     <ProjectTitle>{projectItem.projectTitle}</ProjectTitle>
                     <ProjectTechStackTitle>
