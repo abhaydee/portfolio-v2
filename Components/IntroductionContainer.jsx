@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import {
-  ProjectsContainerTitle,
-} from "../utils/CustomComponents";
+import { ProjectsContainerTitle } from "../utils/CustomComponents";
 
 function IntroductionContainer() {
   const IntroductionDescription = styled.div`
@@ -21,8 +19,8 @@ function IntroductionContainer() {
     font-size: 4rem;
     padding-bottom: 2.4rem;
     font-family: "Kicker-Black";
-    @media (max-width:1024px){
-      text-align:left;
+    @media (max-width: 1024px) {
+      text-align: left;
     }
   `;
 
@@ -34,9 +32,9 @@ function IntroductionContainer() {
     font-family: "Source-OpenSans";
     @media (max-width: 1080px) {
       width: 100%;
-      font-size:2rem;
-      text-align:left;
-      justify-content:center;
+      font-size: 2rem;
+      text-align: left;
+      justify-content: center;
     }
   `;
 
@@ -47,14 +45,21 @@ function IntroductionContainer() {
       left: 60%;
       bottom: 53rem;
       transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 35.5273, 0, 1);
+      border-radius: 1rem;
+      mix-blend-mode: multiply;
+      filter: grayscale(100%) contrast(1) brightness(90%);
+      &:hover{
+        filter:none;
+        transition:opacity 500ms linear 0s;
+      }
     }
   `;
 
   const SelfAvatar = styled.img`
     width: 30rem;
-    height: 30rem;
+    height: 35rem;
     display: block;
-    padding-bottom:4rem;
+    padding-bottom: 4rem;
     @media (max-width: 1080px) {
       display: none !important;
     }
@@ -72,22 +77,39 @@ function IntroductionContainer() {
       height: 67rem;
     }
   `;
+
+  const FigureContainer = styled.div`
+    content: "";
+    inset: 0px;
+    z-index: 3;
+    background-color: black;
+    mix-blend-mode: screen;
+
+  `;
   return (
     <>
       <IntroductionOuterContainer>
-        <ProjectsContainerTitle >
+        <ProjectsContainerTitle>
           ALLOW ME TO INTRODUCE MYSELF.
         </ProjectsContainerTitle>
         <IntroductionDescription>
           <IntroductionTitle>HELLO</IntroductionTitle>
           <IntroductionParagraph>
-            I am Abhay Deshpande, a full-stack developer from India, also Front End Developer Nanodegree Graduate at Udacity (Co-created By Google).
-            Working with clients, my dream has always been driven towards providing unique experiences with the best level of quality and service to them.
+            I am Abhay Deshpande, a full-stack developer from India, also Front
+            End Developer Nanodegree Graduate at Udacity (Co-created By Google).
+            Working with clients, my dream has always been driven towards
+            providing unique experiences with the best level of quality and
+            service to them.
           </IntroductionParagraph>
         </IntroductionDescription>
-        <CustomFigure>
-          <SelfAvatar src="./assets/images/avatar2.jpeg" alt="avatar image" />
-        </CustomFigure>
+        <FigureContainer>
+          <CustomFigure>
+            <SelfAvatar
+              src="./assets/images/square-profile-2.jpeg"
+              alt="avatar image"
+            />
+          </CustomFigure>
+        </FigureContainer>
       </IntroductionOuterContainer>
     </>
   );
