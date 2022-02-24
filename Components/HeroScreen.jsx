@@ -16,6 +16,9 @@ function HeroScreen() {
     @media (max-width: 1024px) {
       font-size: 3rem;
     }
+    @media (min-width:1600px){
+      font-size:8rem;
+    }
   `;
 
   const HeroScreenSubTitle = styled.p`
@@ -28,6 +31,9 @@ function HeroScreen() {
     color: #019872;
     @media (max-width: 1024px) {
       font-size: 2rem;
+    }
+    @media (min-width:1600px){
+      font-size:4rem;
     }
   `;
   return (
