@@ -9,7 +9,6 @@ function Header() {
     <HeaderContainer>
       <Header3 href="#">ABHAY DESHPANDE</Header3>
       <Header3 href="#projects">PROJECTS</Header3>
-      <Header3> IN REGARDS TO</Header3>
       <Header3>CONTACT</Header3>
       <Header3 onClick={navigateToResume}>RESUME</Header3>
     </HeaderContainer>
