@@ -24,14 +24,14 @@ const IconCard = (props) => {
 };
 
 const logoStyle = {
-  width: "5rem",
-  height: "5rem",
+  width: "4rem",
+  height: "4rem",
 };
 function Skills() {
   return (
     <SkillsContainer>
       <SkillsHeader>Skills</SkillsHeader>
-      <SkillsSubHeader style={{ color: "white" }}>FrontEnd</SkillsSubHeader>
+      <SkillsSubHeader marginBottom={"1rem"}>FrontEnd</SkillsSubHeader>
       <FlexContainer>
         <IconCard
           dropShadowColor="#61dafb"
@@ -80,36 +80,36 @@ function Skills() {
         />
         <IconCard
           dropShadowColor="#bf3054"
-          icon={<Web3dotjs width={80} height={80} />}
+          icon={<Web3dotjs style={logoStyle} />}
           title="ThirdWeb"
         />
       </FlexContainer>
-      <SkillsSubHeader>Backend</SkillsSubHeader>
+      <SkillsSubHeader marginBottom={"1rem"}>Backend</SkillsSubHeader>
       <FlexContainer>
         <IconCard
           dropShadowColor="#72ab63"
-          icon={<Nodejs width={80} height={80} />}
+          icon={<Nodejs style={logoStyle} />}
           title="Node.js"
         />
 
         <IconCard
           dropShadowColor="#d64292"
-          icon={<Graphql width={80} height={80} />}
+          icon={<Graphql style={logoStyle} />}
           title="GraphQL"
         />
         <IconCard
           dropShadowColor="#ee8610"
-          icon={<Aws width={80} height={80} />}
+          icon={<Aws style={logoStyle} />}
           title="Amazon Web Services"
         />
         <IconCard
           dropShadowColor="#20da0f"
-          icon={<Mongodb width={80} height={80} />}
+          icon={<Mongodb style={logoStyle}/>}
           title="MongoDB"
         />
         <IconCard
           dropShadowColor="#1a9bf1"
-          icon={<Amazondynamodb width={80} height={80} />}
+          icon={<Amazondynamodb style={logoStyle} />}
           title="DynamoDB"
         />
       </FlexContainer>
@@ -129,7 +129,7 @@ const SkillsContainer = styled.div`
 `;
 
 const SkillsSubHeader = styled.h3`
-  margin-top: 1rem;
+  margin-bottom: ${(props) => props.marginBottom};
   text-align: center;
   font-family: "Poppins-Regular";
   color: #fff;
@@ -140,7 +140,7 @@ const SkillsHeader = styled.h1`
   font-family: "Kicker-Black";
   font-size: 4rem;
   text-transform: uppercase;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   text-align: center;
 `;
 const ShadowContainer = styled.div`
@@ -162,7 +162,8 @@ const CustomReactLogo = styled(ReactLogo)`
 
 const IconContainer = styled.div`
   min-width: min-content;
-  padding: 1rem;
+  padding: 0.5rem;
+  margin-inline: 1rem;
 `;
 
 const StackTitle = styled.p`

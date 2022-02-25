@@ -50,6 +50,7 @@ function ProjectsContainer() {
     object-fit: cover;
     border-radius: 1rem;
     background-position: center;
+    filter: ${(props) => `drop-shadow(0 0 0.75rem ${props.color}) !important`};
     &:hover {
       transform: scale(1.05);
       transition: transform 1.05s ease-in-out;
@@ -80,6 +81,7 @@ function ProjectsContainer() {
       projectLink: "https://www.culture-plus.com/seneca-go",
       external: true,
       projectImage: "/assets/images/seneca-go.jpg",
+      dropShadowColor:"white",
       projectDescription: `I am currently working as Full Stack Engineer for a  from-scratch React Native Full-Stack Product. Working on the API Integration with React Native and GraphQL and AWS-APP-SYNC (Serverless)`,
     },
     {
@@ -91,6 +93,7 @@ function ProjectsContainer() {
       projectLink: "https://www.vodacom.co.za/shopping/products",
       projectImage: "/assets/images/vodacom.jpg",
       external: true,
+      dropShadowColor:"white",
       projectDescription: `We were building client intimacy by understanding their functional and UX requirements. We have developed extensively reusable React Components in the UI. Made from scratch, fully functional e-commerce React products using NextJS. Worked on API Integration of React with Magento using GraphQL, the Product's overall functionality, and successfully delivered it. I was a part of the Team where we built this Product from scratch. The Front End of this project is built with NEXTJS, React, Redux, GraphQL (Consuming Side)`,
     },
     {
@@ -106,6 +109,7 @@ function ProjectsContainer() {
       ],
       projectLink: "/coinbase-clone",
       external: false,
+      dropShadowColor:"white",
       projectImage: "/assets/images/coinbase.jpg",
       projectImage2: "/assets/images/coinbase2.jpg",
       projectDescription: `A dynamic UI web application which enables users to send/receive payments in the form of CryptoCurrency. The website also describes the portfolio details of the users by analysing and integrating metamask wallet into the web application.`,
@@ -123,6 +127,7 @@ function ProjectsContainer() {
       ],
       projectLink: "/Rest-Countries",
       external: false,
+      dropShadowColor:"white",
       projectImage: "/assets/images/rest-countries.jpg",
       projectImage2: "/assets/images/rest-countries.jpg",
       projectDescription: `A fully-featured application that describes the details of
@@ -144,6 +149,7 @@ function ProjectsContainer() {
         { tech: "MongoDB", logoUrl: "/assets/images/mongodb-logo.jpg" },
       ],
       external: false,
+      dropShadowColor:"white",
       projectLink: "/Social-Media-Web",
       projectShortDescription: `A secured social media web application which implements all the CRUD functionalities of Social Media. `,
       projectDescription: `A from-scratch Full Stack Application provides a Secure Login System for the users and performs all basic CRUD social media functionalities.`,
@@ -162,6 +168,7 @@ function ProjectsContainer() {
       projectImage: "/assets/images/todo-list.jpg",
       projectImage2: "/assets/images/todo-list2.png",
       external: false,
+      dropShadowColor:"white",
       projectLink: "/todo-list",
       projectShortDescription: `It also comes with a unique dark mode theme for all those AMOLED screens out there. This website is going to look amazing on your phones and desktops. I have given it an honest try.`,
       projectDescription: `We all know that a Typical to-do list web application helps a developer understand the CRUD functionalities of the web. I always wanted to build a to-do application rich in UI, yet simple and easier to use.`,
@@ -180,6 +187,7 @@ function ProjectsContainer() {
       ],
       projectLink: "/Netflix",
       external: false,
+      dropShadowColor:"white",
       projectDescription: `A clone of the Netflix landing Page built with ReactJS and Firebase. I have used TMDB Database to render all the TV Shows and Movies data.`,
       projectShortDescription: `The most exciting feature in this project is that the web app can also play on screen trailers of shows and movies displayed.`,
     },
@@ -196,6 +204,7 @@ function ProjectsContainer() {
       projectImage: "/assets/images/memory-game.jpg",
       projectImage2: "/assets/images/memory-game2.png",
       external: false,
+      dropShadowColor:"white",
       projectShortDescription: `An interactive Memory Game through which the users can challenge themselves to complete the Game.`,
       projectDescription: `The web application also consists of timer and points which keeps the participants on their toes and motivate them them to perform better in their next try.`,
     },
@@ -228,6 +237,7 @@ function ProjectsContainer() {
                     <ProjectImage
                       src={projectItem.projectImage}
                       width={"100%"}
+                      color={projectItem.dropShadowColor}
                       alt="project-image"
                       // height={"585"}
                       style={{
