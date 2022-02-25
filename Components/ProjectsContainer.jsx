@@ -209,7 +209,7 @@ function ProjectsContainer() {
     }
   };
   return (
-    <ProjectsCustomContainer id="#projects">
+    <ProjectsCustomContainer id="projects">
       <ProjectsContainerTitle maxWidth={"55rem"}>
         DISCOVER MY LATEST PROJECTS.
       </ProjectsContainerTitle>

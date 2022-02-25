@@ -66,7 +66,7 @@ function ContactContainer() {
     font-family:"Poppins-Regular";
   `
   return (
-    <ContactDisplay>
+    <ContactDisplay id="contact">
       <ContactContainerTitle>
         <ContactHeader href="mailto:hi@abhaydee.com">
           HI@ABHAYDEE.COM
