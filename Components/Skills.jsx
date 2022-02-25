@@ -1,18 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 import { ReactLogo } from "styled-icons/boxicons-logos";
+import { Nextdotjs } from "styled-icons/simple-icons";
 
 function IconCard(props) {
   const { dropShadowColor, icon, title } = props;
   return (
     <IconContainer>
       <ShadowContainer
-        className="rounded-full bg-gray-100 w-min mx-auto"
         color={dropShadowColor}
       >
         {icon}
       </ShadowContainer>
-      <p className="text-center mt-2">{title}</p>
+      <StackTitle>{title}</StackTitle>
     </IconContainer>
   );
 }
@@ -25,6 +25,13 @@ function Skills() {
         dropShadowColor="#61dafb"
         icon={<ReactLogo width={80} height={80} />}
         title="React"
+      />
+      <IconCard
+        dropShadowColor="#fafafa"
+        icon={
+          <Nextdotjs width={80} height={80} />
+        }
+        title="Next.js"
       />
     </SkillsContainer>
   );
@@ -60,4 +67,9 @@ const IconContainer = styled.div`
   min-width: min-content;
   padding:1rem;
 `;
+
+const StackTitle = styled.p`
+  text-align: center;
+  padding:0.5rem;
+`
 export default Skills;
