@@ -9,20 +9,19 @@ function ContactContainer() {
     justify-content: center;
   `;
   const ContactHeader = styled.a`
-    color: #242424;
     font-family: "Kicker-Black";
-    color: teal;
     text-decoration: none;
     font-weight: bold;
     font-size: 4rem;
     font-weight: 600;
-    cursor: pointer;
+    z-index:5;
     display: flex;
+    color:teal !important;
     justify-content: center;
     height: 10rem;
     flex-direction: column;
     &:hover {
-      color: teal;
+      cursor:pointer;
     }
     @media (max-width: 576px) {
       font-size: 2rem;
@@ -68,7 +67,7 @@ function ContactContainer() {
   return (
     <ContactDisplay id="contact">
       <ContactContainerTitle>
-        <ContactHeader href="mailto:hi@abhaydee.com">
+        <ContactHeader href="mailto:hi@abhaydee.com?Subject=subject message" target="_blank">
           HI@ABHAYDEE.COM
         </ContactHeader>
         <TextHeader>Say hi, and let's chat! ✌🏼</TextHeader>
