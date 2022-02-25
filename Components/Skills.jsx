@@ -12,7 +12,8 @@ import {
   Mongodb,
   Amazondynamodb,
 } from "styled-icons/simple-icons";
-function IconCard(props) {
+
+const IconCard = (props) => {
   const { dropShadowColor, icon, title } = props;
   return (
     <IconContainer>
@@ -20,12 +21,12 @@ function IconCard(props) {
       <StackTitle>{title}</StackTitle>
     </IconContainer>
   );
-}
+};
 
-const logoStyle= {
-  width:"5rem",
-  height:"5rem",
-}
+const logoStyle = {
+  width: "5rem",
+  height: "5rem",
+};
 function Skills() {
   return (
     <SkillsContainer>
@@ -90,7 +91,7 @@ function Skills() {
           icon={<Nodejs width={80} height={80} />}
           title="Node.js"
         />
-        
+
         <IconCard
           dropShadowColor="#d64292"
           icon={<Graphql width={80} height={80} />}
@@ -108,7 +109,7 @@ function Skills() {
         />
         <IconCard
           dropShadowColor="#1a9bf1"
-          icon={<Mongodb width={80} height={80} />}
+          icon={<Amazondynamodb width={80} height={80} />}
           title="DynamoDB"
         />
       </FlexContainer>
@@ -130,11 +131,13 @@ const SkillsContainer = styled.div`
 const SkillsSubHeader = styled.h3`
   margin-top: 1rem;
   text-align: center;
+  font-family: "Poppins-Regular";
   color: #fff;
 `;
 
 const SkillsHeader = styled.h1`
   color: #fff;
+  font-family: "Kicker-Black";
   font-size: 4rem;
   text-transform: uppercase;
   margin-bottom: 4rem;
@@ -153,7 +156,7 @@ const ShadowContainer = styled.div`
 const CustomReactLogo = styled(ReactLogo)`
   &:hover {
     transform: scale(1.2);
-    transition: transform 1.05s ease;
+    transition: transform 200ms ease-in-out;
   }
 `;
 
