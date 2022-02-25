@@ -23,8 +23,7 @@ export default class MyDocument extends Document {
     return (
       <html lang="en">
         <Head>
-          
-          <title>Abhay Deshpande</title>
+          <title>Abhay Deshpande | Full Stack Developer</title>
           {/* Step 5: Output the styles in the head  */}
           {this.props.styleTags}
         </Head>
