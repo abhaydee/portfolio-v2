@@ -30,7 +30,7 @@ export const ProjectsCustomContainer = styled.div`
 
 export const Header3 = styled.a`
   padding-right: 10px;
-  font-family: "Kicker-Black";
+  font-family: "ClashDisplay-Bold";
   font-weight: bold;
   color: black;
   font-size: 1.75rem;

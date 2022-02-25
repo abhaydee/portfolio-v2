@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import { ProjectsContainerTitle } from "../utils/CustomComponents";
+import Skills from "./Skills";
 
 function IntroductionContainer() {
   const IntroductionDescription = styled.div`
     padding-left: 5.5rem;
-    padding-bottom: 13.5rem;
     @media (max-width: 1080px) {
       padding-left: 1rem;
       padding-right: 1rem;
@@ -43,7 +43,7 @@ function IntroductionContainer() {
       position: relative;
       width: fit-content;
       left: 60%;
-      bottom: 53rem;
+      bottom: 34rem;
       transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 35.5273, 0, 1);
       border-radius: 1rem;
       mix-blend-mode: multiply;
@@ -72,7 +72,7 @@ function IntroductionContainer() {
   const IntroductionOuterContainer = styled.div`
     background-color: #242424;
     color: #fff;
-    height: 68.5rem;
+    height: 60.5rem;
     @media (max-width: 1024px) {
       height: 67rem;
     }
@@ -84,6 +84,9 @@ function IntroductionContainer() {
     z-index: 3;
     background-color: black;
     mix-blend-mode: screen;
+    @media (min-width:1024px){
+      height:9rem;
+    }
 
   `;
   return (

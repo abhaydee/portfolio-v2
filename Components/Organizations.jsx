@@ -186,7 +186,7 @@ const Organizations = () => {
             enableSwipe={false}
             pagination={false}
             itemPadding={[, 10]}
-            transitionMs={500}
+            transitionMs={700}
           >
             <div>{renderSoftwayDescription()}</div>
             <div>{renderAccentureDescription()}</div>

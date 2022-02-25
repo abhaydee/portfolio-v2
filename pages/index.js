@@ -6,6 +6,7 @@ import styles from "../styles/Home.module.css";
 import { CustomContainer } from "../utils/CustomComponents";
 import Organizations from "../Components/Organizations";
 import TechStackContainer from "../Components/TechStackContainer";
+import Skills from "../Components/Skills";
 
 export default function Home() {
   return (
@@ -15,9 +16,11 @@ export default function Home() {
         <HeroScreen />
         {/* </Zoom> */}
         <Organizations />
+                <IntroductionContainer />
+
         <ProjectsContainer />
         {/* <Fade> */}
-        <IntroductionContainer />
+        <Skills/>
         <ContactContainer />
         {/* </Fade> */}
       </CustomContainer>

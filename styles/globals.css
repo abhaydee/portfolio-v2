@@ -106,6 +106,12 @@ li {
 
 }
 
+@font-face {
+  font-family: "ClashDisplay-Bold";
+  src: url("../public/assets/fonts/ClashDisplay-Bold.ttf");
+  font-display: swap;
+
+}
 .rec.rec-arrow:disabled {
   visibility: hidden;
 }
