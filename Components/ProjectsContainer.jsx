@@ -151,7 +151,8 @@ function ProjectsContainer() {
     {
       id: "6",
       projectTitle: "Social Media Web",
-      projectImage: "/assets/images/social-media-web.jpg",
+      projectImage: "/assets/images/social-media-web2.png",
+      projectImage2: "/assets/images/social-media-web3.png",
       externalLink: "https://social-media-web.netlify.app/",
       techStack: [
         { tech: "Javascript", logoUrl: "/assets/images/javascript-logo.jpg" },
@@ -208,7 +209,7 @@ function ProjectsContainer() {
     }
   };
   return (
-    <ProjectsCustomContainer>
+    <ProjectsCustomContainer id="#projects">
       <ProjectsContainerTitle maxWidth={"55rem"}>
         DISCOVER MY LATEST PROJECTS.
       </ProjectsContainerTitle>

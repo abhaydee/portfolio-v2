@@ -12,7 +12,7 @@ function ContactContainer() {
     color: #242424;
     font-family: "Kicker-Black";
     color: teal;
-    text-decoration:none;
+    text-decoration: none;
     font-weight: bold;
     font-size: 4rem;
     font-weight: 600;
@@ -21,8 +21,8 @@ function ContactContainer() {
     justify-content: center;
     height: 10rem;
     flex-direction: column;
-    &:hover{
-      color:teal;
+    &:hover {
+      color: teal;
     }
     @media (max-width: 576px) {
       font-size: 2rem;
@@ -57,14 +57,31 @@ function ContactContainer() {
     font-size: 1.8rem;
     font-family: "Source-OpenSans";
   `;
+
+  const FooterHeader = styled.h3`
+    margin-bottom:2rem;
+    font-family:"Source-OpenSans";
+  `
+  const TextHeader = styled.h3`
+    font-family:"Poppins-Regular";
+  `
   return (
     <ContactDisplay>
       <ContactContainerTitle>
-        <ContactHeader href="mailto:hi@abhaydee.com">HI@ABHAYDEE.COM</ContactHeader>
+        <ContactHeader href="mailto:hi@abhaydee.com">
+          HI@ABHAYDEE.COM
+        </ContactHeader>
+        <TextHeader>Say hi, and let's chat! ✌🏼</TextHeader>
       </ContactContainerTitle>
       <Footer>
+        <FooterHeader>Shoot me an email at hi@abhaydee.com or find me at</FooterHeader>
         <FooterSocials>
-          <a href="https://www.linkedin.com/in/abhaydee/" target="_blank" alt="linkedin-logo" rel="noopener noreferrer">
+          <a
+            href="https://www.linkedin.com/in/abhaydee/"
+            target="_blank"
+            alt="linkedin-logo"
+            rel="noopener noreferrer"
+          >
             <Image
               src="/assets/images/linkedin-logo.jpg"
               width={50}
@@ -72,11 +89,29 @@ function ContactContainer() {
               alt="linkedin-logo"
             />
           </a>
-          <a href="https://github.com/abhaydee" target="_blank" rel="noopener noreferrer">
-            <Image src="/assets/images/github-sign.jpg" width={50} height={50} alt="github-logo" />
+          <a
+            href="https://github.com/abhaydee"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="/assets/images/github-sign.jpg"
+              width={50}
+              height={50}
+              alt="github-logo"
+            />
           </a>
-          <a href="https://twitter.com/abhaycodes" target="_blank" rel="noopener noreferrer">
-            <Image src="/assets/images/twitter-sign.jpg" width={50} height={50} alt="twitter-logo"/>
+          <a
+            href="https://twitter.com/abhaycodes"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="/assets/images/twitter-sign.jpg"
+              width={50}
+              height={50}
+              alt="twitter-logo"
+            />
           </a>
         </FooterSocials>
         <CopyRight>@2022 Abhay Deshpande</CopyRight>

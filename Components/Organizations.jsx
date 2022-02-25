@@ -146,7 +146,7 @@ const Organizations = () => {
   };
   return (
     <Wrapper>
-      <Header>Organization that I have been a part of...</Header>
+      <Header>Organizations that I have been a part of...</Header>
       {isMobile ? (
         <>
           <TabsContent className="d-flex justify-content-center mx-auto container align-self-center">
@@ -248,7 +248,7 @@ const TabsContainer = styled.div``;
 const TabsContent = styled.div``;
 
 const CarouselContainer = styled.div`
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
