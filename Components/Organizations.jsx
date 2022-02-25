@@ -233,7 +233,7 @@ const Header5 = styled.h5`
 
 const Header3 = styled.h3`
   font-family: "Source-OpenSans";
-  text-align: center;z
+  text-align: center;
   margin-top: 1rem;
   line-height: 2.25rem;
 `;
