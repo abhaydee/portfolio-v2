@@ -118,7 +118,7 @@ function ProjectsContainer() {
       techStack: [
         { tech: "Nextjs", logoUrl: "/assets/images/nextjs-logo.jpg" },
         { tech: "Javascript", logoUrl: "/assets/images/javascript-logo.jpg" },
-        { tech: "Redux", logoUrl: "/assets/images/redux-logo.jpeg" },
+        { tech: "Redux", logoUrl: "/assets/images/redux-logo.png" },
         { tech: "SASS", logoUrl: "/assets/images/sass-logo.jpg" },
       ],
       projectLink: "/Rest-Countries",
@@ -126,10 +126,9 @@ function ProjectsContainer() {
       projectImage: "/assets/images/rest-countries.jpg",
       projectImage2: "/assets/images/rest-countries.jpg",
       projectDescription: `A fully-featured application that describes the details of
-        countries all around the globe. The most exciting thing that I did
-        here was to reduce the API calls and handle all the complex
+        countries all around the globe. The most exciting thing that I worked on was to reduce the API calls and handle all the complex
         functionality using Javascript.`,
-      projectShortDescription: `The web app also has a toggle feature where the users can dark/light theme based on their preference`,
+      projectShortDescription: `The web app also has a toggle feature where the users can toggle between dark/light theme based on their preference`,
     },
     {
       id: "5",
@@ -151,14 +150,14 @@ function ProjectsContainer() {
     {
       id: "6",
       projectTitle: "Social Media Web",
-      projectImage: "/assets/images/social-media-web2.png",
-      projectImage2: "/assets/images/social-media-web3.png",
+      projectImage: "/assets/images/social-media-web.png",
+      projectImage2: "/assets/images/social-media-web2.png",
       externalLink: "https://social-media-web.netlify.app/",
       techStack: [
         { tech: "Javascript", logoUrl: "/assets/images/javascript-logo.jpg" },
         { tech: "ReactJS", logoUrl: "/assets/images/react-logo.jpg" },
         { tech: "GraphQL", logoUrl: "/assets/images/graphql-logo.jpg" },
-        { tech: "NodeJS", logoUrl: "/assets/images/node-logo.svg" },
+        { tech: "NodeJS", logoUrl: "/assets/images/node-logo.jpeg" },
         { tech: "MongoDB", logoUrl: "/assets/images/mongodb-logo.jpg" },
       ],
       external: false,
@@ -178,6 +177,7 @@ function ProjectsContainer() {
         { tech: "Javascript", logoUrl: "/assets/images/javascript-logo.jpg" },
       ],
       projectImage: "/assets/images/todo-list.jpg",
+      projectImage2: "/assets/images/todo-list2.png",
       external: false,
       projectLink: "/todo-list",
       projectShortDescription: `It also comes with a unique dark mode theme for all those AMOLED screens out there. This website is going to look amazing on your phones and desktops. I have given it an honest try.`,
