@@ -60,6 +60,9 @@ function ContactContainer() {
   const FooterHeader = styled.h3`
     margin-bottom:2rem;
     font-family:"Source-OpenSans";
+    @media (max-width:1024px){
+      margin-inline:1rem;
+    }
   `
   const TextHeader = styled.h3`
     font-family:"Poppins-Regular";
