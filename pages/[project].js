@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import TechStackContainer from "../Components/TechStackContainer";
+import { ExternalLink } from "styled-icons/feather";
 const ProjectDetails = () => {
   const [projectData, setProjectData] = useState({});
   useEffect(() => {
@@ -15,6 +16,7 @@ const ProjectDetails = () => {
         <div className="container">
           <Header1 className="mb-5">{projectData.projectTitle}</Header1>
           <ProjectDescription>{projectData.projectDescription}</ProjectDescription>
+          <Header3 href={projectData.externalLink} target="_blank" rel="noopener noreferrer" >Click here to view the live project <ExternalLink width={25} height={25}/></Header3>
           <Anchor href={projectData.externalLink} target="_blank" rel="noopener noreferrer">
             <Image src={projectData.projectImage} alt="project-image-1" />
           </Anchor>
@@ -64,6 +66,7 @@ const Image = styled.img`
   object-fit: contain;
   margin-bottom: 4rem;
   border-radius: 1rem;
+  margin-top: 1rem;
   &:hover {
     transform: scale(1.05);
     transition: transform 1.05s ease-in-out;
@@ -73,7 +76,7 @@ const Image = styled.img`
 const ProjectDescription = styled.p`
   font-size: 1.25rem;
   color: rgb(162, 170, 188);
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   font-family: "Source-OpenSans";
   @media (max-width: 1024px) {
     margin-bottom: 3rem;
@@ -90,40 +93,6 @@ const ShortDescription = styled.p`
   }
 `;
 
-const Description = styled.div`
-  width: 50%;
-  color: white;
-  justify-content: left;
-  text-align: left;
-  @media (max-width: 1024px) {
-    width: 100%;
-  }
-`;
-
-const ImageContainer = styled.div`
-  width: 50%;
-  height: 500px;
-`;
-
-const FlexImage = styled.img`
-  width: 23rem;
-  height: auto;
-  margin-top: 2rem;
-  height: 100%;
-  object-fit: contain;
-`;
-
-const ProjectTitle = styled.h5`
-  color: #fff;
-`;
-
-const DetailsContainer = styled.div`
-  margin-bottom: 3rem;
-  display: flex;
-  @media (max-width: 1024px) {
-    flex-direction: column;
-  }
-`;
 
 const TechStackGrid = styled.div`
   display: flex;
@@ -158,4 +127,16 @@ export const TechStackTitle = styled.h2`
 export const Anchor = styled.a`
   cursor: pointer;
 `;
+
+const Header3 = styled.a`
+  color:#ffcc66;
+  margin-bottom: 2rem;
+  font-family: "Source-OpenSans";
+  font-size: 2rem;
+  text-decoration: none;
+  &:hover{
+    cursor: pointer;
+    color:#ffcc66;
+  }
+`
 export default ProjectDetails;
