@@ -63,6 +63,7 @@ function IntroductionContainer() {
     @media (max-width: 1080px) {
       width:90%;
       height:100%;
+      margin-inline: 1rem;
     }
   
     &:hover {
