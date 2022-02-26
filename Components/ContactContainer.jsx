@@ -73,6 +73,7 @@ function ContactContainer() {
         <ContactHeader href="mailto:hi@abhaydee.com?Subject=subject message" target="_blank">
           HI@ABHAYDEE.COM
         </ContactHeader>
+        <TextHeader>If you an interesting idea about a product, Let's get together on it.</TextHeader>
         <TextHeader>Say hi, and let's chat! ✌🏼</TextHeader>
       </ContactContainerTitle>
       <Footer>
