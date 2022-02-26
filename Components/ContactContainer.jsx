@@ -66,6 +66,9 @@ function ContactContainer() {
   `
   const TextHeader = styled.h3`
     font-family:"Poppins-Regular";
+    @media (max-width:1080px){
+      margin-bottom: 1rem;
+    }
   `
   return (
     <ContactDisplay id="contact">
