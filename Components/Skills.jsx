@@ -11,12 +11,13 @@ import {
   Graphql,
   Mongodb,
   Amazondynamodb,
+  Redux
 } from "styled-icons/simple-icons";
 
 const IconCard = (props) => {
   const { dropShadowColor, icon, title } = props;
   return (
-    <IconContainer>
+    <IconContainer hoverColor={dropShadowColor}>
       <ShadowContainer color={dropShadowColor}>{icon}</ShadowContainer>
       <StackTitle>{title}</StackTitle>
     </IconContainer>
@@ -27,6 +28,7 @@ const logoStyle = {
   width: "4rem",
   height: "4rem",
 };
+
 function Skills() {
   return (
     <SkillsContainer>
@@ -35,16 +37,16 @@ function Skills() {
       <FlexContainer>
         <IconCard
           dropShadowColor="#61dafb"
-          icon={<CustomReactLogo style={logoStyle} />}
+          icon={<Reactjs style={logoStyle} />}
           title="React"
         />
         <IconCard
           dropShadowColor="#61dafb"
-          icon={<CustomReactLogo style={logoStyle} />}
+          icon={<Redux style={logoStyle} />}
           title="Redux"
         />
         <IconCard
-          dropShadowColor="#fafafa"
+          dropShadowColor="#20da0f"
           icon={<Nextdotjs style={logoStyle} />}
           title="Next.js"
         />
@@ -153,17 +155,15 @@ const ShadowContainer = styled.div`
   filter: ${(props) => `drop-shadow(0 0 0.75rem ${props.color}) !important`};
 `;
 
-const CustomReactLogo = styled(ReactLogo)`
-  &:hover {
-    transform: scale(1.2);
-    transition: transform 200ms ease-in-out;
-  }
-`;
-
 const IconContainer = styled.div`
   min-width: min-content;
   padding: 0.5rem;
   margin-inline: 1rem;
+  &:hover {
+    transform: scale(1.1);
+    transition: transform 200ms ease-in-out;
+    color:${props=>props.hoverColor};
+  }
 `;
 
 const StackTitle = styled.p`
