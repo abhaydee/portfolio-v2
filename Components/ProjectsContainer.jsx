@@ -58,10 +58,16 @@ function ProjectsContainer() {
   `;
   const ProjectTitle = styled.h3`
     font-size: 1.5rem;
+    @media (max-width:576px){
+      font-size:1rem;
+    }
   `;
 
   const ProjectTechStackTitle = styled.p`
     font-size: 1.5rem;
+    @media (max-width:576px){
+      font-size:1rem;
+    }
   `;
   const projectsList = [
     {
