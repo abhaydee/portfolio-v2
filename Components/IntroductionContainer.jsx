@@ -61,8 +61,10 @@ function IntroductionContainer() {
     display: block;
     padding-bottom: 4rem;
     @media (max-width: 1080px) {
-      display: none !important;
+      width:90%;
+      height:100%;
     }
+  
     &:hover {
       transform: scale(1.05);
       transition: transform 1.05s ease-in-out;
@@ -74,7 +76,7 @@ function IntroductionContainer() {
     color: #fff;
     height: 60.5rem;
     @media (max-width: 1024px) {
-      height: 67rem;
+      height: 77rem;
     }
   `;
 
