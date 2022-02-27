@@ -5,8 +5,8 @@ export const HeroScreenContainer = styled.div`
   background-color: #fff;
   width: 100%;
   height: 100vh;
-  @media (max-width: 576px) {
-    height: 18rem;
+  @media (max-width:1024px){
+    overflow: hidden;
   }
 `;
 
@@ -17,9 +17,8 @@ export const HeaderContainer = styled.div`
   padding: 3.2rem 7rem 0;
   @media (max-width: 500px) {
     justify-content: space-between;
-    font-size: 12px;
     padding: 0.5rem;
-    display: none;
+    /* display: none; */
   }
 `;
 
@@ -41,6 +40,7 @@ export const Header3 = styled.a`
   }
   @media screen and (max-width: 500px) {
     padding-right: 1rem;
+    font-size: 15px;
   }
 `;
 
