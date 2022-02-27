@@ -38,8 +38,7 @@ export const Header3 = styled.a`
     cursor: pointer;
     color: teal;
   }
-  @media screen and (max-width: 500px) {
-    padding-right: 1rem;
+  @media  (max-width: 576px) {
     font-size: 15px;
   }
 `;
