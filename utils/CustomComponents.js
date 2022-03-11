@@ -5,7 +5,7 @@ export const HeroScreenContainer = styled.div`
   background-color: #fff;
   width: 100%;
   height: 100vh;
-  @media (max-width:1024px){
+  @media (max-width: 1024px) {
     overflow: hidden;
   }
 `;
@@ -38,7 +38,7 @@ export const Header3 = styled.a`
     cursor: pointer;
     color: teal;
   }
-  @media  (max-width: 576px) {
+  @media (max-width: 576px) {
     font-size: 15px;
   }
 `;
@@ -52,7 +52,6 @@ export const FigureContainer = styled.figure`
   @media (max-width: 576px) {
     margin-inline: 1rem;
   }
-
 `;
 
 export const CustomImage = styled.img`

@@ -147,53 +147,53 @@ const Organizations = () => {
   return (
     <Wrapper>
       <Header>Organizations that I have been a part of...</Header>
-      {isMobile ? (
-        <>
-          <TabsContent className="d-flex justify-content-center mx-auto container align-self-center">
-            <Button
-              className="btn"
-              style={{ backgroundColor: "#019872", color: "#fff" }}
-              onClick={() => setActiveTab("Softway")}
-            >
-              Softway
-            </Button>
-            <Button
-              className="btn"
-              style={{ backgroundColor: "#019872", color: "#fff" }}
-              onClick={() => setActiveTab("Accenture")}
-            >
-              Accenture
-            </Button>
-            <Button
-              className="btn"
-              style={{ backgroundColor: "#019872", color: "#fff" }}
-              onClick={() => setActiveTab("Kuliza")}
-            >
-              Kuliza Technologies
-            </Button>
-          </TabsContent>
-          <TabsContainer>
-            {activeTab === "Softway" && renderSoftwayDescription()}
-            {activeTab == "Accenture" && renderAccentureDescription()}
-            {activeTab == "Kuliza" && renderKulizaDescription()}
-          </TabsContainer>
-        </>
-      ) : (
-        <CarouselContainer>
-          <Carousel
-            itemsToShow={1}
-            enableMouseSwipe={false}
-            enableSwipe={false}
-            pagination={false}
-            itemPadding={[, 10]}
-            transitionMs={700}
+      {/* {isMobile ? ( */}
+      <TabsContainer>
+        <TabsContent className="d-flex justify-content-center mx-auto container align-self-center">
+          <Button
+            className="btn"
+            style={{ backgroundColor: "#019872", color: "#fff" }}
+            onClick={() => setActiveTab("Softway")}
           >
-            <div>{renderSoftwayDescription()}</div>
-            <div>{renderAccentureDescription()}</div>
-            <div>{renderKulizaDescription()}</div>
-          </Carousel>
-        </CarouselContainer>
-      )}
+            Softway
+          </Button>
+          <Button
+            className="btn"
+            style={{ backgroundColor: "#019872", color: "#fff" }}
+            onClick={() => setActiveTab("Accenture")}
+          >
+            Accenture
+          </Button>
+          <Button
+            className="btn"
+            style={{ backgroundColor: "#019872", color: "#fff" }}
+            onClick={() => setActiveTab("Kuliza")}
+          >
+            Kuliza Technologies
+          </Button>
+        </TabsContent>
+        <TabsContainer>
+          {activeTab === "Softway" && renderSoftwayDescription()}
+          {activeTab == "Accenture" && renderAccentureDescription()}
+          {activeTab == "Kuliza" && renderKulizaDescription()}
+        </TabsContainer>
+      </TabsContainer>
+      {/* ) : ( */}
+      <CarouselContainer>
+        <Carousel
+          itemsToShow={1}
+          enableMouseSwipe={false}
+          enableSwipe={false}
+          pagination={false}
+          itemPadding={[, 10]}
+          transitionMs={700}
+        >
+          <div>{renderSoftwayDescription()}</div>
+          <div>{renderAccentureDescription()}</div>
+          <div>{renderKulizaDescription()}</div>
+        </Carousel>
+      </CarouselContainer>
+      {/* )} */}
     </Wrapper>
   );
 };
@@ -244,16 +244,27 @@ const ListItem = styled.li`
   font-size: 1.25rem;
 `;
 
-const TabsContainer = styled.div``;
-const TabsContent = styled.div``;
+const TabsContainer = styled.div`
+  @media (min-width: 768px) {
+    display: none;
+  }
+`;
+const TabsContent = styled.div`
+  @media (min-width: 1024px) {
+    display: none;
+  }
+`;
 
 const CarouselContainer = styled.div`
   width: 70%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  align-item: center;
   align-self: center;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const Anchor = styled.a`
