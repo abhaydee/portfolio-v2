@@ -72,6 +72,23 @@ function ProjectsContainer() {
   const projectsList = [
     {
       id: "1",
+      projectTitle: "PRIMOBOTS",
+      techStack: [
+        { tech: "NextJS", logoUrl: "/assets/images/nextjs-logo.jpg" },
+        "Javascript",
+        "Styled-Components",
+        "Ethersjs",
+        "React",
+        "Vercel",
+      ],
+      projectLink: "https://primobots.io",
+      external: true,
+      projectImage: "/assets/images/primobots.png",
+      dropShadowColor: "white",
+      projectDescription: `I am currently working as Full Stack Engineer for a  from-scratch React Native Full-Stack Product. Working on the API Integration with React Native and GraphQL and AWS-APP-SYNC (Serverless)`,
+    },
+    {
+      id: "1",
       projectTitle: "SOFTWAY SOLUTIONS",
       techStack: [
         { tech: "React-Native", logoUrl: "/assets/images/thirdweb-logo.jpeg" },
