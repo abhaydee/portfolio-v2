@@ -67,6 +67,7 @@ function ProjectsContainer() {
     font-size: 1.5rem;
     @media (max-width: 576px) {
       font-size: 1rem;
+      margin-bottom: 0.5rem;
     }
   `;
   const projectsList = [
