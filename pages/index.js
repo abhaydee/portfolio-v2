@@ -7,20 +7,46 @@ import { CustomContainer } from "../utils/CustomComponents";
 import Organizations from "../Components/Organizations";
 import TechStackContainer from "../Components/TechStackContainer";
 import Skills from "../Components/Skills";
-
+import { NextSeo } from "next-seo";
+import Head from "next/head";
 export default function Home() {
   return (
-    <div style={{scrollBehavior:"smooth"}}>
+    <div style={{ scrollBehavior: "smooth" }}>
+      <Head>
+        <link rel="shortcut icon" href="/assets/images/favicon.png" />
+      </Head>
+      <NextSeo
+        title="Abhay Deshpande - Full Stack Developer"
+        description="My Personal Portfolio"
+        openGraph={{
+          type: "website",
+          url: "https://abhaydee.com",
+          images: [
+            {
+              url: "https://primobots.io/assets/images/cover-image.png",
+              width: 1200,
+              height: 630,
+              alt: "Portfolio cover image",
+              type: "image/png",
+            },
+          ],
+        }}
+        twitter={{
+          handle: "@abhaycodes",
+          site: "https://abhaydee.com",
+          cardType: "summary_large_image",
+        }}
+      />
       <CustomContainer>
         {/* <Zoom bottom> */}
         <HeroScreen />
         {/* </Zoom> */}
         <Organizations />
-                <IntroductionContainer />
+        <IntroductionContainer />
 
         <ProjectsContainer />
         {/* <Fade> */}
-        <Skills/>
+        <Skills />
         <ContactContainer />
         {/* </Fade> */}
       </CustomContainer>
