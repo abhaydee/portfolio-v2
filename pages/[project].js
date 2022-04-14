@@ -2,68 +2,6 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import TechStackContainer from "../Components/TechStackContainer";
 import { ExternalLink } from "styled-icons/feather";
-const ProjectDetails = () => {
-  const [projectData, setProjectData] = useState({});
-  useEffect(() => {
-    var projectDetails = JSON.parse(localStorage.getItem("Project-Details"));
-    setProjectData(projectDetails);
-  }, []);
-
-  return (
-    <Wrapper className="d-flex flex-column align-items-center">
-      {Object.keys(projectData).length > 0 && (
-        <div className="container">
-          <Header1 className="mb-5">{projectData.projectTitle}</Header1>
-          <ProjectDescription>
-            {projectData.projectDescription}
-          </ProjectDescription>
-          <Header3
-            href={projectData.externalLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Click here to view the live project{" "}
-            <ExternalLink width={25} height={25} />
-          </Header3>
-          <Anchor
-            href={projectData.externalLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image src={projectData.projectImage} alt="project-image-1" />
-          </Anchor>
-
-          <Anchor
-            href={projectData.externalLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image src={projectData.projectImage2} alt="project-image-2" />
-          </Anchor>
-          <ShortDescription>
-            {projectData.projectShortDescription}
-          </ShortDescription>
-
-          <TechStackTitle>Tech Stack</TechStackTitle>
-          <CustomContainer>
-            {projectData.techStack.map((projectItem, projectItemIndex) => {
-              return (
-                <TechStackGrid key={projectItemIndex}>
-                  <TechStackContainer
-                    techName={projectItem.tech}
-                    techLogo={projectItem.logoUrl}
-                    projectLink={projectItem.externalLink}
-                  />
-                </TechStackGrid>
-              );
-            })}
-          </CustomContainer>
-        </div>
-      )}
-    </Wrapper>
-  );
-};
-
 const Wrapper = styled.div`
   padding-top: 4rem;
   min-height: 100%;
@@ -156,4 +94,67 @@ const Header3 = styled.a`
     color: #ffcc66;
   }
 `;
+
+const ProjectDetails = () => {
+  const [projectData, setProjectData] = useState({});
+  useEffect(() => {
+    var projectDetails = JSON.parse(localStorage.getItem("Project-Details"));
+    setProjectData(projectDetails);
+  }, []);
+
+  return (
+    <Wrapper className="d-flex flex-column align-items-center">
+      {Object.keys(projectData).length > 0 && (
+        <div className="container">
+          <Header1 className="mb-5">{projectData.projectTitle}</Header1>
+          <ProjectDescription>
+            {projectData.projectDescription}
+          </ProjectDescription>
+          <Header3
+            href={projectData.externalLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Click here to view the live project{" "}
+            <ExternalLink width={25} height={25} />
+          </Header3>
+          <Anchor
+            href={projectData.externalLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image src={projectData.projectImage} alt="project-image-1" />
+          </Anchor>
+
+          <Anchor
+            href={projectData.externalLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image src={projectData.projectImage2} alt="project-image-2" />
+          </Anchor>
+          <ShortDescription>
+            {projectData.projectShortDescription}
+          </ShortDescription>
+
+          <TechStackTitle>Tech Stack</TechStackTitle>
+          <CustomContainer>
+            {projectData.techStack.map((projectItem, projectItemIndex) => {
+              return (
+                <TechStackGrid key={projectItemIndex}>
+                  <TechStackContainer
+                    techName={projectItem.tech}
+                    techLogo={projectItem.logoUrl}
+                    projectLink={projectItem.externalLink}
+                  />
+                </TechStackGrid>
+              );
+            })}
+          </CustomContainer>
+        </div>
+      )}
+    </Wrapper>
+  );
+};
+
 export default ProjectDetails;

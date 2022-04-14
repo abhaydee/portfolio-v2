@@ -11,8 +11,62 @@ import {
   Graphql,
   Mongodb,
   Amazondynamodb,
-  Redux
+  Redux,
 } from "styled-icons/simple-icons";
+
+const FlexContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  justify-content: center;
+`;
+const SkillsContainer = styled.div`
+  background-color: #242424;
+  padding: 2rem;
+`;
+
+const SkillsSubHeader = styled.h3`
+  margin-bottom: ${(props) => props.marginBottom};
+  text-align: center;
+  font-family: "Poppins-Regular";
+  color: #fff;
+`;
+
+const SkillsHeader = styled.h1`
+  color: #fff;
+  font-family: "Kicker-Black";
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  text-align: center;
+`;
+const ShadowContainer = styled.div`
+  border-radius: 9999px;
+  background-color: gray;
+  width: min-content;
+  padding: 1rem;
+  margin-inline: auto;
+  background-color: rgba(243, 244, 246, 1);
+  filter: ${(props) => `drop-shadow(0 0 0.75rem ${props.color}) !important`};
+`;
+
+const IconContainer = styled.div`
+  min-width: min-content;
+  padding: 0.5rem;
+  margin-inline: 1rem;
+  &:hover {
+    transform: scale(1.1);
+    transition: transform 200ms ease-in-out;
+    color: ${(props) => props.hoverColor};
+  }
+`;
+
+const StackTitle = styled.p`
+  text-align: center;
+  color: white;
+  font-family: "Source-OpenSans";
+  padding: 1rem;
+`;
 
 const IconCard = (props) => {
   const { dropShadowColor, icon, title } = props;
@@ -106,7 +160,7 @@ function Skills() {
         />
         <IconCard
           dropShadowColor="#20da0f"
-          icon={<Mongodb style={logoStyle}/>}
+          icon={<Mongodb style={logoStyle} />}
           title="MongoDB"
         />
         <IconCard
@@ -119,57 +173,4 @@ function Skills() {
   );
 }
 
-const FlexContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 1rem;
-  justify-content: center;
-`;
-const SkillsContainer = styled.div`
-  background-color: #242424;
-  padding: 2rem;
-`;
-
-const SkillsSubHeader = styled.h3`
-  margin-bottom: ${(props) => props.marginBottom};
-  text-align: center;
-  font-family: "Poppins-Regular";
-  color: #fff;
-`;
-
-const SkillsHeader = styled.h1`
-  color: #fff;
-  font-family: "Kicker-Black";
-  font-size: 4rem;
-  text-transform: uppercase;
-  margin-bottom: 3rem;
-  text-align: center;
-`;
-const ShadowContainer = styled.div`
-  border-radius: 9999px;
-  background-color: gray;
-  width: min-content;
-  padding: 1rem;
-  margin-inline: auto;
-  background-color: rgba(243, 244, 246, 1);
-  filter: ${(props) => `drop-shadow(0 0 0.75rem ${props.color}) !important`};
-`;
-
-const IconContainer = styled.div`
-  min-width: min-content;
-  padding: 0.5rem;
-  margin-inline: 1rem;
-  &:hover {
-    transform: scale(1.1);
-    transition: transform 200ms ease-in-out;
-    color:${props=>props.hoverColor};
-  }
-`;
-
-const StackTitle = styled.p`
-  text-align: center;
-  color: white;
-  font-family: "Source-OpenSans";
-  padding: 1rem;
-`;
 export default Skills;

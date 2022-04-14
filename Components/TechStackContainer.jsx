@@ -1,17 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-const TechStackContainer = ({ techName, techLogo }) => {
-  return (
-    <Wrapper>
-      <ImageContainer>
-        <Image src={techLogo} alt="tech-logo"/>
-      </ImageContainer>
-      <TechText>{techName}</TechText>
-    </Wrapper>
-  );
-};
-
 const Wrapper = styled.div`
   flex-direction: column;
   padding: 30px 20px;
@@ -46,5 +35,16 @@ const TechText = styled.p`
     text-align: center;
   }
 `;
+
+const TechStackContainer = ({ techName, techLogo }) => {
+  return (
+    <Wrapper>
+      <ImageContainer>
+        <Image src={techLogo} alt="tech-logo" />
+      </ImageContainer>
+      <TechText>{techName}</TechText>
+    </Wrapper>
+  );
+};
 
 export default TechStackContainer;
