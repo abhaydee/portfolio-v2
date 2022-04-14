@@ -38,17 +38,13 @@ export default function Home() {
         }}
       />
       <CustomContainer>
-        {/* <Zoom bottom> */}
         <HeroScreen />
-        {/* </Zoom> */}
         <Organizations />
         <IntroductionContainer />
 
         <ProjectsContainer />
-        {/* <Fade> */}
         <Skills />
         <ContactContainer />
-        {/* </Fade> */}
       </CustomContainer>
     </div>
   );
