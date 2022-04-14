@@ -18,7 +18,7 @@ export default function Home() {
           url: "https://abhaydee.com",
           images: [
             {
-              url: "https://primobots.io/assets/images/cover-image.png",
+              url: "https://abhaydee.com/assets/images/cover-image.png",
               width: 1200,
               height: 630,
               alt: "Portfolio cover image",
