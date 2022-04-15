@@ -29,7 +29,8 @@ const Button = styled.button`
     transition: transform 0.2s, -webkit-transform 0.2s;
   }
   @media (max-width: 1080px) {
-    margin: 0.5rem;
+    margin: 0.25rem;
+    padding: 0.375rem 0.25rem !important;
   }
 `;
 const Header5 = styled.h5`
@@ -134,6 +135,49 @@ const Organizations = () => {
     );
   };
 
+  const renderPrimobotsDescription = () => {
+    return (
+      <div className="d-flex flex-column align-items-center">
+        <Header3>
+          Lead Front End Engineer{" "}
+          <Anchor
+            href="https://primobots.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            @Primobots
+          </Anchor>
+        </Header3>
+        <p>Feb 2022 - Present</p>
+        <ul style={{ maxWidth: "500px", paddingLeft: 0 }} id="list">
+          <ListItem>
+            <p>
+              Working as a Front End Lead on one of the most unique Web3 NFT
+              Collections Website.
+            </p>
+          </ListItem>
+          <ListItem>
+            <p>
+              Build dynamic UI and reusable React Components using NextJS and
+              Styled Components.
+            </p>
+          </ListItem>
+          <ListItem>
+            <p>
+              Integrating Smart Contracts into front-end, and optimizing the
+              performance of the website.
+            </p>
+          </ListItem>
+          <ListItem>
+            <p>
+              Setting up Vercel for deployment and dynamic changes in the
+              website for all stages of the NFT project.
+            </p>
+          </ListItem>
+        </ul>
+      </div>
+    );
+  };
   const renderAccentureDescription = () => {
     return (
       <div className="d-flex flex-column align-items-center">
@@ -229,6 +273,13 @@ const Organizations = () => {
           <Button
             className="btn"
             style={{ backgroundColor: "#019872", color: "#fff" }}
+            onClick={() => setActiveTab("Primobots")}
+          >
+            Primobots
+          </Button>
+          <Button
+            className="btn"
+            style={{ backgroundColor: "#019872", color: "#fff" }}
             onClick={() => setActiveTab("Softway")}
           >
             Softway
@@ -249,6 +300,7 @@ const Organizations = () => {
           </Button>
         </TabsContent>
         <TabsContainer>
+          {activeTab === "Primobots" && renderPrimobotsDescription()}
           {activeTab === "Softway" && renderSoftwayDescription()}
           {activeTab == "Accenture" && renderAccentureDescription()}
           {activeTab == "Kuliza" && renderKulizaDescription()}
@@ -264,6 +316,7 @@ const Organizations = () => {
           itemPadding={[, 10]}
           transitionMs={700}
         >
+          <div>{renderPrimobotsDescription()}</div>
           <div>{renderSoftwayDescription()}</div>
           <div>{renderAccentureDescription()}</div>
           <div>{renderKulizaDescription()}</div>

@@ -101,11 +101,9 @@ function IntroductionContainer() {
         <IntroductionDescription>
           <IntroductionTitle>HELLO</IntroductionTitle>
           <IntroductionParagraph>
-            I am Abhay Deshpande, a full-stack developer from India, also a
-            Front End Developer Nanodegree Graduate at Udacity (Co-created By
-            Google). Working with clients, my dream has always been driven
-            towards providing unique experiences to clients also with the best
-            level of quality and service to them.
+            I am Abhay Deshpande,a full-stack Developer from India. With a love
+            for Front-End, and bridging the gap between web2 and web3. Keep
+            scrolling to learn about the fun projects I’ve worked on.
           </IntroductionParagraph>
         </IntroductionDescription>
         <FigureContainer>
