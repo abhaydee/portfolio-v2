@@ -7,69 +7,71 @@ import {
 } from "../utils/CustomComponents";
 import styled from "styled-components";
 import { useRouter } from "next/router";
+
+const ProjectsDescriptionContainer = styled.div`
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+`;
+
+const Project = styled.div`
+  position: relative;
+  margin-bottom: 5rem;
+`;
+
+const ProjectsData = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Source-OpenSans";
+  align-items: center;
+  margin-top: 1.6rem;
+`;
+const CustomImageContainer = styled.div`
+  @media (min-width: 1024px) {
+    filter: grayscale(100%) contrast(1) brightness(90%);
+    &:hover {
+      filter: none;
+      opacity: 100%;
+      transition: opacity 500ms linear 0s;
+      background-color: transparent;
+    }
+  }
+`;
+const ProjectImage = styled.img`
+  // height: 100%;
+  // left: 0;
+  // position: absolute;
+  // top: 0;
+  // width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  background-position: center;
+  filter: ${(props) => `drop-shadow(0 0 0.75rem ${props.color}) !important`};
+  &:hover {
+    transform: scale(1.05);
+    transition: transform 1.05s ease-in-out;
+  }
+`;
+const ProjectTitle = styled.h3`
+  font-size: 1.5rem;
+  @media (max-width: 576px) {
+    font-size: 1rem;
+  }
+`;
+
+const ProjectTechStackTitle = styled.p`
+  font-size: 1.5rem;
+  @media (max-width: 576px) {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+`;
+
 function ProjectsContainer() {
   const router = useRouter();
-  const ProjectsDescriptionContainer = styled.div`
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  `;
-
-  const Project = styled.div`
-    position: relative;
-    margin-bottom: 5rem;
-  `;
-
-  const ProjectsData = styled.div`
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    font-family: "Source-OpenSans";
-    align-items: center;
-    margin-top: 1.6rem;
-  `;
-  const CustomImageContainer = styled.div`
-    @media (min-width: 1024px) {
-      filter: grayscale(100%) contrast(1) brightness(90%);
-      &:hover {
-        filter: none;
-        opacity: 100%;
-        transition: opacity 500ms linear 0s;
-        background-color: transparent;
-      }
-    }
-  `;
-  const ProjectImage = styled.img`
-    // height: 100%;
-    // left: 0;
-    // position: absolute;
-    // top: 0;
-    // width: 100%;
-    object-fit: cover;
-    border-radius: 1rem;
-    background-position: center;
-    filter: ${(props) => `drop-shadow(0 0 0.75rem ${props.color}) !important`};
-    &:hover {
-      transform: scale(1.05);
-      transition: transform 1.05s ease-in-out;
-    }
-  `;
-  const ProjectTitle = styled.h3`
-    font-size: 1.5rem;
-    @media (max-width: 576px) {
-      font-size: 1rem;
-    }
-  `;
-
-  const ProjectTechStackTitle = styled.p`
-    font-size: 1.5rem;
-    @media (max-width: 576px) {
-      font-size: 1rem;
-      margin-bottom: 0.5rem;
-    }
-  `;
   const projectsList = [
     {
       id: "1",

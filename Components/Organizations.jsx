@@ -3,6 +3,82 @@ import styled from "styled-components";
 import Carousel from "react-elastic-carousel";
 import { ComponentReSize } from "../utils/utils";
 
+const Wrapper = styled.div`
+  background-color: #fff;
+  color: #000;
+  padding-top: 4rem;
+  padding-inline: 8rem;
+  @media (max-width: 1024px) {
+    padding-inline: 1rem;
+  }
+`;
+const Header = styled.h1`
+  text-align: center;
+  font-family: "Kicker-Black";
+  font-weight: bold;
+  margin-bottom: 2rem;
+`;
+const Button = styled.button`
+  margin: 3rem;
+  &:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+  }
+  @media (max-width: 1080px) {
+    margin: 0.5rem;
+  }
+`;
+const Header5 = styled.h5`
+  text-align: center;
+`;
+
+const Header3 = styled.h3`
+  font-family: "Source-OpenSans";
+  text-align: center;
+  margin-top: 1rem;
+  line-height: 2.25rem;
+`;
+
+const ListItem = styled.li`
+  font-family: "Source-OpenSans";
+  line-height: 2rem;
+  font-size: 1.25rem;
+`;
+
+const TabsContainer = styled.div`
+  @media (min-width: 768px) {
+    display: none;
+  }
+`;
+const TabsContent = styled.div`
+  @media (min-width: 1024px) {
+    display: none;
+  }
+`;
+
+const CarouselContainer = styled.div`
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
+const Anchor = styled.a`
+  color: teal;
+  &:hover {
+    color: teal;
+  }
+`;
+
 const Organizations = () => {
   const [activeTab, setActiveTab] = useState("Softway");
   const isMobile = ComponentReSize();
@@ -198,79 +274,4 @@ const Organizations = () => {
   );
 };
 
-const Wrapper = styled.div`
-  background-color: #fff;
-  color: #000;
-  padding-top: 4rem;
-  padding-inline: 8rem;
-  @media (max-width: 1024px) {
-    padding-inline: 1rem;
-  }
-`;
-const Header = styled.h1`
-  text-align: center;
-  font-family: "Kicker-Black";
-  font-weight: bold;
-  margin-bottom: 2rem;
-`;
-const Button = styled.button`
-  margin: 3rem;
-  &:hover {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    -webkit-transition: -webkit-transform 0.2s;
-    transition: -webkit-transform 0.2s;
-    transition: transform 0.2s;
-    transition: transform 0.2s, -webkit-transform 0.2s;
-  }
-  @media (max-width: 1080px) {
-    margin: 0.5rem;
-  }
-`;
-const Header5 = styled.h5`
-  text-align: center;
-`;
-
-const Header3 = styled.h3`
-  font-family: "Source-OpenSans";
-  text-align: center;
-  margin-top: 1rem;
-  line-height: 2.25rem;
-`;
-
-const ListItem = styled.li`
-  font-family: "Source-OpenSans";
-  line-height: 2rem;
-  font-size: 1.25rem;
-`;
-
-const TabsContainer = styled.div`
-  @media (min-width: 768px) {
-    display: none;
-  }
-`;
-const TabsContent = styled.div`
-  @media (min-width: 1024px) {
-    display: none;
-  }
-`;
-
-const CarouselContainer = styled.div`
-  width: 70%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-
-  @media (max-width: 768px) {
-    display: none;
-  }
-`;
-
-const Anchor = styled.a`
-  color: teal;
-  &:hover {
-    color: teal;
-  }
-`;
 export default Organizations;
