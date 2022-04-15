@@ -10,7 +10,7 @@ function Header() {
         <Header3 href="#projects">PROJECTS</Header3>
         <Header3 href="#contact">CONTACT</Header3>
         <Header3
-          href={"/Abhay-Deshpande_Resume.html"}
+          href={"/abhay-deshpande_resume.html"}
           target="_blank"
           rel="noopener noreferrer"
         >
