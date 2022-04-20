@@ -41,7 +41,6 @@ function HeroScreen() {
     <HeroScreenContainer>
       <Header />
       <HeroScreenTitle>Full Stack Developer</HeroScreenTitle>
-      <HeroScreenSubTitle>FREELANCE</HeroScreenSubTitle>
     </HeroScreenContainer>
   );
 }
