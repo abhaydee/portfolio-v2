@@ -75,10 +75,10 @@ function ContactContainer() {
     <ContactDisplay id="contact">
       <ContactContainerTitle>
         <ContactHeader
-          href="mailto:hi@abhaydee.com?Subject=subject message"
+          href="mailto:deshpande.abh@northeastern.edu?Subject=subject message"
           target="_blank"
         >
-          HI@ABHAYDEE.COM
+          deshpande.abh@northeastern.edu
         </ContactHeader>
         <TextHeader>
           If you have an interesting idea about a product, Let's get together on
@@ -88,7 +88,7 @@ function ContactContainer() {
       </ContactContainerTitle>
       <Footer>
         <FooterHeader>
-          Shoot me an email at hi@abhaydee.com or find me at
+          Shoot me an email at deshpande.abh@northeastern.edu or find me at
         </FooterHeader>
         <FooterSocials>
           <a
