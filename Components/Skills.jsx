@@ -17,7 +17,7 @@ import {
 const FlexContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin-top: 1rem;
+  margin-top: 2rem;
   justify-content: center;
 `;
 const SkillsContainer = styled.div`
@@ -27,6 +27,7 @@ const SkillsContainer = styled.div`
 
 const SkillsSubHeader = styled.h3`
   margin-bottom: ${(props) => props.marginBottom};
+  margin-top:  ${(props) => props.marginTop};
   text-align: center;
   font-family: "Poppins-Regular";
   color: #fff;
@@ -53,7 +54,7 @@ const ShadowContainer = styled.div`
 const IconContainer = styled.div`
   min-width: min-content;
   padding: 0.5rem;
-  margin-inline: 1rem;
+  margin-inline: 1.5rem;
   &:hover {
     transform: scale(1.1);
     transition: transform 200ms ease-in-out;
@@ -140,7 +141,7 @@ function Skills() {
           title="ThirdWeb"
         />
       </FlexContainer>
-      <SkillsSubHeader marginBottom={"1rem"}>Backend</SkillsSubHeader>
+      <SkillsSubHeader marginBottom={"1rem"} marginTop={"2rem"}>Backend</SkillsSubHeader>
       <FlexContainer>
         <IconCard
           dropShadowColor="#72ab63"
