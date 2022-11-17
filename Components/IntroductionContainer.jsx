@@ -101,7 +101,7 @@ function IntroductionContainer() {
         <IntroductionDescription>
           <IntroductionTitle>HELLO</IntroductionTitle>
           <IntroductionParagraph>
-            I am Abhay Deshpande,a full-stack Developer from India. With a love
+            I am Abhay Deshpande,a full-stack Developer from Boston, USA. With a love
             for Front-End, and bridging the gap between web2 and web3. Keep
             scrolling to learn about the fun projects I’ve worked on.
           </IntroductionParagraph>
