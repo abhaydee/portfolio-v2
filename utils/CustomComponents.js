@@ -17,7 +17,7 @@ export const HeaderContainer = styled.div`
   padding: 3.2rem 7rem 0;
   @media (max-width: 500px) {
     justify-content: space-between;
-    padding: 0.5rem;
+    padding: 1rem;
     /* display: none; */
   }
 `;
@@ -39,7 +39,7 @@ export const Header3 = styled.a`
     color: teal;
   }
   @media (max-width: 576px) {
-    font-size: 15px;
+    font-size: 1.2rem;
   }
 `;
 
@@ -55,12 +55,11 @@ export const FigureContainer = styled.figure`
 `;
 
 export const CustomImage = styled.img`
-height: 100%;
-left: 0;
-position: absolute;
-top: 0;
-width: 100%;
-}
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 `;
 
 export const ProjectsContainerTitle = styled.h1`
