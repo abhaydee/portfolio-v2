@@ -78,7 +78,7 @@ function ContactContainer() {
           href="mailto:deshpande.abh@northeastern.edu?Subject=subject message"
           target="_blank"
         >
-          deshpande.abh<br></br>@northeastern.edu
+          deshpande.abh@northeastern.edu
         </ContactHeader>
         <TextHeader>
           If you have an interesting idea about a product, Let's get together on

@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { Header3, HeaderContainer } from "../utils/CustomComponents";
 import ComponentReSize from "../utils/resolutionHook";
+import LoadingArrow from "./LoadingArrow";
 
 const AnchorContainer = styled.div`
   display: flex;
@@ -90,6 +91,14 @@ function Header() {
     <>
       <HeaderContainer>
         <Header3 href="#">ABHAY DESHPANDE </Header3>
+
+        {/* <img
+          alt="Abhay-Deshpande Logo"
+          src="/assets/images/abhayDeshpande_Logo.png"
+          width={"200"}
+          height={"80"}
+        /> */}
+
         {!isMobile && (
           <>
             <Header3 href="#projects">PROJECTS</Header3>

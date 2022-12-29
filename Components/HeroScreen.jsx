@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header";
 import { HeroScreenContainer } from "../utils/CustomComponents";
 import styled from "styled-components";
+import LoadingArrow from "./LoadingArrow";
 const HeroScreenTitle = styled.div`
   font-family: "Kicker-Black";
   text-transform: uppercase;
@@ -41,6 +42,7 @@ function HeroScreen() {
     <HeroScreenContainer>
       <Header />
       <HeroScreenTitle>Full Stack Developer</HeroScreenTitle>
+      {/* <LoadingArrow /> */}
     </HeroScreenContainer>
   );
 }
