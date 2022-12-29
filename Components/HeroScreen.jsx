@@ -37,12 +37,21 @@ const HeroScreenSubTitle = styled.p`
   }
 `;
 
+const Image = styled.img`
+  display: flex;
+  margin: 0 auto;
+  margin-top: 15rem;
+  width: 80px;
+  height: 80px;
+`;
 function HeroScreen() {
   return (
     <HeroScreenContainer>
       <Header />
       <HeroScreenTitle>Full Stack Developer</HeroScreenTitle>
       {/* <LoadingArrow /> */}
+
+      <Image src="/assets/images/down-arrow.gif" />
     </HeroScreenContainer>
   );
 }
