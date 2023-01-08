@@ -74,9 +74,9 @@ const SelfAvatar = styled.img`
 const IntroductionOuterContainer = styled.div`
   background-color: #242424;
   color: #fff;
-  height: 60.5rem;
+  height: 45rem;
   @media (max-width: 1024px) {
-    height: 77rem;
+    height: 65rem;
   }
 `;
 
@@ -101,8 +101,8 @@ function IntroductionContainer() {
         <IntroductionDescription>
           <IntroductionTitle>HELLO</IntroductionTitle>
           <IntroductionParagraph>
-            I am Abhay Deshpande,a full-stack Developer from Boston, USA. With a love
-            for Front-End, and bridging the gap between web2 and web3. Keep
+            I am Abhay Deshpande,a full-stack Developer from Boston, USA. With a
+            love for Front-End, and bridging the gap between web2 and web3. Keep
             scrolling to learn about the fun projects I’ve worked on.
           </IntroductionParagraph>
         </IntroductionDescription>

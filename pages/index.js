@@ -7,6 +7,7 @@ import Organizations from "../Components/Organizations";
 import Skills from "../Components/Skills";
 import { NextSeo } from "next-seo";
 import Head from "next/head";
+import AwardsContainer from "../Components/AwardsContainer";
 export default function Home() {
   return (
     <div style={{ scrollBehavior: "smooth" }}>
@@ -36,7 +37,7 @@ export default function Home() {
         <HeroScreen />
         <Organizations />
         <IntroductionContainer />
-
+        <AwardsContainer />
         <ProjectsContainer />
         <Skills />
         <ContactContainer />
