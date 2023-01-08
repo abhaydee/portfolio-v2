@@ -226,17 +226,17 @@ const Organizations = () => {
     );
   };
 
-  const renderKulizaDescription = () => {
+  const renderFinvolvDescription = () => {
     return (
       <div className="d-flex flex-column align-items-center">
         <Header3>
           Front End Web/Mobile Engineer{" "}
           <Anchor
-            href="https://www.kuliza.com/"
+            href="https://finvolv.ai"
             target="_blank"
             rel="noopener noreferrer"
           >
-            @Kuliza Technologies
+            Finvolv
           </Anchor>
         </Header3>
         <p>July 2019 - Oct 2019</p>
@@ -269,7 +269,7 @@ const Organizations = () => {
       <Header>Organizations that I have been a part of...</Header>
       {/* {isMobile ? ( */}
       <TabsContainer>
-        <TabsContent className="d-flex justify-content-center mx-auto container align-self-center">
+        <TabsContent className="d-flex flex-row justify-content-center mx-auto container align-self-center">
           <Button
             className="btn"
             style={{ backgroundColor: "#019872", color: "#fff" }}
@@ -294,16 +294,16 @@ const Organizations = () => {
           <Button
             className="btn"
             style={{ backgroundColor: "#019872", color: "#fff" }}
-            onClick={() => setActiveTab("Kuliza")}
+            onClick={() => setActiveTab("Finvolv")}
           >
-            Kuliza Technologies
+            Finvolv Technologies
           </Button>
         </TabsContent>
         <TabsContainer>
           {activeTab === "Primobots" && renderPrimobotsDescription()}
           {activeTab === "Softway" && renderSoftwayDescription()}
           {activeTab == "Accenture" && renderAccentureDescription()}
-          {activeTab == "Kuliza" && renderKulizaDescription()}
+          {activeTab == "Finvolv" && renderFinvolvDescription()}
         </TabsContainer>
       </TabsContainer>
       {/* ) : ( */}
@@ -319,7 +319,7 @@ const Organizations = () => {
           <div>{renderPrimobotsDescription()}</div>
           <div>{renderSoftwayDescription()}</div>
           <div>{renderAccentureDescription()}</div>
-          <div>{renderKulizaDescription()}</div>
+          <div>{renderFinvolvDescription()}</div>
         </Carousel>
       </CarouselContainer>
       {/* )} */}
