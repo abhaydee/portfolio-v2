@@ -148,7 +148,7 @@ const Organizations = () => {
             @Primobots
           </Anchor>
         </Header3>
-        <p>Feb 2022 - Present</p>
+        <p>Feb 2022 - Aug 2022</p>
         <ul style={{ maxWidth: "500px", paddingLeft: 0 }} id="list">
           <ListItem>
             <p>
@@ -265,7 +265,7 @@ const Organizations = () => {
     );
   };
   return (
-    <Wrapper>
+    <Wrapper id="Organization">
       <Header>Organizations that I have been a part of...</Header>
       {/* {isMobile ? ( */}
       <TabsContainer>

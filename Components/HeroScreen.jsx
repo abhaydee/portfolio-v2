@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import { HeroScreenContainer } from "../utils/CustomComponents";
+import { HeroScreenContainer, Header3 } from "../utils/CustomComponents";
 import styled from "styled-components";
 import LoadingArrow from "./LoadingArrow";
 const HeroScreenTitle = styled.div`
@@ -51,7 +51,9 @@ function HeroScreen() {
       <HeroScreenTitle>Full Stack Developer</HeroScreenTitle>
       {/* <LoadingArrow /> */}
 
-      <Image src="/assets/images/down-arrow.gif" />
+      <Header3 href="#Organization">
+        <Image src="/assets/images/down-arrow.gif" />
+      </Header3>
     </HeroScreenContainer>
   );
 }
