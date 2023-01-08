@@ -16,9 +16,12 @@ const VideoUtilityContainer = styled.div`
   &.flex-image {
     padding-inline: 0;
   }
+
   @media (min-width: 1025px) {
     flex-direction: column;
     padding-inline: 1.5rem;
+    align-items: ${(props) => props.alignItems};
+    margin-top: ${(props) => props.marginTop};
   }
 
   @media (min-width: 125rem) {
@@ -97,10 +100,22 @@ function AwardsContainer() {
             onPlay={handlePlayerPlay}
           />
           <VideoTitle>
-            Winning product at HackBoston (Harvard University)
+            First Place at HackBoston (Harvard University)
           </VideoTitle>
         </VideoUtilityContainer>
       </VideoParentContainer>
+      <VideoUtilityContainer alignItems={"center"} marginTop={"2rem"}>
+        <VimeoVideoContainer
+          video={"787396901"}
+          autoplay={false}
+          volume={1}
+          paused={paused}
+          responsive={true}
+          onPause={handlePlayerPause}
+          onPlay={handlePlayerPlay}
+        />
+        <VideoTitle>RunnerUp at Tron Hackathon (Harvard University)</VideoTitle>
+      </VideoUtilityContainer>
     </ProjectsCustomContainer>
   );
 }
