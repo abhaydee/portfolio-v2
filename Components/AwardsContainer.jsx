@@ -36,7 +36,7 @@ const VimeoVideoContainer = styled(Vimeo)`
     width: 30.875rem;
     height: 18.3125rem;
     /* margin-top: 4rem; */
-    margin-left: 4rem;
+    margin-left: ${(props) => (props.marginLeft ? props.marginLeft : "4rem")};
   }
 `;
 
@@ -107,6 +107,7 @@ function AwardsContainer() {
       <VideoUtilityContainer alignItems={"center"} marginTop={"2rem"}>
         <VimeoVideoContainer
           video={"787396901"}
+          marginLeft={0}
           autoplay={false}
           volume={1}
           paused={paused}

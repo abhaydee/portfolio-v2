@@ -23,7 +23,7 @@ const ContactHeader = styled.a`
     cursor: pointer;
   }
   @media (max-width: 576px) {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 `;
 const ContactDisplay = styled.div`
