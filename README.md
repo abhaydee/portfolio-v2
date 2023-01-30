@@ -1,6 +1,6 @@
 ### Beta Version of Portfolio.......
 
-## Portolio build with NextJS and Styled Components
+## This Version of Portfolio is built with NextJS and Styled Components
 
 
-### Portfolio Url : https://abhaydee.com
+### Project Url : https://abhaydee.com
