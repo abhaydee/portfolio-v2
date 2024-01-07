@@ -8,7 +8,11 @@ import Skills from "../Components/Skills";
 import { NextSeo } from "next-seo";
 import Head from "next/head";
 import AwardsContainer from "../Components/AwardsContainer";
+
+
 export default function Home() {
+
+
   return (
     <div style={{ scrollBehavior: "smooth" }}>
       <NextSeo
